@@ -1,0 +1,26 @@
+Framework openMairie Licence
+============================
+
+Licence
+-------
+
+Le framework openMairie est une librairie PHP qui permet de créer une
+application très rapidement en générant, à partir du modèle de données, des
+formulaires, des listings, des éditions PDF, des affichages sur carte et bien
+plus encore.
+Copyright (C) 2004-2019 openMairie
+
+Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le
+modifier au titre des clauses de la Licence Publique Générale GNU, telle que
+publiée par la Free Software Foundation, soit la version 3 de la Licence, ou
+(à votre discrétion) une version ultérieure quelconque.
+
+Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE
+GARANTIE ; sans même une garantie implicite de COMMERCIABILITE ou DE CONFORMITE
+A UNE UTILISATION PARTICULIERE. Voir la Licence Publique Générale GNU pour plus
+de détails.
+
+Vous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec
+ce programme ; si ce n'est pas le cas, consultez <http://www.gnu.org/licenses/>
+ou écrivez à la Free Software Foundation Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, USA.

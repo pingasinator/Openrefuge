@@ -1,0 +1,8 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="framework-openmairie">
+      <file>testGeneral.php</file>
+      <file>testREST.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>

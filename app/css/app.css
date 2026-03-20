@@ -1,0 +1,44 @@
+.widget_table {width: 100%; border: 1px solid rgb(160 160 160); border-collapse: collapse;}
+.widget_table th {border: 1px solid rgb(160 160 160); color: white;}
+.widget_table td {border: 1px solid rgb(160 160 160);}
+
+
+/* définit les propriétés des rubriques dans la barre de recherche avancée */
+#adv-search-adv-fields .field, #adv-search-adv-fields .bloc{float: left; width: 210px;}
+#adv-search-adv-fields .field-type-select .form-content{display: block; padding: 3px; height: 20px;}
+#adv-search-adv-fields .field-type-select .form-content select{width: 90%;}
+#adv-search-adv-fields .field-type-text div.form-content {display: block; padding: 3px; height: 20px;}
+#adv-search-adv-fields .field-type-text div.form-content input {width: 90%;}
+#adv-search-adv-fields .field-type-date div.form-content {display: block; padding: 3px; height: 20px;}
+#adv-search-adv-fields .bloc.intervaldate .field-type-date {float: none; padding: 3px;}
+#adv-search-adv-fields .field-type-select, #adv-search-adv-fields .field-type-text{font-weight: bold;}
+
+#header {border-left: 13px solid #ff4848; border-bottom: none; border-top: none;}
+
+.rubrik h3 a{margin-left: 0px; border-left-width: 7px; border-left-style: solid;}
+
+/* définit les couleurs des rubriques du menu*/
+.édition-20{border-left-color: #ff4848;}
+.ui-state-active .édition-20, .édition-20:hover{background-color: #ff4848;}
+.sejours-20{border-left-color: #48a7ff;}
+.ui-state-active .sejours-20,.sejours-20:hover{background-color: #48a7ff;}
+.soins-20{border-left-color: #48ff48;}
+.soins-20:hover{background-color: #48ff48;}
+.edition-20{border-left-color: #ffbf48;}
+.ui-state-active .edition-20,.edition-20:hover{background-color: #ffbf48;}
+.parametrage-20{border-left-color: #ad48ff;}
+.ui-state-active .parametrage-20,.parametrage-20:hover{background-color: #ad48ff;}
+.administration-20{border-left-color: #9e5534;}
+.ui-state-active .administration-20,.administration-20:hover{background-color: #9e5534;}
+
+/* donne un effet gris métallique aux widgets*/
+.ui-widget-header{border: 1px solid #aaaaaa; background: #cccccc url(../img/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x; color: #222222; font-weight: bold;}
+
+/* donne un effet gris métallique sur les rubriques du menu*/
+.ui-state-default{border: 1px solid #d3d3d3; background: #e6e6e6 url(../img/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; color: #555555; font-weight: bold;}
+
+thead .title{background: #e6e6e6 url(../img/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; color: #555555; font-weight: bold;}
+
+.ui-corner-top{color: #555555; font-weight: bold;}
+
+

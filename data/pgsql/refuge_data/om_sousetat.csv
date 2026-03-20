@@ -1,0 +1,74 @@
+"om_sousetat","om_collectivite","id","libelle","actif","titre","titrehauteur","titrefont","titreattribut","titretaille","titrebordure","titrealign","titrefond","titrefondcouleur","titretextecouleur","intervalle_debut","intervalle_fin","entete_flag","entete_fond","entete_orientation","entete_hauteur","entetecolone_bordure","entetecolone_align","entete_fondcouleur","entete_textecouleur","tableau_largeur","tableau_bordure","tableau_fontaille","bordure_couleur","se_fond1","se_fond2","cellule_fond","cellule_hauteur","cellule_largeur","cellule_bordure_un","cellule_bordure","cellule_align","cellule_fond_total","cellule_fontaille_total","cellule_hauteur_total","cellule_fondcouleur_total","cellule_bordure_total","cellule_align_total","cellule_fond_moyenne","cellule_fontaille_moyenne","cellule_hauteur_moyenne","cellule_fondcouleur_moyenne","cellule_bordure_moyenne","cellule_align_moyenne","cellule_fond_nbr","cellule_fontaille_nbr","cellule_hauteur_nbr","cellule_fondcouleur_nbr","cellule_bordure_nbr","cellule_align_nbr","cellule_numerique","cellule_total","cellule_moyenne","cellule_compteur","om_sql"
+13,1,clinique.veterinaire,clinique.veterinaire,true,Vétérinaires,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0",7,TLB|TLB|TLB|LTBR,C|C|C|C,"255-72-72","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",7,"47.5|47.5|47.5|47.5",TLB|TLB|TLB|LTBR,TLB|TLB|TLB|LTBR,C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|LTBR,C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|LTBR,C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|LTBR,C|C|C|C,"999|999|999|999","0|0|0|0","0|0|0|0","0|0|0|0","select veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+civilite.libelle as civilité,
+veterinaire.telephone as telephone
+from &DB_PREFIXEveterinaire left join &DB_PREFIXEcivilite on civilite.civilite = veterinaire.civilite where veterinaire.clinique='&idx'"
+6,1,animal.soin,animal.soin,true,Soin,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0",7,TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C,"255-72-72","0-0-0",190,"0",10,"0-0-0","243-246-246","255-255-255","1",7,"38|38|38|38|38",TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|LTBR,C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|LTBR,C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|LTBR,C|C|C|C,"999|999|999|999","0|0|0|0","0|0|0|0","0|0|0|0","select soin.soin as id,
+veterinaire.nom as veterinaire,
+clinique.nom as clinique,
+soin.date_soin as date,
+soin.posologie as posologie
+from &DB_PREFIXEsoin left join &DB_PREFIXEveterinaire on veterinaire.veterinaire = soin.veterinaire left join &DB_PREFIXEclinique on soin.clinique = clinique.clinique where soin.animal='&idx'"
+15,1,soins.medicament,soins.medicament,true,Médicaments,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"255-72-72","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",7,"31.6666666666|31.6666666666|31.6666666666|31.6666666666|31.6666666666|31.6666666666",TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"999|999|999|999|999|999","0|0|0|0|0|0","0|0|0|0|0|0|0","0|0|0|0|0|0","select medicament.medicament as ID,
+medicament.nom as nom,
+concat(medicament.dose,unite_mesure.unite_mesure) as dose,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.frequence as fréquence from &DB_PREFIXEmedicament left join &DB_PREFIXEunite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.soin='&idx'"
+17,1,animale.sejour,animale.sejour,true,liste sejour,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C,"255-72-72","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",7,"27.142|27.142|27.142|27.142|27.142|27.142|27.142|27.142|27.142",TLB|TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"999|999|999|999|999|999|999|999|999","0|0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0|0","select sejour.sejour as ID,
+sejour.date_entree as date_entree,
+sejour.date_sortie as date_sortie,
+sejour.provenance as provenance,
+sejour.hebergement as hebergement,
+sejour_tarif.prix as tarif,
+sejour.paye as payé
+from &DB_PREFIXEsejour left join &DB_PREFIXEsejour_tarif on sejour_tarif.sejour_tarif = sejour.sejour_tarif where sejour.animal='&idx'"
+16,1,animale.medicament,animale.medicament,true,medicaments,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C,"255-72-72","0-0-0",190,"0",10,"0-0-0","243-246-246","255-255-255","1",7,"27.1428571429|27.1428571429|27.1428571429|27.1428571429|27.1428571429|27.1428571429|27.1428571429|27.1428571429",TLB|TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"999|999|999|999|999|999|999|999","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+concat(medicament.dose, unite_mesure.libelle)  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from &DB_PREFIXEmedicament left join &DB_PREFIXEunite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='&idx'"
+19,1,factures.factures_soin,factures.factures_soin,true,Soins,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"255-72-72","0-0-0",190,"0",10,"0-0-0","243-246-246","255-255-255","1",7,"31.6|31.6|31.6|31.6|31.6|31.6",TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"999|999|999|999|999|999|999|999","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","select 
+facture_soin.soin as id,
+animal.nom as animal,
+facture_soin.date_soin as date_soin,
+concat(veterinaire.nom,' ',veterinaire.prenom) as veterinaire,
+clinique.nom as clinique,
+round(coalesce(facture_soin.tarif, 0)::numeric,2) as prix
+from &DB_PREFIXEfacture_soin left join &DB_PREFIXEanimal on facture_soin.animal = animal.animal left join &DB_PREFIXEveterinaire on facture_soin.veterinaire = veterinaire.veterinaire left join &DB_PREFIXEclinique on facture_soin.clinique = clinique.clinique
+where facture_soin.facture='&idx' order by facture_soin.animal"
+14,1,hebergement.sejour,hebergement.sejour,true,Séjours,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"255-72-72","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",9,"31.6|31.6|31.6|31.6|31.6|31.6",TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"999|999|999|999|999|999|999|999","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","select sejour.sejour as ID,
+sejour.animal as ID_animal,
+animal.nom as animal,
+sejour.provenance as provenance,
+sejour.date_entree as date_d_entree,
+sejour.date_sortie as date_de_sortie
+from &DB_PREFIXEsejour left join &DB_PREFIXEanimal on animal.animal = sejour.animal where sejour.hebergement='&idx'"
+12,1,veterinaire.soin,veterinaire.soin,true,Soins,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"255-72-72","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",7,"31.6|31.6|31.6|31.6|31.6|31.6",TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C,"999|999|999|999|999|999","0|0|0|0|0|0","0|0|0|0|0|0","0|0|0|0|0|0","select soin.soin as id,
+soin_type.libelle as type,
+soin.date_soin as date,
+soin.posologie as posologie,
+soin.animal as ID_animal,
+clinique.nom as clinique from &DB_PREFIXEsoin left join &DB_PREFIXEclinique on clinique.clinique = soin.clinique left join &DB_PREFIXEsoin_type on soin_type.soin_type = soin.soin_type where soin.veterinaire='&idx'"
+7,1,personne.animal,personne.animal,true,Animaux,8,helvetica,B,18,"0",C,"1","65-65-65","255-255-255",0,5,"1","1","0|0|0|0|0|0",10,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"255-72-72","0-0-0",190,"0",10,"0-0-0","243-246-246","255-255-255","1",7,"29|29|29|29|45|29",TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C,"999|999|999|999|999|999","0|0|0|0|0|0","0|0|0|0|0|0","0|0|0|0|0|0","select animal.animal as ID,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance as date_de_naissance,
+animal_sexe.libelle as animal_sexe
+from &DB_PREFIXEanimal left join &DB_PREFIXEanimal_espece on animal_espece.animal_espece = animal.animal_espece left join &DB_PREFIXEanimal_race on animal_race.animal_race = animal.animal_race left join &DB_PREFIXEanimal_sexe on animal_sexe.animal_sexe = animal.animal_sexe where animal.personne='&idx'"
+18,1,facture.facture_sejour,facture.facture_sejour,true,Séjours,8,helvetica,B,18,"0",C,"1","72-72-72","255-255-255",0,5,"1","1","0|0|0|0|0|0|0|0|0",7,TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"255-255-255","0-0-0",190,"1",10,"0-0-0","243-246-246","255-255-255","1",7,"21.1|21.1|21.1|21.1|21.1|21.1|21.1|21.1",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"1",10,15,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"1",10,5,"212-219-219",TLB|TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C|C,"1",10,7,"255-255-255",TLB|TLB|TLB|TLB|TLB|TLB|TLB|LTBR,C|C|C|C|C|C|C|C,"999|999|999|999|999|999|999|999","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","0|0|0|0|0|0|0|0","select 
+facture_sejour.sejour as sejour,
+animal.nom as animal,
+facture_sejour.date_entree as date_entree,
+facture_sejour.date_sortie as date_sortie,
+provenance.libelle as provenance,
+hebergement.nom as hebergement,
+sejour_tarif.prix  as tarif,
+facture_sejour.date_sortie - facture_sejour.date_entree as nb_jours,
+round(coalesce((facture_sejour.date_sortie - facture_sejour.date_entree) * sejour_tarif.prix, 0)::numeric,2) as somme
+from &DB_PREFIXEfacture_sejour left join &DB_PREFIXEanimal on facture_sejour.animal = animal.animal left join &DB_PREFIXEsejour_tarif on sejour_tarif.sejour_tarif = facture_sejour.sejour_tarif left join &DB_PREFIXEprovenance on provenance.provenance = facture_sejour.provenance left join &DB_PREFIXEhebergement on hebergement.hebergement = facture_sejour.hebergement where facture_sejour.facture='&idx' order by facture_sejour.animal"

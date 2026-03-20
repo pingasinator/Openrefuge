@@ -1,0 +1,3 @@
+om_utilisateur,nom,email,login,pwd,om_collectivite,om_type,om_profil
+10,Gérard DUPONT,gdupont@example.com,gdupont,azerty,1,db,1
+11,Jacques DURAND,jdurand@example.com,jdurand,azerty,1,db,1

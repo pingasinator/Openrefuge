@@ -1,0 +1,8 @@
+{
+    "name": "openmairie/framework-openmairie",
+    "description": "Framework openMairie",
+    "homepage": "http://www.openmairie.org/framework",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

@@ -1,0 +1,10 @@
+#
+# created by: svn propset svn:externals -F ./EXTERNALS.txt .
+#
+
+fpdf https://github.com/Setasign/FPDF/tags/1.8.1/
+tcpdf https://scm.adullact.net/anonscm/svn/openmairie/externals/tcpdf/tags/6.2.12-min/
+pear https://scm.adullact.net/anonscm/svn/openmairie/externals/pear/pear-core/tags/PEAR-1.9.5/
+db https://github.com/pear/DB/tags/RELEASE_1_9_2
+phpmailer https://github.com/PHPMailer/PHPMailer/tags/v5.2.23/
+

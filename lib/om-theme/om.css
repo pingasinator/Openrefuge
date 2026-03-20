@@ -1,0 +1,81 @@
+/**
+ * COMMON
+ */
+
+/* Logo */
+#logo span.logo { margin: 0 0 0 0.5em; width: 184px; height: 50px; background-image: url("../../custom/logo.png"); background-repeat: no-repeat; display: block; text-indent: -9999px; }
+
+/* Textes du header et du footer */
+#actions, #shortlinks { color:#ffffff; }
+#footer span { color:#434343; }
+
+/* Liens du header et du footer */
+#actions a, #actions a:active, #actions a:visited { color:#ffffff; }
+#shortlinks a, #shortlinks a:active, #shortlinks a:visited { color:#ffffff; }
+#footer a, #footer a:active, #footer a:visited { color:#ff4848; }
+
+/* Actions personnelles */
+#actions a.actions-password, #actions a.actions-logout { padding:1px 0 1px 19px; background:transparent none no-repeat left center; }
+#actions a.actions-password { background-image:url("img/password-16x16.png"); }
+#actions a.actions-logout { background-image:url("img/logout-16x16.png"); }
+
+#header { background-image: none; background-color: #414141; }
+
+/* Colonne grise pour affichage des icones dans le menu */
+#menu li.elem:hover, #menu li.hr { background-color:#414141; }
+#menu li.elem.category:hover { background-color: #E2E2E2; ! }
+#menu div.rubrik { background: #fafafa url("img/bg-menu.png") repeat-y scroll left center; }
+#menu li.elem a { padding-left:21px; }
+
+
+/* Items au survol et separateurs */
+#menu li.elem.ui-state-focus { background-color:#434343; background-image: none; font-weight: normal; }
+#menu li.hr { background-color:#ff4848; height:0px; }
+
+/* Fieldset plier/deplier */
+legend { background-image: url("img/legend-20x16.png") !important; background-position:left center !important; background-repeat: no-repeat !important; padding:5px 5px 5px 24px !important; }
+legend.collapsible { background-image: url("img/legend-collapsible-20x16.png") !important; cursor: pointer; }
+legend.collapsed { background-image: url("img/legend-collapsed-20x16.png") !important; cursor: pointer; }
+fieldset.collapsed { border-color: transparent; background-color: transparent; }
+
+/* Lien retour */
+a.retour { background: url("img/back-25x25.png") no-repeat left center transparent; font-weight:bold; margin:5px; padding:5px 0 5px 28px; }
+
+/* Aucune decoration pour les liens de la colonne icons du tableau */
+#content td.icons a:hover, #content th.icons a:hover { text-decoration:none; }
+table.tab-tab tr.ui-state-default { background-image: none; }
+#dashboard .widget-header { background-image: none; }
+.ui-widget-header, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background-image: none; background-color: #fff; }
+
+/* Gestion des classes de base pour les icones */
+.om-prev-icon { background-position:left center; background-repeat: no-repeat; padding:1px 0 1px 19px; background-image: url("img/om-prev-icon-16x16.png"); }
+.om-icon { float:left; text-indent:-99999px; background-repeat: no-repeat; display:block; }
+.om-icon-25 { width:25px; height:25px; margin:1px; background-image: url("img/om-icon-25x25.png"); }
+.om-icon-16 { width:16px; height:16px; margin:1px; background-image: url("img/om-icon-16x16.png"); }
+.om-icon-16.om-icon-fix { display: inline-block; float: none;}
+
+
+/* Icones en 16 pixels */
+.arrow-right-16 { background-image:url("img/arrow-right-16x16.png"); }
+.add-16 { background-image: url("img/add-16x16.png"); }
+.delete-16 { background-image: url("img/delete-16x16.png"); }
+.edit-16 { background-image: url("img/edit-16x16.png"); }
+.copy-16 { background-image: url("img/copy-16x16.png"); }
+.pdf-16 { background-image: url("img/pdf-16x16.png"); }
+.sig-16 { background-image: url("img/sig-16x16.png"); }
+.consult-16 { background-image: url("img/consult-16x16.png"); }
+
+/* Icones en 25 pixels */
+.add-25 { background-image: url("img/add-25x25.png"); }
+.delete-25 { background-image: url("img/delete-25x25.png"); }
+.generate-25 { background-image: url("img/generate-25x25.png"); }
+.print-25 { background-image: url("img/print-25x25.png"); }
+.csv-25 { background-image: url("img/csv-25x25.png"); }
+
+/* Icones fournisseur sig */
+.om-icon-sig { width:60px; height:24px; margin:1px; background-image: url("img/om-icon-60x24.png"); }
+.om-icon-sig.om-icon-fix { display: inline-block; float: none;}
+.google { background-image: url("img/google.png") ; }
+.bing { background-image: url("img/bing.png"); }
+.mapquest { background-image: url("img/mapquest.png"); }
+

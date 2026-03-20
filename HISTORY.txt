@@ -1,0 +1,1437 @@
+Framework openMairie Historique des versions
+============================================
+
+4.9.2 (29/04/2019)
+------------------
+
+* Correction : L'attribut target n'était pas positionnable sur l'élément form dans le layout. Ticket #9218.
+
+
+4.9.1 (20/11/2018)
+------------------
+
+* Correction : Les éléments d'ergonomie (saut de page, insertion des sous-états, aide à la saisie des champs de fusion) n'était pas disponible en sous-formulaire pour les objets 'om_lettretype' et 'om_etat'. Ticket #9082.
+
+* Correction : Lorsqu'aucune configuration de base de données n'est présente, une notice PHP était levée sur la page de login. Ticket #9083.
+
+* Correction : Une erreur de base de données dans la méthode de connexion à la base de données affichait une page blanche au lieu d'afficher un message d'erreur propre à l'utilisateur. Ticket #9084.
+
+
+4.9.0 (20/07/2018)
+------------------
+
+* Évolution : Ajout du paramètre 'parameters' avec un comportement identique à celui du menu dans les sections actions, shortlinks et footer. Ticket #9054.
+
+* Évolution : Suppression de toutes les balises PHP fermantes. Ticket #9053.
+
+* Évolution : Gestion d'un domaine de traduction spécifique pour le framework. En utilisant la fonction __( au lieu de _( la cascade domaine de l'application > domaine du framework se fait. Il est donc possible de profiter des traductions du framework et en même temps pouvoir surcharger une ou plusieurs traductions du framework dans l'application. Ticket #9052.
+
+* Évolution : La configuration du menu, des actions, du footer et des shortlinks de l'application était portée uniquement par les scripts 'dyn/<ELEM>.inc.php'. Cette configuration possède désormais trois niveaux de paramétrage : instance > application > framework. Ticket #9051.
+
+* Évolution : Ajout du paramètre 'ldap_login_id' pour une nouvelle méthode d'authentification LDAP. Ticket #9050.
+
+* Évolution : Création d'un répertoire 'gen/' dans 'core/' qui contiendra les fichiers générés du core. Ticket #9049.
+
+* Évolution : Les scripts 'sql/< OM_DB_PHPTYPE >/< TABLE >.inc.php' ne sont désormais plus obligatoires si ceux-ci doivent rester vides. Ticket #9048.
+
+* Évolution : Supprimer les deux paramètres 'recherche' et 'selectioncol' de TAB et SOUSTAB afin d'utiliser le mécanisme de 'advs_id' pour gérer le même comportement fonctionnel. Ticket #9047.
+
+* Évolution : Ajout d’une condition 'exists()'' sur les actions modifier, supprimer et consulter. Ticket #9046.
+
+* Évolution : Suppression de la gestion du titre par la variable 'idz'. Ticket #9045.
+
+* Correction : Support du SSL openStreetMap dans la librairie openLayers afin de corriger le message des navigateurs (site non sécurisé). Ticket #9040.
+
+* Correction : Remonte au début du formulaire après l'affichage d'un sous-formulaire. Ticket #9036.
+
+* Correction: Les liens du widget de formulaire 'selecthiddenstaticlick' n'étaient plus fonctionnels. Ticket #9029.
+
+
+4.8.0 (05/04/2018)
+------------------
+
+* Évolution : Mise à niveau de la librairie fpdf vers la version 1.81. Ticket #9007.
+
+* Évolution : Rationalisation de l'affichage par le système de grille en CSS. Ticket #9008.
+
+* Évolution : Ne pas journaliser une erreur quand l’identifiant ou le mot de passe est erroné en authentification par annuaire. Ticket #9009.
+
+* Évolution : Refonte et optimisation de l'autocomplete. Ticket #9010.
+
+* Évolution : Suppression de la mention 'de l'enregistrement de la table '<TABLE>' dans le libellé des boutons de validation des formulaires. Ticket #9011.
+
+* Évolution : Ajout d'un méthode unique `application::get_inst__om_dbform()` qui permet d'instancier une classe métier pour rendre pleinement fonctionnel le custom et permettre de rendre non obligatoire la cascade des classes métier obj/core/gen. Ticket #9012.
+
+* Évolution : Les scripts `sql/<OM_DB_PHPTYPE>/*.form.inc.php` ne sont plus générés par le générateur. Les variables que ces scripts définissaient sont désormais générées dans des méthodes de la classe métier. Si les scripts existent, alors ce sont en priorité les variables de ces scripts qui sont récupérées. Ticket #9013.
+
+* Évolution : Ajout d'un bouton de validation en haut des formulaires. Ticket #9014.
+
+* Évolution : Refonte de la valorisation des paramètres GET/POST. Ticket #9015.
+
+* Correction : L'instanciation de la classe ``gen`` n'était pas faite via la méthode ``application::get_inst__om_gen()`` dans le snippet de formulaire 'combo'. Ticket #8892.
+
+* Correction : Impossible de conserver le menu ouvert sur une entrée spécifique d'ajout. Ticket #9000.
+
+* Correction : PHP Deprecated lié à la librairie FPDF. Ticket #8998.
+
+* Correction : Le tri n'était pas fonctionnel à partir de la 10ème colonne incluse dans les listings. Ticket #8786.
+
+
+4.7.0 (21/12/2017)
+------------------
+
+* Évolution : Amélioration de l'ergonomie (suppression d'un clic). Ticket #8957.
+
+* Évolution : Mise en cohérence du zoom par défaut dans les éditions PDF. Ticket #8958.
+
+* Évolution : Rendre optionnelles les surcharges des classes du framework. Ticket #8959.
+
+* Évolution : Externaliser om-tests. Ticket #8960.
+
+* Évolution : Factoriser du code en créant la classe om_base. Ticket #8961.
+
+* Évolution : Supprimer la fonction genaff. Ticket #8962.
+
+* Évolution : Déplacer les web assets vers le répertoire lib/. Ticket #8963.
+
+* Évolution : Déplacer la fonction direct_link de spg -> core. Ticket #8964.
+
+* Évolution : Gestion des snippets de formulaires. Ticket #8965.
+
+* Évolution : Supprimer les répertoires scr/ et spg/. Ticket #8966.
+
+* Évolution : Fiabiliser / Pérenniser le module SIG. Ticket #8967.
+
+* Évolution : Des champs de fusion spécifiques peuvent être passés aux éditions. Ticket #8936.
+
+* Évolution : Ajout de la classe rest_client permettant d'exécuter des requêtes REST sortantes. Ticket #8933.
+
+* Évolution : Suppression de la fonction adresse_postale non fonctionnelle. Ticket #8897.
+
+* Évolution : Suppression du widget de formulaire comboc non fonctionnel. Ticket #8896.
+
+* Évolution : Suppression du script css/layout_jquerymobile_after.css non utilisé. Ticket #8895.
+
+* Évolution : Suppression du script css/main.css non utilisé. Ticket #8894.
+
+* Correction : Remplacement de tous les appels à 'database:isError()' et 'DB::isError()' par des appels à la méthode '$this->f->isDatabaseError()' avec les bons paramètres pour obtenir un comportement identique (retour d'un booléen indiquant si une erreur est survenue ou exécution de la commande die() en cas d'erreur). Ticket #8879.
+
+* Correction : L'autocomplete déclenche l'événement on change trop souvent. Ticket #8968.
+
+
+4.6.3 (21/09/2017)
+------------------
+
+* Correction : Certaines actions sur l'autocomplete ne déclenchaient pas l'événement onchange sur le champ. C'est désormais le cas. Ticket #8929.
+
+* Correction : Dans le module reqmo, la définition d'un filtre ne prenait pas en compte le cas où la chaîne de caractères "SELECT" de la requête SQL était en majuscules. Ticket #8917.
+
+* Correction : Dans le module reqmo, le fait d'appliquer plusieurs fois un filtre sur un même champ de base de données ne fait plus apparaître plusieurs fois ce champ dans le formulaire. Ticket #8916.
+
+* Correction : La page de récupération du mot de passe était accessible sans l'option activée. Ticket #8931.
+
+
+4.6.2 (20/07/2017)
+------------------
+
+* Correction : Les champs utilisant TinyMCE dans une fenêtre modale ne s'afficher plus correctement après la fermeture et réouverture de la fenêtre modale. Ticket #8898.
+
+* Correction : La redirection directe vers un sous-formulaire interrompait les traitements Javascript. Ticket #8892.
+
+* Correction : La surcharge des valeurs par défaut des registres CSS et JS ne fonctionnait pas en mode catégories. Ticket #8891.
+
+* Correction : En cas d'erreur de base de données dans la méthode de traitement supprimer, la méthode de vérification des erreurs ne faisait pas de rollback car elle était appelée avec le mauvais paramètre. Ticket #8877.
+
+
+4.6.1 (12/06/2017)
+------------------
+
+* Correction : Les appels à PDF::PrepareMultiCell() ne respectaient pas les standards PHP 7. Ticket #8830.
+
+* Correction : L'envoi de mail ne fonctionnait plus sur certains environnements spécifiques suite à la mise à jour de PHPMailer. Des paramètres spécifiques optionnels supplémentaires permettent de configurer les serveurs SMTP qui fonctionnaient avant la mise à jour. Ticket #8837.
+
+
+4.6.0 (24/05/2017)
+------------------
+
+* Évolution : Ajout du support de la version PHP 7.0. Ticket #8811.
+
+* Évolution : Intégration dans om-tests du serveur de mail local `maildump`. Ticket #8805.
+
+* Évolution : Mise à jour de la librairie PHPMailer en version 5.2.23. Ticket #8781.
+
+* Évolution : Mise à jour de la librairie DB PEAR en version 1.9.2. Ticket #8812.
+
+* Évolution : Amélioration de l'ajout de widgets de type 'file'. Ticket #8813.
+
+* Évolution : Ajout du paramètre tinymce_load dans la méthode app_initialize_content. Ticket #8818.
+
+* Évolution : Suppression des anciens paramètres ‘ico’ et ‘help’. Ticket #8780.
+
+* Évolution : Suppression des anciennes actions de tableau ($href). Ticket #8777.
+
+* Évolution : Suppression des scripts scr/dashboard_composer.php et scr/directory.php. Ticket #8776.
+
+* Évolution : Suppression du répertoire pdf/. Ticket #8770.
+
+* Correction : Lors de l'exécution du tests suite RF du login, il y avait trop d'ouvertures de navigateurs du coup une fenêtre restait ouverte durant toute l'exécution des tests inutilement et était potentiellement source d'erreurs pour les tests suivants. Désormais, on ferme la fenêtre et on en ouvre une nouvelle à cahque début de tests case. Ticket #8807.
+
+* Correction : Le script de lancement des tests ne renvoyait jamais les valeurs de retour de l'exécution des tests, c'est désormais le cas. Certains services d'intégration continue (comme travis-ci.org) n'était donc pas en mesure de distinguer le succès ou l'échec des tests. Ticket #8806.
+
+* Correction : Suppression d'une vérification inutile dans le formulaire de sous-état. Ticket #8762.
+
+* Correction : Les champs masqués d'un formulaire ne l'étaient plus s'ils étaient alignés dans la mise en page. Ticket #8693.
+
+* Correction : Suppression de l'affectation par référence de la valeur retour d'une fonction pour supprimer l'erreur 'PHP Strict Standards'. Ticket #8814.
+
+* Correction : Suppression de l'erreur de base de données silencieuse lors de la première réinitialisation de mot de passe. Ticket #8816.
+
+* Correction : Suppression des erreurs 'PHP Notice' lors de l'accès direct aux scripts scr/form_sig.php et scr/tab_sig.php sans passer aucun paramètre. Ticket #8820.
+
+
+4.5.1 - 20/03/2017
+------------------
+
+* Amélioration : Lors de l'appel à une action de classe, les permissions définies dans
+  l'action sont maintenant testées avant l'appel à la vue.
+
+
+4.5.0 - 06/01/2017
+------------------
+
+* Correction : les fichiers uploadés lors d'un ajout d'enregistrement n'étaient
+  pas supprimés lorsqu'une erreur survenait.
+  Ticket #8670. [atReal][Nicolas MEUCCI]
+
+* Correction : les widgets de formulaire concernant l'affichage des fichiers ne
+  provoquent plus d'erreur sur la méthode *getFilename* lorsque la valeur du
+  champ est vide.
+  Ticket #8667. [atReal][Sofien TIMEZOUAGHT]
+
+* Correction : Les contraintes sur les fichiers n'étaient gérées qu'en sous-formulaire et pas en formulaire. C'est désormais le cas. Ticket #7791.
+
+* Correction : L'inclusion du script CUSTOM était réalisée avec les attributs 'once' ce qui empêchait l'inclusion dans la plupart des cas où le script est utilisé avec des variables locales.
+
+* Correction : Les méthodes permettant d'agir sur les appels de scripts CSS et JS du header HTML dans le layout étaient sans effet. Il est désormais possible de surcharger la liste des scripts CSS & JS du layout de manière spécifique pour un script PHP ou pour tous les scripts de l'application. Ticket #8557.
+
+* Évolution : Suppression du layout 'jquerymobile'. Ticket #8662.
+
+* Correction : La suppression d'un fichier depuis un formulaire de modification n'était pas toujours effective.
+  Ticket #8634. [atReal][Nicolas MEUCCI]
+
+* Amélioration : Ajout de points d'entrées spécifiques dans les vues formulaire et sousformulaire.
+
+* Correction : La variable utilisée pour représenter l'identifiant du contexte dans lequel on se trouve était $idx alors que c'est $idxformulaire qui est la correcte lors de la génération du critère de sélection du listing dans le cas d'un SOUSTAB.
+
+* Correction : Ajout de filtres manquants sur la composition du select.
+
+* Correction : La gestion de la validité des enregistrements sur un listing n'était disponible que sur un listing TAB et pas sur un listing SOUSTAB. Le lien a été ajouté. La continuité du paramètre 'valide' entre SOUSTAB et SOUSFORM a également été ajouté.
+
+* Correction : Mise en cohérence des variables récupérées et transmises entre TAB/FORM et SOUSTAB/SOUSFORM.
+
+* Correction : La logique de la méthode dbform::retoursousformulaire() avait été déplacé dans les méthodes du layout par erreur. La logique a été repositionnée dans la méthode dbform::retoursousformulaire() et l'implémentation est désormais cohérente avec la méthode dbform::retour() ainsi qu'avec l'appel de la fonction ajaxit depuis un bind jquery.
+
+* Évolution : Ajout des actions direct sur les résultats de listing.
+  Ticket #7611. [atReal][Nicolas MEUCCI]
+
+* Amélioration : Ajout de la possibilité d'accéder à un objet direct même si
+  celui ci n'est pas lié par son modèle de données à l'objet contexte dans la
+  fonction directlink.
+  Ticket #8635. [atReal][Florent MICHON]
+
+* Correction - Suppression d'une 'Fatal Error' appairaissant lorsque la requête
+  mémorisée passée en paramètre n'existe pas.
+  Ticket #8621. [atReal][Florent MICHON]
+
+* Correction - Les logs n'étaient pas vidés après avoir été écrits dans le fichier.
+  Ticket #8620. [atReal][Nicolas MEUCCI]
+
+* Amélioration : La configuration du nom de l'application était portée
+  uniquement par le script 'dyn/config.inc.php'. Cette configuration possède
+  désormais trois niveaux de paramétrage : instance > application > framework.
+
+* Amélioration : La configuration du titre HTML de la page était portée
+  uniquement par le script 'dyn/config.inc.php'. Cette configuration possède
+  désormais trois niveaux de paramétrage : instance > application > framework.
+
+* Amélioration : La configuration du nom de la session utilisateur était portée
+  uniquement par le script 'dyn/config.inc.php'. Cette configuration possède
+  désormais trois niveaux de paramétrage : instance > application > framework.
+
+* Correction : En mode 'ajout' sur un formulaire permettant d'uploader un fichier,
+  si le fichier est saisi mais que le formulaire est en erreur une erreur
+  sur l'état de l'enregistrement s'affichait.
+  Ticket #8575.
+  [atReal][Nicolas HAYE]
+ 
+* Correction : l'annulation de transaction avec le système de stockage de
+  fichiers n'était pas fonctionnel lors d'une erreur de base de données ou lors
+  d'une erreur avec le système de stockage de fichier.
+  Ticket #8576.
+  [atReal][Nicolas HAYE]
+
+* Amélioration : La configuration du mode de gestion des permissions était portée
+  uniquement par le script 'dyn/config.inc.php'. Cette configuration possède
+  désormais trois niveaux de paramétrage : instance > application > framework.
+
+* Amélioration : La configuration du nombre de colonnes dans le tableau de bord
+  était portée uniquement par le script 'dyn/config.inc.php'. Cette configuration
+  possède désormais trois niveaux de paramétrage : instance > application > framework.
+
+* correction module sig (om_map.class.php)  [aRles][Alain BALDACHINO]
+
+* Correction - Ajout du mode de log dans la méthode addToLog() du connecteur de
+  filestorage, filesystem.
+  Ticket #8572.
+  [atReal][Sofien TIMEZOUAGHT]
+
+* Correction - La méthode dbform::getVal() retournait une valeur erronée si le
+  champ passé en paramètre n'existait pas. C'est la valeur de la clé primaire
+  qui était retournée. La méthode a été revue et documentée.
+  Ticket #8161.
+  [atReal][Florent MICHON]
+  [Ville de Marseille][Laurent GROLEAU][Hélène LEGRAND]
+
+* Correction - L'assistant de création d'éditions (états et lettres types) ne
+  créait pas une requête correcte si la clé primaire ne correspondait pas au
+  nom de la table. Désormais il utilise la clé primaire de la table.
+  Ticket #7477. [atReal][Florent MICHON]
+
+* Coding - Ajout de la génération de la documentation des mots-clefs Robot Framework.
+  [atReal][Nicolas MEUCCI]
+
+* Correction - Modification de l'initialisation de l'attribut val de dbform en
+  mode ajout pour ne plus récupérer les valeurs d'un autre enregistrement.
+  Ticket #8547. [atReal][Florent MICHON]
+
+* Correction - Modification de la méthode utilisée pour récuprérer le type des
+  fichiers.
+  Ticket #8387. [atReal][Nicolas MEUCCI]
+
+* Correction - Correction de la méthode de récupération des paramètres de
+  collectivité qui pouvait provoquer une erreur de base de données.
+  Ticket #8520. [atReal][Nicolas HAYE]
+
+* Amélioration - Ajout de la possibilité de surcharger les paramètres de génération
+  d'un tableau lorsque l'on exporte les données dans un fichier CSV.
+  Ticket #8355. [atReal][Nicolas MEUCCI]
+
+* Amélioration - Ajout de la possibilité de configurer un favicon pour l'application
+  avec trois niveaux de configuration : framework, application, instance.
+  Ticket #8280. [atReal][Florent MICHON]
+
+* Correction - La prévisualisation d'une lettre type ou d'un état affichait le document
+  actif avec le même identifiant, au lieu du document en cours d'édition.
+  Ticket #7886. [atReal][Jean-Yves MADIER]
+
+* Correction - Le logo de la collectivité multi n'était jamais récupéré dans les
+  éditions.
+  Ticket #8083. [atReal][Nicolas HAYE]
+
+* Amélioration - Ajout d'un argument optionnel sur la fonction javascript
+  VerifFloat pour définir le nombre de décimales.
+  Ticket #7885. [atReal][Sofien TIMEZOUAGHT]
+
+* Correction des requêtes permettant d'afficher les lettres types et les états.
+  Ticket #7817. [atReal][Sofien TIMEZOUAGHT]
+
+* Correction de la recherche avec apostrophe.
+  Ticket #7813. [atReal][Nicolas HAYE]
+
+* Correction du widget de formulaire "select", la déclaration de la classe CSS
+  comportait un simple guillemet en trop.
+  Ticket #7790. [atReal][Sofien TIMEZOUAGHT]
+
+* Coding : Déplacement de tout le code concernant le générateur dans la classe
+  gen du script ./core/om_gen.class.php et suppression de tous les scripts
+  du répertoire ./scr/ : genfull, genauto, gensup, genlettretype, genetat,
+  gensousetat, genimport. L'objectif est de factoriser le code du générateur
+  afin de rendre la surcharge/personnalisation plus simple.
+  [atReal][Florent MICHON]
+
+* Correction de l'affichage des champs de type texte riche en séparant le style
+  CSS de tinyMCE de celui du reste de l'application.
+  Ticket #7782
+  [atReal][Nicolas MEUCCI]
+
+* Correction de la suppression des fichiers dans le système de stockage qui ne les
+  supprimait pas. [Virginie PIHOUR]
+
+* Correction des vérificateurs javascript des champs dates et heures dans les
+  formulaires qui ne doivent pas envoyer d'alerte si la saisie est vide.
+  Ticket #7767.
+  [atReal][Florent MICHON]
+
+* Correction de la problématique sur le champ lié au contexte dans un
+  sous-formulaire. Ticket #7764.
+  [atReal][Florent MICHON]
+
+* Correction d'une erreur de base de données en mode "modifier" lors de
+  l'utilisation conjointe d'un champ de type select multiple avec l'activation
+  de la gestion des dates de validité. [atReal][Nicolas MEUCCI]
+
+* Ajout de la possibilité d'activer les nouvelles actions sur certaines classes.
+  [atReal][Florent MICHON][Virginie PIHOUR]
+
+* Ajout des tests sur les tableaux (listing) des objets.
+  [atReal][Sofien TIMEZOUAGHT]
+
+* Modification de l'initialiation de la base de données et de l'environnement
+  de test du framework.
+  [atReal][Sofien TIMEZOUAGHT]
+
+* Correction du select de la pagination dans les sous-formulaires et
+  formulaires. Il y avait une erreur javascript sur celui des sous-formulaires.
+  [atReal][Sofien TIMEZOUAGHT]
+
+* Externalisation des keywords pour les tests dans le framework.
+  [atReal][Nicolas HAYE][Sofien TIMEZOUAGHT]
+
+* Ajout d'information dans le logger lors d'erreurs sur les fonctions d'ajout,
+  de modification et de suppression. [atReal][Sofien TIMEZOUAGHT]
+
+* Correction de la recherche avancée. Si on cumulait une recherche simple et
+  une recherche avancée en utilisant la même variable de session, une erreur
+  de base de données se produisait. [atReal][Virginie PIHOUR]
+
+* Amélioration : Ajout d'un log en cas d'erreur lors de la gestion des
+  fichiers à l'ajout, la modification ou la suppression d'un objet.
+  [atReal][Virginie PIHOUR]
+
+* Fonctionnalité : création du paramétrage des lettres-types et des états
+  pour l'ajout éventuel d'un filigrane lors de la génération du document.
+  [atReal][Nicolas MEUCCI]
+
+* Modification de la récupération des post et get avec les méthodes appropriées
+  [atReal][nicolas HAYE]
+
+* Correction de la génération des éditions si pas d'identifiant passé.
+  [atReal][Virginie PIHOUR]
+
+* Amélioration : utilisation du filestorage lors de la génération de csv
+  dans les requêtes mémorisées. [atReal][Nicolas HAYE]
+
+* Bug : Correction de l'ordre d'affichage des actions du portail d'actions. Il
+  n'était pas pris en compte. [atReal][Virginie PIHOUR]
+
+* Fonctionnalité : Création d'une fonction app_initialize_content() pour
+  permettre d'appeler à chaque chargement de page et AJAX des scripts
+  spécifiques à l'application.
+  Ticket #7679. [atReal][Nicolas MEUCCI]
+
+* Bug : Création du libellé d'un champ même lorsque celui-ci est caché.
+  Cela permet de pouvoir le réafficher dynamiquement sans le reconstruire.
+  Ticket #7674. [atReal][Nicolas MEUCCI]
+
+* Bug : Correction de la construction d'une date cachée pour l'éventualité où
+  on souhaiterait la ré-afficher. Ajout du style CSS pour la masquer/afficher.
+  Ticket #7381. [atReal][Nicolas MEUCCI]
+
+* Amélioration du générateur : Prise en compte d'éventuelles surcharges des
+  classes générées. Ticket #7566.
+  [atReal][Florent MICHON][Sofien TIMEZOUAGHT]
+
+* Fonctionnalité 'Layout' : Nettoyage par la suppression de toutes les méthodes
+  non utilisées dans le framework, la suppression des méthodes mal employées,
+  la création de méthodes basiques. Ticket #6533.
+  [atReal][Florent MICHON]
+
+* Fonctionnalité 'Custom' : Possibilité d'ajouter des scripts personnalisés
+  (nouveau scripts ou surcharges de l'existant) pour les fonctions reqmo, pdf
+  et import (FONCTIONNEL). Les classes 'métier' et fichiers de configuration
+  correspondant peuvent également être surchargés (EN COURS DE DEV...).
+  Ces scripts peuvent être stockés en dehors de l'application pour des besoins
+  spécifiques ne rentrant pas dans le champ fonctionnel standard de
+  l'application. Ticket #7657.
+  [arles][francois raynaud][atReal][Florent MICHON]
+
+* Amélioration du générateur : ATTENTION - suppression du fichier de configuration
+  gen/dyn/tab.inc.php. La configuration se fait désormais dans gen/dyn/gen.inc.php
+  sous un autre format. Renommage, nettoyage et documentation de la classe gen.
+  Ticket #7656 [atReal][Florent MICHON]
+
+* Bug : Correction de la gestion des actions dans les conditions des
+  tableaux. Les href étaient mal pris en compte.
+  Ticket #7621 [atReal][Nicolas MEUCCI]
+
+* Bug : Correction de la gestion des actions dans les conditions des
+  tableaux. Seuls les href étaient pris en compte, dorénavant les tab_actions
+  le sont aussi.
+  Ticket #7620 [atReal][Nicolas MEUCCI]
+
+* Bug - Correction de la gestion des actions contextuelles, elles fonctionnent
+  maintenant en sousformulaire.
+  Amélioration des actions de copie sur les états et lettres-type. Ajout des
+  actions de copie sur logo et sig.
+  Nettoyage et simplification du code de gestion des actions.
+  Ajout de tests.
+  Ticket #7611 [atReal][Nicolas HAYE]
+
+* Bug - Correction de l'initialisation des attributs de om_dbform
+  Ticket #7579 [atReal][Nicolas HAYE]
+
+* Bug - Correction de l'ajout d'enregistrement dont la clé primaire est alphanumérique
+  Ticket #7576 [atReal][Nicolas HAYE]
+
+* Amélioration - Correction de la recherche simple dans les sous-formulaires avec
+  filtrage sur l'identfiant de l'objet principal.
+  Ticket #7571 [atReal][Virginie PIHOUR]
+
+* Amélioration - Ajout d'un paramètre aux options de select de recherche avancée
+  permettant de filtrer la liste de ses option via une requête sql.
+  Ticket #7567 [atReal][Nicolas HAYE]
+
+* Bug - Dans la recherche avancée la chaîne de caractère 'AND ()' est supprimée
+  s'il n'y a aucune condition à la requête.
+  Ticket #7487. [atReal][Sofien TIMEZOUAGHT]
+
+* Bug - La fonction de serialisation et d'envoi des données après validation
+  de sous-formulaire était appelé 2 fois [atReal][Nicolas HAYE]
+
+* Amélioration - Mise à jour de la version de la librairie TCPDF afin de
+  remplacer la méthode de transformation en minuscule ou majuscule par du css
+  dans les éditions. [atReal][Nicolas HAYE]
+
+* Bug - Correction de l'implémentation des éditeurs riches pour l'instanciation
+  en sous formulaire. [atReal][Nicolas HAYE]
+
+* Bug - Correction de l'affichage des sous-états dans les éditions lors d'un saut
+  de page. [atReal][Nicolas HAYE]
+
+* Amélioration : Colle le texte brut (sans balise , ni style) dans l'éditeur
+  WYSIWYG (tinyMCE) [atReal][Virginie PIHOUR]
+
+* Correction : Un fatal error était levé au moment de la destruction d'un objet
+  om_dbform. [atReal][Virginie PIHOUR]
+
+* correction om_table.class.php Lorsque l on utilise le tableau $options
+  il y a un warning (si le champ n est pas vide) "Warning: strpos() expects parameter 1 to be string"
+  Ticket #7246 [francois raynaud - Arles - ACCM]
+
+* Amélioration : surcharge des scripts voir et file afin de récupérer
+  la bonne table lors d'une utilisation depuis un objet hérité.
+
+* Evolution : ajout d'un nouveau mode de recherche multi-critères permettant de
+  faire des recherches dans des tables ayant une liaison 1-n avec la table courante
+  Exemple d'utilisation :
+     $champs['parcelle'] = array(
+        'table' => 'dossier_parcelle',
+        'where' => 'injoin',
+        'tablejoin' => 'INNER JOIN (SELECT DISTINCT dossier FROM '.DB_PREFIXE.'dossier_parcelle WHERE lower(dossier_parcelle.libelle) like %s ) AS A1 ON A1.dossier = dossier.dossier' ,
+        'colonne' => 'libelle',
+        'type' => 'text',
+        'taille' => 30,
+        'libelle' => _('parcelle'));
+  #7283
+  [atReal][Thierry BENITA]
+
+* Correction : modification du calcul de total sur la recherche avancée :
+  suppression du ORDER BY dans le calcul de totaux, ce qui divise par
+  5 les temps de calcul
+  [atReal][Therry BENITA]
+
+* Correction d'une erreur lors de l'inclusion des sousétats dans les éditions.
+  [atReal][Nicolas HAYE]
+
+* Correction : un effet de bord empêchait les fieldsets ou autres blocs
+  de s'afficher lorsqu'ils ne contenaient pas de bloc imbriqué
+  et que leur premier champ était hidden
+  [atReal][Thierry BENITA]
+
+* Correction : les retours d'erreurs n'était pas cohérents (messages d'erreur de
+  base de données sur fond vert). r2648 [atReal][Nicolas HAYE]
+
+* Amélioration : ajout de commentaires sur les tables openMairie.
+  r2647 [atReal][Nicolas HAYE]
+
+* Amélioration : modification de la génération des éditions pdf :
+  - intégration d'un WYSIWYG (tinyMCE) sur les champs titre et corps des
+    formulaires de paramétrage des états et lettres types (génération de code html),
+    3 types d'instances de tinyMCE : une pour le champ titre, une pour le champ corps
+    (elle permet d'ajouter des sous états), et une générique pour tout autres champs.
+  - changement de librairie : FPDF -> TCPDF (interpretation du code html lors de
+    la génération des édition)
+  - gestion de la rétrocompatibilité avec les éditions existantes
+  [atReal][Nicolas HAYE]
+
+
+4.4.x - ??/??/????
+------------------
+
+* Correctif : La configuration d'une action dans un sous formulaire avec le
+  paramètre ajax à false faisait dysfonctionner les autres liens ajax du
+  tableau. Ticket #7086.
+  [Alain BALDACHINO]/[Mairie de Vitrolles]
+  [Florent MICHON][Virginie PIHOUR]/[atReal]
+
+
+4.4.0 - 31/03/2014
+------------------
+
+* Amélioration : Ajout d'une option pour permettre de désactiver les onglets
+  des sous formulaires lorsque nous sommes en modification sur un formulaire.
+  [Alain BALDACHINO][Florent MICHON][François RAYNAUD]
+
+* Bug - Correction de la recherche avancée sur les select qui, dans le cas
+  des wildcards, ajoutaient des résultats non attendus. [atReal][Nicolas MEUCCI]
+
+* Bug - Correction de l'implémentation des overlay jquery qui ajoutait du contenu
+  en pied de page sans pour autant appliquer l'overlay. [atReal][Nicolas HAYE]
+
+* Bug - Correction de l'erreur des modifications de dates cachées par la création
+  d'un type hiddendate et de son ajout dans la méthode afficherChamp.
+  Ticket #7381. [atReal][Nicolas MEUCCI]
+
+* Amélioration : Ajout d'un niveau dans la génération des éléments qui
+  concernent des tables du framework. Tous les fichiers générés qui concernent
+  les tables om_* sont générés suivant le postulat : obj/table.class.php ->
+  core/obj/table.class.php -> gen/obj/table.class.php et de même pour les
+  fichiers sql/pgsql/table.form.inc.php et sql/pgsql/table.inc.php. L'objetcif
+  est de réduire la maintenance lors des mises à niveau des applications.
+  [atReal][Florent MICHON]
+
+
+4.4.0-b2 - 12/12/2013
+---------------------
+
+ * correctif : Correction d'un bug lors de la suppression d'enregistrement contenant
+   un champ de fichier vide. #7174 [atReal][Nicolas HAYE]
+
+
+4.4.0-b1 - 12/12/2013
+---------------------
+
+* Correctif : Prise en charge des traductions dans les nom de colonnes des sous-états.
+  #7134 [atReal][Nicolas HAYE]
+
+* Correctif : Les fichiers temporaires sont visible depuis le bouton "voir" d'un
+  champ "upload". #7081 [atReal][Sofien TIMEZOUAGHT]
+
+* Correctif : Correction du script scr/import.php pour qu'il utilise le système
+  de stockage des fichiers actuel afin de récupérer le fichier CSV. #7038
+  [atReal][Sofien TIMEZOUAGHT]
+
+* Correctif : Lors de la correlation en javascript  l'événement 'change' n'était
+  pas déclenché. Modification du code pour rendre fonctionnel l'envoi d'événement
+  pour tout les navigateurs (IE8 compris). #7157 [atReal][Nicolas HAYE]
+
+* Amélioration : générateur : ne pas afficher en gras les fichiers non modifiés.
+  #7158 [atReal][Thierry BENITA]
+
+* correctif gestion des adresses postales - utilisation des codes postaux en recherche
+  [francois raynaud - 15/10/2013]
+
+* Correctif : gestion du cache des navigateurs pour les scripts css et javascript.
+  L'utilisateur avait besoin de vider manuellement le cache de son navigateur lors
+  d'une mise à jour de ces scripts. Il a été ajouté le numéro de version de
+  l'application en paramètre pour que le navigateur détecte bien un nouveau fichier.
+  #6925 [atReal][Florent MICHON]
+
+* correction pb d affichage sur om_sig_map (niveau) [francois RAYNAUD]
+
+* Ajout de la possibilité de mettre en majuscule ou minuscule certaines données
+  dans les lettres-type et les états en utilisant les balises <MAJ></MAJ> et
+  <min></min>. #6898 [atReal][Virginie PIHOUR]
+
+* Modification du système de tableau de bord - Le tableau de bord n'est plus
+  désormais spécifique à un utilisateur mais à un profil. Les widgets peuvent
+  être composés à partir de script PHP et sont directement inclus dans le
+  tableau de bord pour améliorer les performances. L'ancien écran de composition
+  de son propre tableau de bord a été adapté pour que l'administrateur compose
+  le tableau de bord de chaque profil. #6591 [atReal][Florent MICHON]
+
+* Ajout de la possibilité de modifier le fil d'Ariane depuis un objet, pour les
+  formulaires et sous-formulaires. #6833 [atReal][Sofien TIMEZOUAGHT][Florent MICHON]
+
+* Correctif : suppression d'une faille de sécurité en filtrant le contenu d'une
+  variable passée en paramètre dans la page de login. #7163 [atReal][Florent MICHON]
+
+* Modification de la classe core/om_filestorage.class.php afin que l'on puisse
+  mettre l'url de la classe du storage plutôt que seulement le nom du type de
+  storage. #6711 [atReal][Virginie Pihour]
+
+* Amélioration des fonctions isAuthorized(), connectDatabase(), displayMessage(),
+  setDatabaseConfig(), isDatabaseError() dans core/om_application pour prendre en
+  compte les requêtes REST. #6614 [atReal][Sofien TIMEZOUAGHT]
+
+* Correction d'une erreur de base de données lors de la génération du PDF
+  d'un état ayant plusieurs sous-états. #6666 [atReal][Virginie Pihour]
+
+* Ajout de fichiers .htaccess empêchant l'accès dans les répertoires qui ne
+  doivent pas être accessibles depuis l'interface par l'utilisateur.
+  #7164 [atReal][Florent MICHON]
+
+* Modification des fonctions javascript permettant de visualiser un fichier
+  uploadé. #6587 [atReal][Sofien TIMEZOUAGHT]
+
+* Amélioration de la gestion des  des scripts de mise à jour de la base de données
+  #6586 [atReal][Florent MICHON]
+
+* Correction : Certaines séquences n'étaient pas liées au champ duquel elles
+  étaient la séquence. #6585 [atReal][Florent MICHON]
+
+* Modification du script permettant le téléchargement de fichiers afin d'ajouter
+  un contrôle des droit ; si l'uid est passé en paramètre seul, aucun contrôle
+  ne sera fait. #6587 [atReal][Sofien TIMEZOUAGHT]
+
+* Modification de la fonction selectstatic afin d'afficher la balise <span> même
+  si le champs est vide. #6587 [atReal][Sofien TIMEZOUAGHT]
+
+* Fonctionnalité : Contrôle des fichiers uploadés grâce à l'utilisation de contraintes
+  sur la taille maximale et sur les extensions possibles que le fichier peut avoir.
+  Deux cas de configuration sont possibles :
+  - des contraintes spécifiques ont été définies dans la méthode setSelect de
+    classe métier de l'objet ;
+  - des contraintes génériques ont été spécifiées dans le fichier de configuration
+    dyn/config.inc.php. #6579 [atReal][Virginie PIHOUR]
+
+* Fonctionnalité : Gestion du positionnement et affichage du code barres de type
+  code 128 dans les états et les lettres types.
+  Utilisation d'un marqueur ||||| avant et après le nombre qui doit composer le code,
+  composé de 12 chiffres, afin de positionner le code barres au bon endroit dans
+  le PDF. Ex. : |||||100015420009|||||
+  #6561 #6558 [atReal][Virginie PIHOUR]
+
+* Amélioration : Ajout d'une verification sur les requêtes contenant des group by
+  lors de la pagination. #6559 [atReal][Sofien TIMEZOUAGHT]
+
+* correction gen - methode objselect pb des types geom on implementés quand il n'y
+  a pas de clés secondaire (AB 02/04/2013)
+
+* nouvelle version om_sig : flux WMS en BaseLayer, WMS singleTile, filtres WMS,
+  flux WMS en provenance de TileCache (AB 02/04/2013)
+  Compatibilité avec version 2.12 openLayers
+  Nouvelles fonctionnalités
+  - Gestion du GetFeatureInfo :
+  - modification du format demandé de l'HTML à l'XML
+  - personnalisation de la restitution par la surcharge de la fonction traiteGetFeatureInfo de js/sig.js par celle contenue dans app/js/sig.js
+  - utiliser un flux WMS en BaseLayer
+  - paramètre WMS singleTile, assure une continuité entre les tuiles (ex: étiquettes sur plusieurs tuiles)
+  - filtres WMS
+  - flux WMS en provenance de TileCache
+  - Ajout de l'emprise des villes des Bouches du Rhone
+  - Géolocalisation
+  - Persistance du choix de la BaseLayer
+  - ajout de fonds google supplémentaires
+  - ajout de fonds bing supplémentaires
+  Correction de bugs
+  - affichage de la requète après le bouton "fermer" dans form_sig.php
+  - Génération problème affichage dans form du bouton des champs geom
+  - Gestion des affichages d'erreurs dans tab_sig.php
+  - malformation des fichiers json si rien à retourner
+
+  Fichiers modifiés :
+  - externals lib : openLayers 2.12 comp
+  - app/js/sig : possibilite de surcharge sig.js
+  - data/sql/pgsql/ver_4xx.sql
+  - data/sql/pgsql/init.sql
+  - dyn/var_sig.sql : etendue des communes BDR
+  - gen/ obj + pgsql + obj/ + sql/pgsql : nouveaux objets om_sig_wms + om_sig_map
+  - img position.png
+  - js/sig.js
+  - scr : form.sig, tab.sig et sig_json
+
+
+* Utilisation de la classe filestorage lors de l'enregistrement de fichier via
+  le champ de formulaire upload, création d'un widget de formulaire permettant
+  la visualisation et le téléchargement de fichier, création d'un script permettant
+  le téléchargement de fichier dont uid lui a été passé en paramètre, ajout d'une
+  méthode dans le filestorage filesystem permettant de récupérer le path d'un
+  fichier dans le but de l'afficher dans les états et lettres types, définition
+  d'un path par defaut pour le projet OM exemple. #6583 [atReal][Nicolas HAYE]
+
+* Amélioration : Suppression des fonctions ucwords() #5816 [atReal][Sofien TIMEZOUAGHT]
+
+* Amélioration : Amélioration de la gestion des éditions : ajout d'une table de
+  paramétrage des logos et des requêtes pour les états et lettres type, ajout de
+  la gestion des éditions multiples, possibilité d'afficher les logos en
+  fonction de leur résolution. #7165 [atReal][Florent MICHON]
+
+* Amélioration : Ajout d'un widget de visualisation pour le champ de type
+  'select_multiple'. #7166 [atReal][Florent MICHON]
+
+* Amélioration : Ajout d'un paramètre pour l'affichage des éléments concernant
+  le sig. Pour l'activer, il faut positionner le paramètre 'option_localisation'
+  à la valeur 'sig_interne'. #7167 [atReal][Florent MICHON]
+
+* Correctif : Affichage des textarea avec retour à la ligne lors de l'affichage
+  des formulaires en mode consultation. #7168 [atReal][Florent MICHON]
+
+* Correctif : Le module de localisation (widget du formulaire + spg de
+  localisation) n'est fonctionnel que pour les éditions c'est-à-dire pour
+  positionner un point sur une page A3 ou A4 en portrait ou en paysage, il n'est
+  plus fonctionnel pour un plan depuis une ancienne version. Ce module a été
+  nettoyé et rendu plus fonctionnel. #7169 [atReal][Florent MICHON]
+
+* Correctif : Suppression d'une balise autofermée dans le widget de select
+  multiple du formulaire. #7170 [atReal][Florent MICHON]
+
+* Amélioration : Affichage des textarea avec redimensionnement automatique en
+  fonction du contenu. #7170 [atReal][Florent MICHON]
+
+* Amélioration : Affichage du bouton retour au dessus des formulaires quel que
+  soit l'état du formulaire. #7172 [atReal][Florent MICHON]
+
+* Infrastructure : Suppression du support MySQL. [atReal][Florent MICHON]
+
+* correction bug visibility dans om_sig_map_wms ab-28/02/2013
+
+* fonctionnalité : jquery mobile jlb
+
+* Fonctionnalité : Abstraction du layout (en cours) #6533 [atReal][Florent MICHON]
+
+* Fonctionnalité : Abstraction du stockage (en cours) #6534 [atReal][Florent MICHON]
+
+* Fonctionnalité : Stockage temporaire de fichier
+
+* Amélioration : Affichage du nom du fichier dans un champ file en suppression
+
+* Amélioration : Ajout d'un bouton au champ upload permettant de vider le
+  contenu du champ
+
+* Fonctionnalité : Ajout de la gestion de métadonnées suplémentaires sur les
+  fichiers uploadés #6589 [atReal][Nicolas HAYE]
+
+* Amélioration : possibilité d'utiliser la méthode init_select pour initialiser
+  les widgets de formulaire select_multiple et select_multiple_static
+
+* Amélioration : modification de la gestion des erreurs afin de les remonter au
+  formulaire et annuler ou non sa validation (cela comprend l'annulation des
+  modifications effectuées sur le storage si le formulaire est en erreur)
+
+
+4.3.0-bx - XX/XX/XXXX
+---------------------
+
+Report dans le trunk des modifications/corrections de la branche (4.3.0-bx)
+
+* Correctif : Dans le générateur toutes les clés secondaires qui faisaient
+  référence à une table qui ne possède pas de colonne 'libelle' produisent
+  une erreur dans la recherche de ce champs. [Florent MICHON]
+
+* Correctif : Suppression d'une notice "Notice: Undefined index: om_utilisateur
+  in /core/om_dbform.class.php on line 2225". [Florent MICHON]
+
+* Correctif : Les blocs du système d'affichage des formulaires s'affichaient
+  même si ils ne contenaient aucun champ. [Florent MICHON]
+
+* Correctif : Rendu XHTML Valide. [Florent MICHON]
+
+* Amélioration : gestion des actions des tableaux de la même manière
+  que les actions du menu (parameters). [Florent MICHON]
+
+* Correctif : Vérification de l'existence de variables avant leur
+  utilisation. [Florent MICHON]
+
+
+4.3.0-b1 - 08/10/2012
+---------------------
+
+* Important : Ajout de la possibilité de gérer les droits d'accès sans avoir
+  de hiérarchie entre les profils. [Florent MICHON]
+
+* om_sig_map : actif devient booleen pour compatibilité avec le programme scr/copie [francois RAYNAUD]
+  modification des programmes d initialisation
+
+* modification de l interface de SIG sur les champs obligatoires dans obj/ (champs null) [francois RAYNAUD]
+
+* interface geographique : gestion du parametre seli (plusieurs geometries pour un objet) : [alain baldachino]
+scr\tab_sig.php
+  passer en paramètre l’idx à scr\sig_json.php pour limiter les données dans la couche Data
+  Recherche avec schéma dans geometry_columns
+scr\form_sig.php
+  Correction de la gestion des boutons de géométries dans les form (affichage, multi-géométrie, génération)
+js\script.js :
+  localisation_sig : ajout du paramètre « seli » pour traiter la multi-géométrie
+core\om_formulaire.class.php
+  geom : correction d’un bug d’affichage, ajout du paramètre seli,
+core\gen.class.php
+  objvalf : unset si type geom -> non implementé car peut etre rempli par calcul ou sous programme
+  objselect : affichage en visu et modif, correction 1er paramètre qui était vide, ajout seli
+
+* Ajout d'une fonctionnalité. Il est maintenant possible de personnaliser la
+  structure HTML des formulaires en regroupant les champs dans des balises <div>
+  et des <fieldset>.
+  [Nicolas HAYE]
+
+* Amélioration de l'affichage des formulaires. Les formulaires sont maintenant
+  affichés avec des balises <div> et non plus <table>.
+  [Nicolas HAYE]
+
+* Ajout de fonctionnalité. Ajout de la gestion d'objets à date de validite.
+  [Romain BEYLERIAN]
+
+* Ajout de fonctionnalité. Ajout de la recherche avancée
+  avec caractère de remplacement configurable.
+  [Romain BEYLERIAN]
+
+* Amélioration du tri des colonnes de tableau. Les colonnes se trient maintenant
+  par ordre croissant, décroissant et original par clic successif sur leur
+  en-tête.
+  [Romain BEYLERIAN]
+
+* Modification du comportement du générateur. Par défaut l'ensemble des tableaux
+  sont triés par ordre croissant, selon le libellé de la table.
+  [Romain BEYLERIAN]
+
+* Mise à niveau. Ajout de scripts SQL permettant de mettre à niveau une base
+  de données openMairie 4.2.0 vers 4.3.0 (pour MySQL et PostgresSQL).
+  [Romain BEYLERIAN][Nicolas HAYE]
+
+* Ajout d'une fonctionnalité. Ajout de fichiers de paramétrage dans le
+  répertoire dyn/ permettant de surcharger les actions par défaut d'openMairie
+  sur l'ensemble de l'application. Il est ainsi possible de surcharger les
+  actions de tableaux, sous-tableaux, formulaires et sous-formulaires.
+  [Romain BEYLERIAN]
+
+* Mise à jour des actions par défaut d'openMairie. L'unique action disponible
+  sur les tableaux est maintenant 'consulter'. Modifier et supprimer sont
+  disponibles sur les formulaires de consultation.
+  [Romain BEYLERIAN]
+
+* Ajout d'une nouvelle action. Il est désormais possible de visualiser
+  les formulaires en mode de consultation. Dans ce mode, les champs sont
+  non éditables. Un porlet d'actions existent également proposant les actions
+  contextuelles non présentes sur les tableaux.
+  [Romain BEYLERIAN][Nicolas HAYE]
+
+* Mise à jour des fichiers de surcharge.
+  Dans obj/ :
+    - Suppression des vérifications manuelles des champs requis.
+  Dans sql/pgsql/ :
+    - Mise à jour des préfixes des noms de colonnes étrangères.
+    - Suppression des actions supplémentaires (déplacées dans le formulaire).
+  [Romain BEYLERIAN][Nicolas HAYE]
+
+* Amélioration du générateur. Remise en forme des messages d'erreurs. Ils sont
+  maintenant plus clairs, plus colorés, et plus précis.
+  [Romain BEYLERIAN][Nicolas HAYE]
+
+* Amélioration du générateur. Ajout de vérifications des droits d'écriture
+  du serveur web avant et pendant la génération. Le script 'genauto' et 'gensup'
+  ne permettent plus d'écrire des fichiers si le serveur web n'a pas les droits
+  suffisant. Le script 'genfull' affiche des erreurs si des fichiers n'ont pas
+  pu être écrit.
+  [Nicolas HAYE]
+
+* Amélioration du générateur. Ajout de la gestion des contraintes UNIQUE.
+  [Nicolas HAYE]
+
+* Amélioration du générateur. Ajout de la gestion des contraintes NOT NULL.
+  [Romain BEYLERIAN][Nicolas HAYE]
+
+* Amélioration du générateur. Ajout de conditions permettant de vérifier si
+  une table est générable ou non. Si non, les scripts de génération n'ecriront
+  aucun fichier. Pour être générable, une table doit avoir une clé primaire,
+  et ses clés étrangères doivent référencer des tables ayant elles aussi une
+  clé primaire.
+  [Romain BEYLERIAN]
+
+* Amélioration du générateur. Ajout de la gestion des contraintes PRIMARY KEY,
+  et FOREIGN KEY (seulement avec PostgresSQL). L'ancien fonctionnement avec le
+  nom des tables comme clé primaire/étrangère est conservé.
+  [Romain BEYLERIAN]
+
+* Correctif : correction du script d'import des états, sous-états et lettres types
+  Ce correctif résoud le ticket #5823 de tracker openmairie-exemple
+  [Thierry BENITA]
+
+* Amélioration de la gestion des utilisateurs par la vérification de l'existence
+  de l'utilisateur dans la base de données à chaque requête et plus simplement
+  à sa connexion ainsi que par la mise à jour de son profil à chaque requête
+  pour qu'un changement de profil prenne effet immédiatement. [Florent MICHON]
+
+* Modification du comportement de l'affichage des actions en ajoutant le cas où
+  aucun droit n'est nécessaire pour accéder à l'action et ceci pour respecter la
+  même logique que celle utilisée dans le menu. [Florent MICHON]
+
+* Amélioration de l'ergonomie : lorsqu'il n'y a aucun élément dans le menu,
+  désormais l'affichage du contenu prend toute la largeur de l'écran.
+  [Florent MICHON]
+
+* Important : ajout de la gestion des jointures avec les tables de clés
+  secondaires lors de la génération des table.inc.php. Si une colonne libelle
+  existe dans la table de la clé secondaire alors c'est ce libellé qui est
+  affiché dans le champaffiche. Si la clé secondaire est om_collectivite,
+  alors la colonne n'est affichée que si nous sommes connecté en niveau 2. La
+  vérification des surcharges est nécessaire car la génération peut entraîner
+  l'apparition d'erreur de base de données à cause de noms de colonnes ambigus.
+  [Florent MICHON]
+
+* Ajout d'une méthode getParameter dans la classe om_application
+  permettant de récupérer des options depuis différentes sources et
+  intégration de cette option dans le menu pour pouvoir afficher des rubriques
+  et des entrées de menu seulement si une option a une valeur en particulier
+  (plus de détails dans le ticke #5790).
+  [Florent MICHON]
+
+* Correction d'un bug d'affichage du tableau si seule l'action ajouter était
+  présente, la colonne d'actions n'était pas créée et cassait l'affichage du
+  tableau. [Florent MICHON]
+
+* Amélioration du lien d'édition dans tab.php, en vérifiant que le fichier
+  existe avant d'afficher le lien (imprimante en haut à droite du tableau).
+  Sinon le clic sur le lien nous donne l'erreur : "L'objet n'existe pas".
+  [Florent MICHON]
+
+* Correction d'un bug dans une requête de l'édition pdfetat.php dans la gestion
+  du sousetat. L'erreur venait de la valeur du champ niveau qui était traitée
+  comme un entier au lieu d'une chaine de caractères. [Florent MICHON]
+
+* Correction d'un bug dans le générateur qui ne permet pas en collectivité de
+  niveau 1 d'ajouter d'utilisateur lorsque l'on se trouve dans le
+  sous-formulaire utilisateur de l'objet profil. Ce bug vient du fait que la
+  valeur n'était pas passée dans la méthode setValsousformulaire.
+  [Florent MICHON]
+
+* Intégration cohérente des scripts scr/gen*.php par l'homogénéisation des
+  permissions nécessaires pour accéder à ces scripts et par le paramétrage de
+  l'ouverture du menu sur ces élements. [Florent MICHON]
+
+* Mise à jour des librairies javascript jquery 1.7.2 et jquery-ui 1.8.21.
+  [Florent MICHON]
+
+* Amélioration de la gestion des droits : en ajoutant de la granularité avec
+  les permission OBJ_ajouter, OBJ_modifier, OBJ_supprimer) sur les actions des
+  tableaux et sur les formulaires, en ajoutant la possibilité de visualiser les
+  tableaux grâce à la permission OBJ et pas seulement la permission OBJ_tab,
+  ainsi qu'en ajoutant la vérification des permissions adéquates sur les onglets
+  des sous-formulaires. [Florent MICHON]
+
+* Amélioration de l'affichage du menu en vérifiant si la rubrique est vide
+  avant de l'afficher, donc si cette dernière est vide, alors on ne l'affiche
+  pas. Un droit permettait d'afficher ou non la rubrique, cette possibilité est
+  conservée mais si l'utilisateur a la permission et que la rubrique est vide
+  alors elle ne s'affichera pas. [Florent MICHON]
+
+* Important : gestion différente de la sécurité par la modification de la valeur
+  par défaut des permissions données aux utilisateurs lorsque le droit n'est pas
+  paramétré. Par défaut l'utilisateur n'a plus la permission d'accéder à la
+  fonction si le droit n'est pas explicitement configuré dans le paramétrage.
+  [Florent MICHON]
+
+* Ajout de la possibilité d'ajouter une catégorie d'éléments dans une rubrique
+  de menu. Ceci permet de catégoriser les entrées de menu avec une granularité
+  plus fine que la rubrique. [Florent MICHON]
+
+* Correction de l'affichage des messages dans le formulaire. Un saut de ligne
+  supplémentaire inutile était ajouté dans certains cas. [Florent MICHON]
+
+* Correctif du bug "L'icone de recherche possible sur une colonne ne s'affiche
+  pas si le libellé contient un accent" (plus de détails dans le ticke #5815).
+  [Florent MICHON]
+
+* Amélioration du générateur par la gestion des booléens automatique. Pour
+  PostGreSQL le type de données est 'boolean' et pour MySQL le type de données
+  est int(1). [Florent MICHON]
+
+* Correction d'un bug du générateur pour la prise en compte des paramètres
+  NOT NULL sur les dates. Il était impossible de supprimer une date de la base
+  même si le champ autorisait la valeur NULL. [Florent MICHON]
+
+* Amélioration du générateur pour la prise en compte des paramètres NOT NULL
+  sur les bases MySQL également. [Florent MICHON]
+
+* Correctif du bug "Impossible de créer un utilisateur sur une collectivité de
+  niveau 1" (plus de détails dans le ticke #5814). [Florent MICHON]
+
+* Ergonomie : Modification de l'alignement du texte dans les tableaux à gauche
+  pour une meilleure lisibilité. [Florent MICHON]
+
+* Correctif du bug "La synchronisation des utilisateurs LDAP ne reconnaît pas
+  les utilisateurs déjà synchronisés" (plus de détails dans le ticket #5812).
+  [Florent MICHON]
+
+* bug DB_PREFIXE en pgsql/init.sql : etat, sousetat, lettretype
+
+* suppression de l'action de formulaire "suppression totale"
+
+
+4.2.0 - 29/06/2012
+------------------
+
+* Correctif : ajout du chemin relatif complet vers les scripts sousform et
+  soustab pour permettre leur utilisation depuis d'autres endroits que dans
+  le dossier scr. [Florent MICHON]
+
+* Correctif : une erreur javascript survenait lors de l'utilisation d'un
+  sous-formulaire sans champ de recherche dans la page. La correction
+  consiste en l'initialisation et au test de l'existence du champ recherche
+  avant son utilisation. [Florent MICHON]
+
+* [francois RAYNAUD] mise a niveau om_sig version wms et geometry complementaire + mise a niveau base de donnees om_sig_map
+
+* [francois RAYNAUD] modification du controle "geom" affichage en fenetre
+
+* Permettre l’accès depuis les méthodes de la classe dbform aux méthodes de
+  la classe utils. [Florent MICHON]
+
+* [francois RAYNAUD] 16/05/2012 correction bug generateur sur affichage champ date mysql en tab
+
+* [francois RAYNAUD] 23/04/2012 gen.class champ numerique pour postgres
+                 om_dbform unicite des cles primaires alphanumeriques
+
+* [francois RAYNAUD] 19/04/2012 bug adresse postale (form)
+
+* Amélioration de la génération en prenant en compte la réelle taille des champs
+  de la base de données, en séparant les notions de taille de champs d'affichage
+  et de taille maximum de saisie. [Florent MICHON]
+
+* Remplacement des int(11) de mysql par des int(8)
+  pour uniformiser les bases de données mysql et postgresql [Florent MICHON]
+
+* Mise à jour du menu qu'il puisse rester ouvert suite à un clic :
+  Un paramétrage du menu, optionnel, permet de garder l'élément cliqué actif
+  et la rubrique correspondante ouverte. (voir dyn/menu.inc.php)
+  [Thierry BENITA]
+
+* Amélioration du générateur pour que les noms de champs soient
+  reconnus par Poedit et qu'ils soient traduits. [Thierry BENITA]
+
+* Modification du générateur pour que les fichiers générés ne finissent pas
+  par l'extension .inc mais par .inc.php
+  La compatibilité avec les fichiers déjà existants en .inc est assurée, mais il
+  est recommandé de les renommer en .inc.php pour que les chaines de traductions
+  soient détectées par Poedit.
+
+  -----------------------------------------------------------------------------
+  | Mise à jour des applications existantes (sous linux) :
+  | for i in $( find . -name '*.inc'|grep -v "php/db" |grep -v "dyn/var"); do mv $i $i.php; done
+  |
+  | Pour les applications versionnées sous Subversion, utiliser plutôt :
+  | for i in $( find . -name '*.inc'|grep -v "php/db" |grep -v "dyn/var"); do svn mv $i $i.php; done
+  |
+  | Mettre à jour le code contenu dans les surcharges !
+  | remplacer les chaines dans tous les fichiers:
+  |  .inc'  -> .inc.php'
+  |  .inc"  -> .inc.php"
+  |  .inc,  -> .inc.php,
+  |  .inc;  -> .inc.php;
+  |  .inc\" -> .inc.php\"
+  | Ne pas oublier les commentaires ! ; done
+  -----------------------------------------------------------------------------
+  [Thierry BENITA]
+
+* Nouvelles pariables de locales dans dyn/locales.inc.php
+  La variable CHARSET était utilisée à la fois pour la base de données et le
+  rendu web alors que les noms de locales ne sont pas les mêmes.
+  CHARSET est remplacé par :
+      - DBCHARSET pour la base de données (UTF8)
+      - HTTPCHARSET pour le rendu web (UTF-8). [Thierry BENITA]
+
+* Passage des éditions, états et sous-états dans le menu Paramétrage
+[Thierry BENITA]
+
+* Ajout d'une classe css pour l'affichage des icones d'actions (actionicon)
+  [Thierry BENITA]
+
+* Téléchargement des fichiers PDF générés pour éviter les problèmes de
+  navigation (ouverture du PDF dans le navigateur ou dans le lecteur PDF en
+  fonction de la façon dont le lecteur PDF a été installé, ce qui ne permet pas
+  à tous les utilisateurs d'avoir le même comportement. [Thierry BENITA]
+
+* Surcharge om_dbform, om_formulaire, om_table dans le dossier obj.
+  [Florent MICHON]
+
+* Intégration de la librairie openmairie dans le dossier core.
+  [Florent MICHON] [François RAYNAUD]
+
+
+4.1.0 - 21/02/2012
+------------------
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0.
+  [Florent MICHON]
+
+- bug sur le post des sous-formulaires : le caractère & n'est pas sauvegardé dans
+  les sous-formulaires. Les données sont maintenant traitées avant d'être postées au serveur
+  en ajax (js/script.js).
+
+- bug gen/sql/pgsql : selection om_utilisateur om_utilisateur.form ... 01/02/2012 [francois RAYNAUD]
+
+- bug js/script.js : sousform pb avec & 01/02/2012 [francois RAYNAUD]
+
+- om_sousetat.class.php ligne 43 pb passage par reference 30/01/2012 [francois RAYNAUD]
+
+- modifier scr/edition.php pb de selection fichier pdf. au lieu pdf [francois RAYNAUD]
+
+- suppression du quartier dans spg/adresse_postale.php et var_adresse_postale.inc 17/01/2012 [francois RAYNAUD]
+
+- suppression de la version sig point (scr/json_points.php,scr/form_sig_point.php,
+scr/wkt_point.php, scr/tab_sig_point.php, dyn/var_point.php ) [francois RAYNAUD]
+
+- correction de bug dans om/sig :js/sig.js (onsaisieselect), scr/form_sig.php(validation)
+obj/im_sig_point.class.php (pointe sur var_sig.php) [francois RAYNAUD]
+
+- suppression du repertoire scr/dyn et integration des variables dans les scripts gen
+et gen.class.php (necessite om4.1.0rc8 ou 7+) [francois RAYNAUD]
+
+- integration du repertoire gen/dyn au lieu de gen/dyn/standard et gen/dyn/custom pour la customisation [francois RAYNAUD]
+
+- ajout des fichiers data "metier" en data/mysql et pgsql et ajout du fichier SPECIFIC.TXT en /app [francois RAYNAUD]
+
+- modification tab_sig.php et sig_json.php pour prise en compte specificite openadresse (affichage de point pour une voie) [francois RAYNAUD]
+
+- modification dyn/adresse_postale.inc pour prise en compte detable/vue [francois RAYNAUD]
+
+- rajout en data/pgsql des fichiers de configuration [francois RAYNAUD]
+
+- rajout dans app de specific.txt
+
+- elimination de l ancien sig_point (scr/jsons_points.php, scr/wkt_point.php, svr/tab_sig_point.php, scr/form_sig_point.php, dyn/var_point.inc.php)
+
+- mise a niveau sig adressage (openodp, opentriselectif) , dyn/adressepostale.inc.php [francois RAYNAUD]
+
+- debug sig : js/sig.js (appel onsaisie_select), scr/form_sig.php (validation) [francois RAYNAUD]
+
+- mise a niveau openadresse : [francois RAYNAUD]
+
+- mise a niveau variable [francois RAYNAUD]
+
+- bug : spg/adresse_postale_google et bing -> include adresse_postale google + bing [francois RAYNAUD]
+
+
+4.1.0-rc6 - 16/12/2011
+----------------------
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0-rc8.
+  [Florent MICHON]
+
+* Déplacement du dossier om-theme depuis le dossier lib/ vers la racine de
+  l'application. La compatibilité antérieure est assurée. [Florent MICHON]
+
+* Correctif : le générateur ne fonctionnait pas sur une base de données MySQL
+  qui avait le caractère '-' dans son nom car dans la requête il fallait
+  encadrer le nom de la base de données par les caractères '`'. [Florent MICHON]
+
+* Correctif : ajout du préfixe manquant pour la gestion des schémas dans
+  plusieurs fichiers. [François RAYNAUD]
+
+* Correctif : modification d'une erreur de lien dans les fichiers inc om_tdb et
+  om_widget de mysql qui pointaient vers les dossiers pgsql. [François RAYNAUD]
+
+* Correctif : correction de deux bugs bloquants dans les assistants états,
+  sousetats et lettretype du générateur ("Undefined variable: variable et
+  Undefined variable: this dans om_database.class.php"). Ajout des fichiers
+  de config : gen/dyn/standard : etat.inc sousetat.inc, lettretype.inc et
+  correction scr/genetat.php, gensousetat.php, genlettretype.php au niveau des
+  includes et de l appel à la methode d'erreur : $f->isDatabaseError($res)
+  creation du repertoire scr/dyn modification gen.class ligne 120
+  include ("../gen/dyn/".$dyn."/form.inc") pour genfull et gen
+  ->  "../scr/dyn/form.inc". Cette solution est provisoire, ces fichiers
+  seront positionnés dans un endroit plus pertinent rapidement.
+  [François RAYNAUD]
+
+* Correctif : ajout de l'encodage des variables (si utf8) de om_parametre dans
+  les fichiers faisant le remplacement des variables pour les éditions pdf
+  (varetatpdf.inc et varlettretype.inc). [François RAYNAUD]
+
+* Correctif : suppression d'une ligne vide dans le fichier dyn/mail.inc.php qui
+  provoquait une erreur (Warning: Cannot modify header information...).
+  [François RAYNAUD]
+
+* Correctif : modification de INSERT INTO om_droit VALUES ('om_directory', 99);
+  dans le fichier init.sql pour PostGreSQL car profil 99 ne respecte pas
+  l'integrité référentielle. [François RAYNAUD]
+
+
+4.1.0-rc5 - 08/11/2011
+----------------------
+
+* Correction du bug dans le sous-état lors de la récupération de données
+  sauvegardées sous PostGreSQL (le séparateur entre les sous-états : chr10 au
+  lieu de chr10+chr13). [François RAYNAUD]
+
+* Optimisation de la gestion des utilisateurs par la possibilité
+  de redéfinition du mot de passe par mail. [Florent MICHON][Romain BEYLERIAN]
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0-rc6.
+  [Florent MICHON]
+
+
+4.1.0-rc4 - 18/10/2011
+----------------------
+
+* Correction du bug dans l'assistant de récupération des états, sous-états et
+  lettres types, le path vers le dossier inc n'était pas correct.
+  [Florent MICHON][François RAYNAUD]
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0-rc5.
+  [Romain BEYLERIAN]
+
+
+4.1.0-rc3 - 06/10/2011
+----------------------
+
+* Mise à jour de la version du thème kied en 1.0.1. [Florent MICHON]
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0-rc4.
+  [Florent MICHON]
+
+* Correction d'un bug sur le combo avec l'ajout d'un test sur l'existence
+  d'un field en javascript avant utilisation pour empêcher que la popup ne se
+  ferme pas. [Florent MICHON]
+
+* Optimisation des images du SIG et du calendrier (ajout de la transparence,
+  redimensionnement, ...). [Jean-Louis BASTIDE]
+
+* Correction des images manquantes concernant les fournisseurs SIG. Ces
+  images sont maintenant dans le thème. [Jean-Louis BASTIDE]
+
+* Correction de la classe om_parametre avec ajout des méthodes setTaille et
+  setMax manquantes. [François RAYNAUD]
+
+* Optimisation du SIG avec mise en place de la gestion de polygones et de
+  lignes. [Jean-Louis BASTIDE][François RAYNAUD]
+
+
+4.1.0-rc2 - 16/09/2011
+----------------------
+
+* Correction du bug dans l'assistant de récupération des états, sous-états et
+  lettres types, le path vers le dossier inc n'était pas correct.
+  [Florent MICHON][François RAYNAUD]
+
+* Correction du bug dans l'affichage SIG, la variable $fond_google était appelée
+  sans être initialisée. L'appel à cette variable a été supprimé car elle n'est
+  pas utilisée. [Florent MICHON][François RAYNAUD]
+
+* Mise à jour de la version de la librairie openmairie en 4.1.0-rc2.
+  [Florent MICHON]
+
+
+4.1.0-rc1 - 15/09/2011
+----------------------
+
+4.0.1
+-----
+25/05/2011
+cle google sig/
+tab_sig_point.php
+var_sig_point.sig
+
+
+22/05/2011
+spg/upload.php : limitation de 20 à 50 caracteres
+sig/adresse_postale : google
+
+17/05/2011 test avec mysql
+- js/script upload taille fen fait
+- img/droite.png fait
+- pb load de db
+- pb load openLayers
+-
+
+
+15/05/2011
+* point SIG
+    /sig
+    js/sig.js
+* tableau de bord
+    /tdb
+    /js/script.js
+    /dyn/tdb.inc
+* bug : utf8 avec fpdf
+    pdf/pdfetat.php
+
+* init et objet nouveau
+    om_widget
+    om_tbd
+    data/
+    init mono
+
+
+
+4.0.0
+
+(+) data/.../init.sql : gestion des droits de base (04/01/2010)
+
+
+4.0.0 - decembre 2010  Version beta publié le 03/01/2010
+---------------------
+* creation d assistant : import Version <4, assistant creation etat et sous etat [François RAYNAUD]
+
+* mise a niveau du generateur [François RAYNAUD]
+
+* mise en table des etats / sous etats / lettretype en table [Florent MICHON][François RAYNAUD]
+
+* mise en place de la multi collectivite [Florent MICHON][François RAYNAUD]
+
+* Compatibilité openMairie 4.0.0 [Florent MICHON][François RAYNAUD]
+
+* Intégration de la librairie jqueryui [Florent MICHON]
+
+* Intégration de la librairie openlayers [Florent MICHON]
+
+* Restructuration du code (création des dossiers css, js, lib et déplacement
+  de certains scripts) pour une meilleure lisibilité du code [Florent MICHON]
+  [François RAYNAUD]
+
+* Nettoyage, documentation et indentation du code selon une nouvelle convention
+  de codage [Florent MICHON]
+
+
+3.01 - Non publiée
+------------------
+
+La version 3.01 n a pas été publié et le sousforminterne est abandonné
+sous cette forme et sera repris sous une forme ulterieure avec jquery
+
+[05/05/2010] 3eme niveau
+- dbformdyn integration sousforminterne
+- scr/form_fenetre.php
+- scr/tab_fenetre.php
+- img/cle.gif et clebas.gif
+
+[23/02/2010] [bug]
+gen/aff.php deprecated ereg
+
+[22/01/2009] (bug) correction pear5 dyn/var.inc
+- compatibilite php4 php/pear/ ..
+- compatibilite RP : dbformdyn.class.php
+
+3.00 - 11/01/2010
+-----------------
+
+La version 3.00 propose une version generateur qui permet de construire
+tres rapidement  une application openMairie apres avoir créer les tables
+sur la base mysql et pgsql.
+
+2.02 - Non publiée  // passage version 3.00
+------------------
+(modif) pdf/pdflettretype.php et pdfetat.php(attribut affichage <b>)
+(bug) spg/voir.php (controle fichier inexistant)
+(modif) spg/combo et combo2.php + lang.inc(traduction)
+(bug) spg/combo et combo2.php
+(modif) scr/requeteur.php(nouvelle presentation 15 sept 2008) + style
+(bug) tri form.php et sousform.php 30/08/2008
+(bug) scr/requeteur.php (copie a partir opencimetiere) 08/09/2008
+
+
+2.01 - 06/05/2008
+-----------------
+recherche globale sur application dans tableau de bord
+integration choix apparence dans tableau de bord
+
+
+1.17 - 28/09/2007
+-----------------
+suppression repertoire dyn/custom et  dyn/custom/img
+affichage dynamique du sous formulaire
+
+
+1.15 - 03/11/2006
+-----------------
+Ajout du lien mailto lors de l'affichage d'un mail dans un tableau
+
+
+1.14 - 06/10/2006
+-----------------
+module de requête mémorisée
+
+
+1.11 - 24/05/2006
+-----------------
+formulaire et de sous formulaire
+état, de sous état et de lettre type
+

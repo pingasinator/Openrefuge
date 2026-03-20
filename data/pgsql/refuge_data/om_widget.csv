@@ -1,0 +1,14 @@
+"om_widget","libelle","lien","texte","type","script","arguments"
+2,utilisateurs,http://192.168.200.124/openrefuge/app/index.php?module=tab&obj=om_utilisateur,"",web,"",""
+5,"10 dernières factures","","",file,affichage_table,"name=facture
+color=black
+column=facture,numero_facture,date_creation,concat(personne.nom,' ',personne.prenom)
+replace=ID,numéro de facture,date de création, personne
+join=personne on personne.personne = facture.personne"
+7,"10 derniers animaux","","",file,affichage_table,"name=animal
+color=red
+column=animal.animal,animal.nom,animal_espece.nom,animal_race.nom,animal_sexe.libelle,concat(personne.nom,' ', personne.prenom)
+replace=ID,nom,espèce,race,sexe,personne
+join=animal_espece on animal_espece.animal_espece = animal.animal_espece,animal_race on animal_race.animal_race = animal.animal_race ,animal_sexe on animal_sexe.animal_sexe = animal.animal_sexe,personne on personne.personne = animal.personne"
+9,test,"","",file,test,""
+10,table vide,"","",file,affichage_table,""

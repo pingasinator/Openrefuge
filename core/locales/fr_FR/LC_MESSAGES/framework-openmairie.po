@@ -1,0 +1,4066 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: framework-openmairie\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-20 18:45+0100\n"
+"PO-Revision-Date: 2018-07-20 18:45+0100\n"
+"Last-Translator: Sofien Timezouaght <stimezouaght@atreal.fr>\n"
+"Language-Team: openMairie Team <contact@openmairie.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: /var/www/framework-openmairie/core\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: tests/binary_files/om_lettretype.inc.php:24
+#, fuzzy
+msgid "Copier"
+msgstr "Copier"
+
+#: tests/binary_files/custom/sql/pgsql/om_utilisateur.inc.php:21
+#: core/om_application.class.php:2327 core/om_application.class.php:4167
+msgid "Identifiant"
+msgstr "Identifiant"
+
+#: tests/binary_files/sql/pgsql/om_parametre.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_parametre.reqmo.inc.php:5
+#: tests/binary_files/sql/pgsql/om_parametre_om_collectivite.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_parametre_om_collectivite.reqmo.inc.php:5
+#, fuzzy
+msgid "reqmo-libelle-om_parametre"
+msgstr "paramètre"
+
+#: tests/binary_files/sql/pgsql/om_parametre.reqmo.inc.php:6
+#: core/om_application.class.php:7727 core/sql/pgsql/om_parametre.inc.php:18
+#: core/sql/pgsql/om_parametre.inc.php:28
+#: core/gen/sql/pgsql/om_parametre.inc.php:7
+#: core/gen/sql/pgsql/om_parametre.inc.php:28
+#: core/gen/sql/pgsql/om_parametre.inc.php:42
+#: core/gen/obj/om_parametre.class.php:215
+msgid "om_parametre"
+msgstr "paramètre"
+
+#: tests/binary_files/sql/pgsql/om_collectivite.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_collectivite.reqmo.inc.php:5
+#, fuzzy
+msgid "public.om_collectivite"
+msgstr "collectivité"
+
+#: tests/binary_files/sql/pgsql/om_droit.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_droit.reqmo.inc.php:5
+#, fuzzy
+msgid "public.om_droit"
+msgstr "droit"
+
+#: tests/binary_files/sql/pgsql/om_parametre_om_collectivite.reqmo.inc.php:6
+#, fuzzy
+msgid "om_parametre_om_collectivite"
+msgstr "collectivité"
+
+#: tests/binary_files/sql/pgsql/om_utilisateur.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_utilisateur.reqmo.inc.php:5
+#, fuzzy
+msgid "public.om_utilisateur"
+msgstr "utilisateur"
+
+#: tests/binary_files/sql/pgsql/om_profil.reqmo.inc.php:4
+#: tests/binary_files/sql/pgsql/om_profil.reqmo.inc.php:5
+#, fuzzy
+msgid "public.om_profil"
+msgstr "profil"
+
+#: core/db_fpdf.php:485 core/om_application.class.php:1637
+#: core/om_application.class.php:1722 core/om_application.class.php:2099
+#: core/om_application.class.php:2144 core/om_application.class.php:2592
+#: core/fpdf_etat.php:1525 core/om_database.class.php:73
+#: core/fpdf_etiquette.php:488 core/om_gen.class.php:6946
+#: core/om_gen.class.php:7022 core/om_gen.class.php:7088
+#: core/om_dbform.class.php:3669
+msgid "Erreur de base de donnees. Contactez votre administrateur."
+msgstr "Erreur de base de données. Contactez votre administrateur."
+
+#: core/om_application.class.php:1063 core/om_application.class.php:2463
+msgid "Votre session est maintenant ouverte."
+msgstr "Votre session est maintenant ouverte."
+
+#: core/om_application.class.php:1189 core/om_formulaire.class.php:4544
+#: core/om_formulaire.class.php:4972 core/om_dbform.class.php:3930
+msgid ""
+"Droits insuffisants. Vous n'avez pas suffisamment de droits pour acceder a "
+"cette page."
+msgstr ""
+"Droits insuffisants. Vous n'avez pas suffisament de droits pour accéder à "
+"cette page."
+
+#: core/om_application.class.php:1398 core/om_application.class.php:1445
+#: core/om_application.class.php:1470 core/om_application.class.php:1536
+msgid "Aucune entree dans le fichier de configuration"
+msgstr "Aucune entrée dans le fichier de configuration"
+
+#: core/om_application.class.php:1409
+msgid "Un nom d'hote est obligatoire"
+msgstr "Un nom d'hôte est obligatoire"
+
+#: core/om_application.class.php:1420
+msgid "Une adresse d'expediteur est obligatoire"
+msgstr "Une adresse d'expediteur est obligatoire"
+
+#: core/om_application.class.php:1532 core/om_application.class.php:1854
+#: core/om_application.class.php:2662 core/om_application.class.php:2680
+#: core/om_application.class.php:2713 core/om_formulaire.class.php:3942
+#: core/om_formulaire.class.php:3956
+msgid "Erreur de configuration. Contactez votre administrateur."
+msgstr "Erreur de configuration. Contactez votre administrateur."
+
+#: core/om_application.class.php:1627
+msgid "Tentative de connexion au SGBD"
+msgstr "Tentative de connexion au SGBD"
+
+#: core/om_application.class.php:1692 core/om_application.class.php:7991
+msgid "Deconnexion"
+msgstr "Déconnexion"
+
+#: core/om_application.class.php:1692
+msgid "OK"
+msgstr "OK"
+
+#: core/om_application.class.php:1692
+msgid "ECHOUEE"
+msgstr "ÉCHOUÉE"
+
+#: core/om_application.class.php:1695
+msgid "Aucune base de donnees a deconnecter"
+msgstr "Aucune base de données à déconnecter"
+
+#: core/om_application.class.php:1758
+msgid "Votre session est maintenant terminee."
+msgstr "Votre session est maintenant terminée."
+
+#: core/om_application.class.php:1809 core/om_application.class.php:2561
+#: core/om_application.class.php:2604 core/om_application.class.php:2643
+msgid "Votre identifiant ou votre mot de passe est incorrect."
+msgstr "Votre identifiant ou votre mot de passe est incorrect."
+
+#: core/om_application.class.php:1812
+msgid ""
+"L'application n'est pas en mesure de vous identifier pour l'instant. "
+"Contactez votre administrateur."
+msgstr ""
+"L'application n'est pas en mesure de vous identifier pour l'instant. "
+"Contactez votre administrateur."
+
+#: core/om_application.class.php:1817
+msgid "Erreur de l'annuaire"
+msgstr "Erreur de l'annuaire"
+
+#: core/om_application.class.php:1869 core/om_application.class.php:2677
+msgid ""
+"Mauvais parametres : l'authentification a l'annuaire n'est pas possible."
+msgstr ""
+"Mauvais paramètres : l'authentification sur annuaire n'est pas possible."
+
+#: core/om_application.class.php:1898 core/om_application.class.php:2707
+msgid ""
+"Impossible de poursuivre la recherche des utilisateurs. La methode de "
+"recherche renvoie le message: "
+msgstr ""
+"Impossible de poursuivre la recherche des utilisateurs. La methode de "
+"recherche renvoie le message : "
+
+#: core/om_application.class.php:2155
+msgid "Certains enregistrements provenant du LDAP ne possedent pas l'attribut "
+msgstr ""
+"Certains enregistrements provenant de l'annuaire LDAP ne possèdent pas "
+"l'attribut "
+
+#: core/om_application.class.php:2163
+msgid "La synchronisation des utilisateurs est terminee."
+msgstr "La synchronisation des utilisateurs est terminée."
+
+#: core/om_application.class.php:2181
+msgid "Les fonctions ldap ne sont pas disponibles sur cette installation."
+msgstr "Les fonctions LDAP ne sont pas disponibles sur cette installation."
+
+#: core/om_application.class.php:2298
+msgid "Identification"
+msgstr "Identification"
+
+#: core/om_application.class.php:2333 core/om_application.class.php:5483
+#: core/om_application.class.php:5503 core/om_application.class.php:7983
+msgid "Mot de passe"
+msgstr "Mot de passe"
+
+#: core/om_application.class.php:2340 core/om_application.class.php:4174
+msgid "Base de donnees"
+msgstr "Base de données"
+
+#: core/om_application.class.php:2366
+msgid "Se connecter"
+msgstr "Se connecter"
+
+#: core/om_application.class.php:2375 core/om_application.class.php:5361
+msgid "Redefinition du mot de passe"
+msgstr "Redéfinition du mot de passe"
+
+#: core/om_application.class.php:2377
+msgid "Mot de passe oublie ?"
+msgstr "Mot de passe oublié ?"
+
+#: core/om_application.class.php:3235
+#, fuzzy
+msgid "Cette option n'est pas activee. Contactez votre administrateur."
+msgstr "Une erreur s'est produite. Contactez votre administrateur."
+
+#: core/om_application.class.php:3238
+msgid "L'option de localisation 'sig_interne' n'est pas configuree."
+msgstr ""
+
+#: core/om_application.class.php:3897
+msgid "Impossible d'ecrire le fichier de log :"
+msgstr "Impossible d'écrire le fichier de log :"
+
+#: core/om_application.class.php:3899
+msgid "Le dossier n'est probablement pas accessible en ecriture."
+msgstr "Le dossier n'est probablement pas accessible en écriture."
+
+#: core/om_application.class.php:3900
+msgid "Contactez votre administrateur."
+msgstr "Contactez votre administrateur."
+
+#: core/om_application.class.php:4201
+msgid "Lancer la re-initialisation du mot de passe"
+msgstr "Lancer la ré-initialisation du mot de passe"
+
+#: core/om_application.class.php:4248 core/om_application.class.php:5565
+msgid "Nouveau mot de passe"
+msgstr "Nouveau mot de passe"
+
+#: core/om_application.class.php:4253
+msgid "Confirmation du mot de passe"
+msgstr "Confirmation du mot de passe"
+
+#: core/om_application.class.php:4277
+msgid "Definir mon mot de passe"
+msgstr "Definir mon mot de passe"
+
+#: core/om_application.class.php:5337
+msgid "Veuillez vous connecter"
+msgstr "veuillez vous connecter"
+
+#: core/om_application.class.php:5391 core/om_application.class.php:5399
+#: core/om_application.class.php:5428
+msgid ""
+"Votre identifiant est incorrect, ou ne vous permet pas de redefinir votre "
+"mot de passe de cette maniere. Contactez votre administrateur."
+msgstr ""
+"Votre identifiant est incorrect, ou ne vous permet pas de redefinir votre "
+"mot de passe de cette manière. Contactez votre administrateur."
+
+#: core/om_application.class.php:5411
+msgid "Confirmation de reinitialisation du mot de passe "
+msgstr "Confirmation de ré-initialisation du mot de passe"
+
+#: core/om_application.class.php:5413
+msgid "Vous avez demande la reinitialisation de votre mot de passe "
+msgstr "Vous avez demandé la ré-initialisation de votre mot de passe "
+
+#: core/om_application.class.php:5414
+msgid "Pour finaliser votre demande, veuillez cliquer sur ce lien"
+msgstr "Pour finaliser votre demande, veuillez cliquer sur ce lien"
+
+#: core/om_application.class.php:5421
+msgid ""
+"Un message de demande de reinitialisation de mot de passe vous a ete envoye "
+"sur votre messagerie."
+msgstr ""
+"Un message de demande de ré-initialisation de mot de passe vous a été envoyé "
+"sur votre messagerie."
+
+#: core/om_application.class.php:5483
+msgid "Mon compte"
+msgstr "Mon compte"
+
+#: core/om_application.class.php:5489
+msgid ""
+"Cette page vous permet de changer votre mot de passe. Pour cela, il vous "
+"suffit de saisir votre mot de passe actuel puis votre nouveau mot de passe "
+"deux fois."
+msgstr ""
+"Cette page vous permet de changer votre mot de passe. Pour cele, il vous "
+"suffit de saisir votre mot de passe actuel puis votre nouveau mot de passe "
+"deux fois."
+
+#: core/om_application.class.php:5523
+msgid "Mot de passe actuel incorrect"
+msgstr "Mot de passe actuel incorrect"
+
+#: core/om_application.class.php:5528
+msgid "Nouveau mot de passe incorrect"
+msgstr "Nouveau mot de passe incorrect"
+
+#: core/om_application.class.php:5535
+msgid "Votre mot de passe a ete change correctement"
+msgstr "Votre mot de passe a été changé correctement"
+
+#: core/om_application.class.php:5560
+msgid "Mot de passe actuel"
+msgstr "Mot de passe actuel"
+
+#: core/om_application.class.php:5570
+msgid "Confirmation du nouveau mot de passe"
+msgstr "Confirmation du nouveau mot de passe"
+
+#: core/om_application.class.php:5585 core/om_layout.class.php:1675
+#: core/om_formulaire.class.php:4394 core/om_gen.class.php:7143
+#: core/om_dbform.class.php:2982 core/om_dbform.class.php:3006
+#: core/obj/om_dashboard.class.php:472
+msgid "Valider"
+msgstr "Valider"
+
+#: core/om_application.class.php:5609 core/om_application.class.php:8009
+#: core/om_layout.class.php:653
+msgid "Tableau de bord"
+msgstr "Tableau de bord"
+
+#: core/om_application.class.php:5726
+msgid "L'element n'est pas accessible."
+msgstr "L'élément n'est pas accessible."
+
+#: core/om_application.class.php:5781 core/om_application.class.php:5880
+#: core/om_application.class.php:5951 core/om_application.class.php:6325
+#: core/om_application.class.php:6386 core/om_application.class.php:6571
+#: core/om_application.class.php:7022 core/om_import.class.php:901
+#: core/om_import.class.php:948 core/om_edition.class.php:131
+#: core/om_edition.class.php:290 core/om_formulaire.class.php:4702
+#: core/om_map.class.php:704 core/om_reqmo.class.php:166
+msgid "L'objet est invalide."
+msgstr "L'objet est invalide."
+
+#: core/om_application.class.php:5897 core/om_application.class.php:5900
+#: core/om_application.class.php:6340 core/om_application.class.php:6343
+#: core/om_dbform.class.php:2973 core/om_dbform.class.php:2997
+msgid "Modifier"
+msgstr "Modifier"
+
+#: core/om_application.class.php:5906 core/om_application.class.php:5909
+#: core/om_application.class.php:6349 core/om_application.class.php:6352
+#: core/om_layout.class.php:1651 core/om_dbform.class.php:2976
+#: core/om_dbform.class.php:3000
+msgid "Supprimer"
+msgstr "Supprimer"
+
+#: core/om_application.class.php:6600 core/om_application.class.php:7049
+#: core/om_dbform.class.php:2970 core/om_dbform.class.php:2994
+msgid "Ajouter"
+msgstr "Ajouter"
+
+#: core/om_application.class.php:6609 core/om_application.class.php:7058
+msgid "Consulter"
+msgstr "Consulter"
+
+#: core/om_application.class.php:7528 core/om_edition.class.php:224
+#: core/om_reqmo.class.php:177
+msgid "export"
+msgstr "export"
+
+#: core/om_application.class.php:7537
+msgid "edition"
+msgstr "édition"
+
+#: core/om_application.class.php:7548 core/om_reqmo.class.php:177
+msgid "requetes memorisees"
+msgstr "requêtes mémorisées"
+
+#: core/om_application.class.php:7564 core/gen/sql/pgsql/om_etat.inc.php:7
+#: core/gen/sql/pgsql/om_logo.inc.php:7
+#: core/gen/sql/pgsql/om_sousetat.inc.php:7
+#: core/gen/sql/pgsql/om_lettretype.inc.php:7
+#: core/gen/sql/pgsql/om_requete.inc.php:7
+msgid "parametrage"
+msgstr "paramétrage"
+
+#: core/om_application.class.php:7574 core/om_edition.class.php:224
+msgid "editions"
+msgstr "éditions"
+
+#: core/om_application.class.php:7592 core/sql/pgsql/om_etat.inc.php:18
+#: core/sql/pgsql/om_etat.inc.php:30 core/gen/sql/pgsql/om_etat.inc.php:7
+#: core/gen/sql/pgsql/om_etat.inc.php:30 core/gen/sql/pgsql/om_etat.inc.php:68
+#: core/gen/obj/om_etat.class.php:519
+msgid "om_etat"
+msgstr "état"
+
+#: core/om_application.class.php:7593
+msgid "Composition des états."
+msgstr ""
+
+#: core/om_application.class.php:7606 core/sql/pgsql/om_lettretype.inc.php:18
+#: core/sql/pgsql/om_lettretype.inc.php:30
+#: core/gen/sql/pgsql/om_lettretype.inc.php:7
+#: core/gen/sql/pgsql/om_lettretype.inc.php:30
+#: core/gen/sql/pgsql/om_lettretype.inc.php:68
+#: core/gen/obj/om_lettretype.class.php:525
+msgid "om_lettretype"
+msgstr "lettre type"
+
+#: core/om_application.class.php:7607
+#, fuzzy
+msgid "Composition des lettres types."
+msgstr "Création lettre-type"
+
+#: core/om_application.class.php:7627 core/sql/pgsql/om_logo.inc.php:18
+#: core/sql/pgsql/om_logo.inc.php:33 core/gen/sql/pgsql/om_logo.inc.php:7
+#: core/gen/sql/pgsql/om_logo.inc.php:28 core/gen/sql/pgsql/om_logo.inc.php:46
+#: core/gen/obj/om_logo.class.php:261
+msgid "om_logo"
+msgstr "logo"
+
+#: core/om_application.class.php:7628
+msgid ""
+"Paramétrage des logos disponibles depuis l'écran de composition des lettres "
+"types."
+msgstr ""
+
+#: core/om_application.class.php:7649 core/sql/pgsql/om_sousetat.inc.php:18
+#: core/sql/pgsql/om_sousetat.inc.php:30
+#: core/gen/sql/pgsql/om_sousetat.inc.php:7
+#: core/gen/sql/pgsql/om_sousetat.inc.php:28
+#: core/gen/sql/pgsql/om_sousetat.inc.php:98
+#: core/gen/obj/om_sousetat.class.php:795
+msgid "om_sousetat"
+msgstr "sous état"
+
+#: core/om_application.class.php:7650
+msgid ""
+"Paramétrage des tableaux (appelés sous-états) disponibles à l'insertion "
+"depuis l'écran de composition des lettres types."
+msgstr ""
+
+#: core/om_application.class.php:7663 core/obj/om_etat.class.php:153
+#: core/obj/om_lettretype.class.php:154
+#: core/gen/sql/pgsql/om_requete.inc.php:7
+#: core/gen/sql/pgsql/om_requete.inc.php:26
+#: core/gen/sql/pgsql/om_requete.inc.php:41
+#: core/gen/obj/om_requete.class.php:201
+msgid "om_requete"
+msgstr "requête"
+
+#: core/om_application.class.php:7664
+msgid ""
+"Paramétrage des configurations de champs de fusion disponibles depuis "
+"l'écran de composition des lettres types."
+msgstr ""
+
+#: core/om_application.class.php:7682 core/om_import.class.php:986
+#: core/om_gen.class.php:5482 core/obj/om_dashboard.class.php:63
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:7
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:7
+#: core/gen/sql/pgsql/om_widget.inc.php:7
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:7
+#: core/gen/sql/pgsql/om_droit.inc.php:7
+#: core/gen/sql/pgsql/om_dashboard.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:7
+#: core/gen/sql/pgsql/om_collectivite.inc.php:7
+#: core/gen/sql/pgsql/om_parametre.inc.php:7
+#: core/gen/sql/pgsql/om_permission.inc.php:7
+#: core/gen/sql/pgsql/om_profil.inc.php:7
+msgid "administration"
+msgstr "administration"
+
+#: core/om_application.class.php:7691
+msgid "général"
+msgstr ""
+
+#: core/om_application.class.php:7713 core/obj/om_sousetat.class.php:195
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:43
+#: core/gen/sql/pgsql/om_etat.inc.php:60
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:44
+#: core/gen/sql/pgsql/om_sig_map.inc.php:60
+#: core/gen/sql/pgsql/om_logo.inc.php:42
+#: core/gen/sql/pgsql/om_sousetat.inc.php:92
+#: core/gen/sql/pgsql/om_collectivite.inc.php:7
+#: core/gen/sql/pgsql/om_collectivite.inc.php:26
+#: core/gen/sql/pgsql/om_collectivite.inc.php:35
+#: core/gen/sql/pgsql/om_parametre.inc.php:38
+#: core/gen/sql/pgsql/om_lettretype.inc.php:60
+#: core/gen/obj/om_utilisateur.class.php:291
+#: core/gen/obj/om_sig_flux.class.php:283 core/gen/obj/om_etat.class.php:520
+#: core/gen/obj/om_sousetat.class.php:796
+#: core/gen/obj/om_lettretype.class.php:526
+#: core/gen/obj/om_collectivite.class.php:144
+#: core/gen/obj/om_sig_map.class.php:491 core/gen/obj/om_logo.class.php:268
+#: core/gen/obj/om_parametre.class.php:218
+msgid "om_collectivite"
+msgstr "collectivité"
+
+#: core/om_application.class.php:7714
+#, fuzzy
+msgid "Paramétrage des collectivités."
+msgstr "Paramètres des sous-états"
+
+#: core/om_application.class.php:7728
+msgid ""
+"Divers paramètres de l'application : champs de fusion généraux disponibles "
+"pour les éditions pdf, activation/désactivation de modules complémentaires, "
+"paramétrages fonctionnels, ..."
+msgstr ""
+
+#: core/om_application.class.php:7740
+msgid "gestion des utilisateurs"
+msgstr "gestion des utilisateurs"
+
+#: core/om_application.class.php:7758
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:34
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:52
+#: core/gen/sql/pgsql/om_droit.inc.php:30
+#: core/gen/sql/pgsql/om_droit.inc.php:39
+#: core/gen/sql/pgsql/om_dashboard.inc.php:31
+#: core/gen/sql/pgsql/om_dashboard.inc.php:42
+#: core/gen/sql/pgsql/om_profil.inc.php:7
+#: core/gen/sql/pgsql/om_profil.inc.php:26
+#: core/gen/sql/pgsql/om_profil.inc.php:35
+#: core/gen/obj/om_utilisateur.class.php:293
+#: core/gen/obj/om_droit.class.php:174 core/gen/obj/om_profil.class.php:144
+#: core/gen/obj/om_dashboard.class.php:223
+msgid "om_profil"
+msgstr "profil"
+
+#: core/om_application.class.php:7759
+#, fuzzy
+msgid "Paramétrage des profils utilisateurs."
+msgstr "gestion des utilisateurs"
+
+#: core/om_application.class.php:7772 core/gen/sql/pgsql/om_droit.inc.php:7
+#: core/gen/sql/pgsql/om_droit.inc.php:28
+#: core/gen/sql/pgsql/om_droit.inc.php:37 core/gen/obj/om_droit.class.php:172
+msgid "om_droit"
+msgstr "droit"
+
+#: core/om_application.class.php:7773
+msgid "Matrice des permissions affectées à chaque profil."
+msgstr ""
+
+#: core/om_application.class.php:7786
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:7
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:30
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:48
+#: core/gen/obj/om_utilisateur.class.php:286
+msgid "om_utilisateur"
+msgstr "utilisateur"
+
+#: core/om_application.class.php:7787
+msgid "Paramétrage des utilisateurs autorisés à se connecter à l'application."
+msgstr ""
+
+#: core/om_application.class.php:7812
+msgid "annuaire"
+msgstr "annuaire"
+
+#: core/om_application.class.php:7813
+#, fuzzy
+msgid "Interface de synchronisation des utilisateurs avec un annuaire."
+msgstr "La synchronisation des utilisateurs est terminée."
+
+#: core/om_application.class.php:7824 core/obj/om_dashboard.class.php:63
+#: core/gen/sql/pgsql/om_widget.inc.php:7
+#: core/gen/sql/pgsql/om_dashboard.inc.php:7
+msgid "tableaux de bord"
+msgstr "tableaux de bord"
+
+#: core/om_application.class.php:7840 core/gen/sql/pgsql/om_widget.inc.php:7
+#: core/gen/sql/pgsql/om_widget.inc.php:26
+#: core/gen/sql/pgsql/om_widget.inc.php:39
+#: core/gen/sql/pgsql/om_dashboard.inc.php:34
+#: core/gen/sql/pgsql/om_dashboard.inc.php:45
+#: core/gen/obj/om_dashboard.class.php:226
+#: core/gen/obj/om_widget.class.php:180
+msgid "om_widget"
+msgstr "widget"
+
+#: core/om_application.class.php:7841
+msgid ""
+"Paramétrage des blocs d'informations affichables sur le tableau de bord."
+msgstr ""
+
+#: core/om_application.class.php:7854 core/obj/om_dashboard.class.php:63
+msgid "composition"
+msgstr "composition"
+
+#: core/om_application.class.php:7855
+#, fuzzy
+msgid "Composition des tableaux de bord par profil."
+msgstr "Tableau de bord pour le profil"
+
+#: core/om_application.class.php:7867 core/gen/sql/pgsql/om_sig_flux.inc.php:7
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:7
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:7
+#, fuzzy
+msgid "SIG"
+msgstr "sig"
+
+#: core/om_application.class.php:7885 core/sql/pgsql/om_sig_extent.inc.php:17
+#: core/sql/pgsql/om_sig_extent.inc.php:28
+#: core/sql/pgsql/om_sig_extent.inc.php:34 core/obj/om_sig_map.class.php:377
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:7
+#, fuzzy
+msgid "étendue"
+msgstr "étendue"
+
+#: core/om_application.class.php:7886
+msgid "Paramétrage des étendues sélectionnables depuis une carte."
+msgstr ""
+
+#: core/om_application.class.php:7900 core/sql/pgsql/om_sig_extent.inc.php:20
+#: core/sql/pgsql/om_sig_map.inc.php:17
+#: core/sql/pgsql/om_sig_map_comp.inc.php:22
+#: core/sql/pgsql/om_sig_map_flux.inc.php:22
+#: core/sql/pgsql/om_sig_map_flux.inc.php:33
+#: core/gen/sql/pgsql/om_sig_map.inc.php:7
+msgid "carte"
+msgstr ""
+
+#: core/om_application.class.php:7901
+#, fuzzy
+msgid "Paramétrage des cartes."
+msgstr "Paramètres des sous-états"
+
+#: core/om_application.class.php:7915 core/sql/pgsql/om_sig_flux.inc.php:17
+#: core/sql/pgsql/om_sig_map_flux.inc.php:23
+#: core/sql/pgsql/om_sig_map_flux.inc.php:34
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:7
+msgid "flux"
+msgstr ""
+
+#: core/om_application.class.php:7916
+msgid "Paramétrage des flux sélectionnables depuis une carte."
+msgstr ""
+
+#: core/om_application.class.php:7929
+msgid "options avancees"
+msgstr "options avancées"
+
+#: core/om_application.class.php:7941 core/om_gen.class.php:6836
+msgid "import"
+msgstr "import"
+
+#: core/om_application.class.php:7942
+msgid ""
+"Ce module permet l'intégration de données dans l'application depuis des "
+"fichiers CSV."
+msgstr ""
+
+#: core/om_application.class.php:7956 core/om_gen.class.php:5482
+msgid "generateur"
+msgstr "générateur"
+
+#: core/om_application.class.php:7957
+msgid ""
+"Ce module permet la génération d'éléments à partir du modèle de données."
+msgstr ""
+
+#: core/om_application.class.php:7984
+msgid "Changer votre mot de passe"
+msgstr "Changer votre mot de passe"
+
+#: core/om_application.class.php:7992
+msgid "Quitter l'application"
+msgstr "Quitter l'application"
+
+#: core/om_application.class.php:8010
+msgid "Acceder a la page d'accueil de l'application"
+msgstr "Accéder à la page d'accueil de l'application"
+
+#: core/om_application.class.php:8027
+msgid "Documentation"
+msgstr "Documentation"
+
+#: core/om_application.class.php:8028
+msgid "Acceder a l'espace documentation de l'application"
+msgstr "Accéder à l'espace documentation de l'application"
+
+#: core/om_application.class.php:8036
+msgid "Forum"
+msgstr ""
+
+#: core/om_application.class.php:8037
+#, fuzzy
+msgid "Espace d'échange ouvert du projet openMairie"
+msgstr "Site officiel du projet openMairie"
+
+#: core/om_application.class.php:8045
+msgid "openMairie.org"
+msgstr "openMairie.org"
+
+#: core/om_application.class.php:8046
+msgid "Site officiel du projet openMairie"
+msgstr "Site officiel du projet openMairie"
+
+#: core/fpdf_etat.php:460
+#, php-format
+msgid "Erreur de parametrage. Le sous-etat '%s' n'existe pas."
+msgstr ""
+
+#: core/upload.class.php:449
+msgid "Le fichier a charger excede la directive upload_max_filesize (php.ini)."
+msgstr ""
+"Le fichier à charger excède la directive upload_max_filesize (php.ini)."
+
+#: core/upload.class.php:452
+msgid ""
+"Le fichier excede la directive MAX_FILE_SIZE qui a ete specifiee dans le "
+"formulaire."
+msgstr ""
+"Le fichier excède la directive MAX_FILE_SIZE qui a été specifiée dans le "
+"formulaire."
+
+#: core/upload.class.php:455
+msgid "Le fichier n'a pu etre charge completement."
+msgstr "Le fichier n'a pu être chargé complètement."
+
+#: core/upload.class.php:458
+msgid "Le champ du formulaire est vide."
+msgstr "Le champ du formulaire est vide."
+
+#: core/upload.class.php:461
+msgid "Fichier potentiellement dangereux."
+msgstr "Fichier potentiellement dangereux."
+
+#: core/upload.class.php:464
+msgid "Le fichier n'est pas conforme a la liste des entetes autorises."
+msgstr "Le fichier n'est pas conforme à la liste des entêtes autorisés."
+
+#: core/upload.class.php:467
+msgid "Le fichier n'est pas conforme a la liste des extension(s) autorisee(s)"
+msgstr "Le fichier n'est pas conforme à la liste des extension(s) autorisée(s)"
+
+#: core/upload.class.php:470
+msgid "La largeur de l'image depasse celle autorisee."
+msgstr "La largeur de l'image dépasse celle autorisée."
+
+#: core/upload.class.php:473
+msgid "La hauteur de l'image depasse celle autorisee."
+msgstr "La hauteur de l'image dépasse celle autorisée."
+
+#: core/upload.class.php:476
+msgid "La largeur de l'image est inferieure a celle autorisee."
+msgstr "La largeur de l'image est inférieure à celle autorisée."
+
+#: core/upload.class.php:479
+msgid "La hauteur de l'image est inferieure a celle autorisee."
+msgstr "La hauteur de l'image est inférieure à celle autorisée."
+
+#: core/upload.class.php:482
+msgid "Erreur a l'ecriture du fichier :"
+msgstr "Erreur à l'écriture du fichier :"
+
+#: core/upload.class.php:482 core/om_dbform.class.php:1451
+#: core/om_dbform.class.php:1471 core/om_dbform.class.php:1498
+#: core/om_dbform.class.php:1521 core/om_dbform.class.php:1595
+msgid "Veuillez contacter votre administrateur."
+msgstr "Veuillez contacter votre administrateur."
+
+#: core/upload.class.php:485
+msgid ""
+"Le filestorage n'est pas configure : Veuillez contacter votre administrateur."
+msgstr ""
+"Le filestorage n'est pas configuré : Veuillez contacter votre administrateur."
+
+#: core/upload.class.php:581
+msgid "Acces refuse"
+msgstr "Accès refusé"
+
+#: core/upload.class.php:603
+msgid "la propriete MaxFilesize doit etre une valeur numerique."
+msgstr "la propriété MaxFilesize doit ëtre une valeur numérique."
+
+#: core/upload.class.php:613
+msgid "la propriete Fields doit etre un entier."
+msgstr "la propriété Fields doit ëtre un entier."
+
+#: core/upload.class.php:628
+msgid ""
+"La version de php sur ce serveur est trop ancienne. La classe ne peut "
+"fonctionner qu'avec une version egale ou superieure a la version 4.1.0."
+msgstr ""
+"La version de php sur ce serveur est trop ancienne. La classe ne peut "
+"fonctionner qu'avec une version égale ou supérieure à la version 4.1.0."
+
+#: core/upload.class.php:629
+msgid "La propriete Extension est mal configuree."
+msgstr "La propriété Extension est mal configurée."
+
+#: core/upload.class.php:630
+msgid "La propriete MimeType est mal configuree."
+msgstr "La propriété MimeType est mal configurée."
+
+#: core/upload.class.php:631
+msgid "La propriete Filename est mal configuree."
+msgstr "La propriété Filename est mal configurée."
+
+#: core/upload.class.php:632
+msgid "La propriete Debit est mal configuree."
+msgstr "La propriété Debit est mal configurée."
+
+#: core/upload.class.php:633
+msgid "La propriete Required est mal configuree."
+msgstr "La propriété Required est mal configurée."
+
+#: core/upload.class.php:634
+msgid "La propriete SecurityMax est mal configuree."
+msgstr "La propriété SecurityMax est mal configurée."
+
+#: core/upload.class.php:635
+msgid "La propriete CheckReferer est mal configuree."
+msgstr "La propriété CheckReferer est mal configurée."
+
+#: core/upload.class.php:646
+msgid "La propriete ImgMaxWidth est mal configuree."
+msgstr "La propriéte ImgMaxWidth est mal configurée."
+
+#: core/upload.class.php:647
+msgid "La propriete ImgMaxHeight est mal configuree."
+msgstr "La propriété ImgMaxHeight est mal configurée."
+
+#: core/upload.class.php:648
+msgid "La propriete ImgMinWidth est mal configuree."
+msgstr "La propriété ImgMinWidth est mal configurée."
+
+#: core/upload.class.php:649
+msgid "La propriete ImgMinHeight est mal configuree."
+msgstr "La propriété ImgMinHeight est mal configurée."
+
+#: core/upload.class.php:660
+msgid "Erreur classe Upload"
+msgstr "Erreur classe Upload"
+
+#: core/om_import.class.php:118
+#, fuzzy
+msgid "choix de l'import"
+msgstr "Choix de la table d'import :"
+
+#: core/om_import.class.php:149
+#, fuzzy
+msgid "Fichier CSV"
+msgstr "Fichier"
+
+#: core/om_import.class.php:162
+msgid "Separateur"
+msgstr "Séparateur"
+
+#: core/om_import.class.php:166 core/om_reqmo.class.php:430
+msgid "(point-virgule)"
+msgstr "(point-virgule)"
+
+#: core/om_import.class.php:166 core/om_reqmo.class.php:430
+msgid "(virgule)"
+msgstr "(virgule)"
+
+#: core/om_import.class.php:170
+msgid "Importer les Id"
+msgstr ""
+
+#: core/om_import.class.php:174
+msgid "Non (par défaut)"
+msgstr ""
+
+#: core/om_import.class.php:174
+msgid "Oui (peut nécessiter une maintenance)"
+msgstr ""
+
+#: core/om_import.class.php:187
+#, fuzzy
+msgid "Importer"
+msgstr "Import"
+
+#: core/om_import.class.php:219
+#, fuzzy
+msgid "Structure du fichier CSV"
+msgstr "Import du fichier CSV :"
+
+#: core/om_import.class.php:225
+#, fuzzy
+msgid "Télécharger le fichier CSV modèle"
+msgstr "Télécharger le fichier"
+
+#: core/om_import.class.php:237
+#, fuzzy
+msgid "Ordre"
+msgstr "ordre"
+
+#: core/om_import.class.php:238
+#, fuzzy
+msgid "Champ"
+msgstr "Champ(s) de fusion"
+
+#: core/om_import.class.php:239
+#, fuzzy
+msgid "Type"
+msgstr "type"
+
+#: core/om_import.class.php:240
+#, fuzzy
+msgid "Obligatoire"
+msgstr "obligatoire"
+
+#: core/om_import.class.php:241
+#, fuzzy
+msgid "Defaut"
+msgstr "Par defaut * est ajouté au debut et à la fin des recherches."
+
+#: core/om_import.class.php:242
+#, fuzzy
+msgid "Vocabulaire"
+msgstr "annuaire"
+
+#: core/om_import.class.php:295
+msgid "Cle etrangere vers"
+msgstr ""
+
+#: core/om_import.class.php:301
+msgid "Valeurs alternatives possibles"
+msgstr ""
+
+#: core/om_import.class.php:303
+msgid "Valeur alternative possible"
+msgstr ""
+
+#: core/om_import.class.php:313 core/om_import.class.php:316
+#, fuzzy
+msgid "Format"
+msgstr "format"
+
+#: core/om_import.class.php:313
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: core/om_import.class.php:318
+msgid "pour état null"
+msgstr ""
+
+#: core/om_import.class.php:320
+msgid "pour oui"
+msgstr ""
+
+#: core/om_import.class.php:322
+msgid "pour non"
+msgstr ""
+
+#: core/om_import.class.php:368
+msgid "Vous n'avez pas selectionne de fichier a importer."
+msgstr "Vous n'avez pas selectionné de fichier à importer."
+
+#: core/om_import.class.php:382
+msgid "Le fichier n'existe pas."
+msgstr "Le fichier n'existe pas."
+
+#: core/om_import.class.php:467 core/om_import.class.php:654
+msgid "nombre de colonnes incohérent"
+msgstr ""
+
+#: core/om_import.class.php:551 core/om_import.class.php:682
+msgid "champ obligatoire vide"
+msgstr "champ obligatoire vide"
+
+#: core/om_import.class.php:564
+msgid "valeur trop longue pour le champ"
+msgstr ""
+
+#: core/om_import.class.php:600 core/om_import.class.php:620
+#: core/om_import.class.php:726
+msgid "cle secondaire inexistante"
+msgstr "Clé secondaire inexistante"
+
+#: core/om_import.class.php:836
+#, fuzzy
+msgid "Resultat de l'import"
+msgstr "Résultat de l'import"
+
+#: core/om_import.class.php:837
+#, fuzzy
+msgid "ligne(s) dans le fichier dont :"
+msgstr "ligne(s) dans le fichier"
+
+#: core/om_import.class.php:838
+msgid "ligne(s) d'entete"
+msgstr "ligne(s) d'entête"
+
+#: core/om_import.class.php:839
+msgid "ligne(s) importee(s)"
+msgstr "ligne(s) importée(s)"
+
+#: core/om_import.class.php:840
+msgid "ligne(s) rejetee(s)"
+msgstr "ligne(s) rejetée(s)"
+
+#: core/om_import.class.php:841
+msgid "ligne(s) vide(s)"
+msgstr "ligne(s) vide(s)"
+
+#: core/om_import.class.php:859
+#, fuzzy
+msgid "Télécharger le fichier CSV rejet"
+msgstr "Télécharger le fichier"
+
+#: core/om_import.class.php:986
+#, fuzzy
+msgid "module import"
+msgstr "import"
+
+#: core/om_import.class.php:990
+msgid ""
+"Ce module permet l'intégration de données dans l'applicatif depuis des "
+"fichiers CSV."
+msgstr ""
+
+#: core/om_layout.class.php:568
+msgid "Actions globales"
+msgstr "Actions globales"
+
+#: core/om_layout.class.php:574
+msgid "Version"
+msgstr "Version"
+
+#: core/om_layout.class.php:698
+msgid "Actions personnelles"
+msgstr "Actions personnelles"
+
+#: core/om_layout.class.php:752
+msgid "Raccourcis"
+msgstr "Raccourcis"
+
+#: core/om_layout.class.php:802
+msgid "Menu"
+msgstr "Menu"
+
+#: core/om_layout.class.php:1004
+msgid "Fermer"
+msgstr "Fermer"
+
+#: core/om_layout.class.php:1100 core/om_layout.class.php:1104
+msgid "Page precedente"
+msgstr "Page précédente"
+
+#: core/om_layout.class.php:1113
+msgid "enregistrement(s) sur"
+msgstr "enregistrement(s) sur"
+
+#: core/om_layout.class.php:1138 core/om_layout.class.php:1142
+msgid "Page suivante"
+msgstr "Page suivante"
+
+#: core/om_layout.class.php:1158
+msgid "Page"
+msgstr "Page"
+
+#: core/om_layout.class.php:1227 core/om_layout.class.php:1232
+msgid "Tous"
+msgstr "Tous"
+
+#: core/om_layout.class.php:1246 core/om_layout_jqueryui.class.php:193
+#: core/om_table.class.php:2414 core/om_table.class.php:2625
+msgid "Recherche"
+msgstr "Recherche"
+
+#: core/om_layout.class.php:1282 core/om_layout.class.php:1298
+#: core/obj/om_etat.class.php:294 core/obj/om_lettretype.class.php:295
+msgid "Edition"
+msgstr "Édition"
+
+#: core/om_layout.class.php:1384 core/om_layout.class.php:1753
+msgid "Retour"
+msgstr "Retour"
+
+#: core/om_layout.class.php:1589
+msgid "Cliquer ici pour telecharger un fichier depuis votre poste de travail"
+msgstr "Cliquer ici pour télécharger un fichier depuis votre poste de travail"
+
+#: core/om_layout.class.php:1590 core/om_formulaire.class.php:1955
+msgid "Telecharger"
+msgstr "Télécharger"
+
+#: core/om_layout.class.php:1622
+msgid "Cliquer ici pour voir le fichier"
+msgstr "Cliquer ici pour voir le fichier"
+
+#: core/om_layout.class.php:1623 core/om_formulaire.class.php:5019
+msgid "Voir"
+msgstr "Voir"
+
+#: core/om_layout.class.php:1650
+msgid "Cliquer ici pour supprimer le fichier"
+msgstr "Cliquer ici pour supprimer le fichier"
+
+#: core/om_layout.class.php:1664 core/om_formulaire.class.php:2089
+#: core/om_formulaire.class.php:2505 core/om_formulaire.class.php:2565
+msgid "Cliquer ici pour positionner l'element"
+msgstr "Cliquer ici pour positionner l'élément"
+
+#: core/om_layout.class.php:1665 core/om_formulaire.class.php:2090
+#: core/om_formulaire.class.php:2506 core/om_formulaire.class.php:2566
+#: core/om_formulaire.class.php:4621
+msgid "Localisation"
+msgstr "Localisation"
+
+#: core/om_logger.class.php:127
+msgid "Logger"
+msgstr "Logger"
+
+#: core/om_table.class.php:996 core/fpdf_etiquette.php:154
+msgid "Aucun enregistrement."
+msgstr "Aucun enregistrement."
+
+#: core/om_table.class.php:1234
+msgid "Envoyer un mail a cette adresse"
+msgstr "Envoyer un mail à cette adresse"
+
+#: core/om_table.class.php:1476
+msgid "Recherche possible sur ce champ"
+msgstr "Recherche possible sur ce champ"
+
+#: core/om_table.class.php:2418
+msgid "Utilisation de * pour zones de saisie"
+msgstr "Utilisation de * pour zones de saisie"
+
+#: core/om_table.class.php:2421
+msgid "*ABC finit par 'ABC'."
+msgstr "*ABC finit par 'ABC'."
+
+#: core/om_table.class.php:2425
+msgid "ABC* commence par 'ABC'."
+msgstr "ABC* commence par 'ABC'."
+
+#: core/om_table.class.php:2429
+msgid "*ABC* contient 'ABC'."
+msgstr "*ABC* contient 'ABC'."
+
+#: core/om_table.class.php:2432
+msgid "A*D peut correspondre a 'ABCD'."
+msgstr "A*D peut correspondre à 'ABCD'."
+
+#: core/om_table.class.php:2435
+msgid "Par defaut * est ajoute au debut et a la fin des recherches."
+msgstr "Par defaut * est ajouté au debut et à la fin des recherches."
+
+#: core/om_table.class.php:2438
+msgid "Par defaut * est toujours ajoute au debut des recherches."
+msgstr "Par defaut * est toujours ajouté au debut des recherches."
+
+#: core/om_table.class.php:2442
+msgid "Par defaut * est toujours ajoute a la fin des recherches."
+msgstr "Par defaut * est toujours ajouté à la fin des recherches."
+
+#: core/om_table.class.php:2451 core/om_dbform.class.php:2979
+#: core/om_dbform.class.php:3003
+msgid "Rechercher"
+msgstr "Rechercher"
+
+#: core/om_table.class.php:2533 core/obj/om_sousetat.class.php:213
+#: core/obj/om_sousetat.class.php:222 core/obj/om_sousetat.class.php:229
+#: core/obj/om_sousetat.class.php:236 core/obj/om_sousetat.class.php:243
+#: core/obj/om_sousetat.class.php:250 core/obj/om_sousetat.class.php:257
+msgid "du"
+msgstr "du"
+
+#: core/om_table.class.php:2547
+msgid "au"
+msgstr "au"
+
+#: core/om_table.class.php:2629
+msgid "Vider le formulaire"
+msgstr "Vider le formulaire"
+
+#: core/om_table.class.php:2922
+msgid "Masquer les elements expires"
+msgstr "Masquer les éléments expirés"
+
+#: core/om_table.class.php:2925
+msgid "Afficher les elements expires"
+msgstr "Afficher les elements expirés"
+
+#: core/om_table.class.php:2963
+msgid "Edition PDF"
+msgstr "Édition PDF"
+
+#: core/om_table.class.php:3003
+msgid "Export"
+msgstr "Export"
+
+#: core/om_edition.class.php:231
+msgid ""
+"Le module 'editions' permet d'acceder aux listings PDF de l'application."
+msgstr ""
+
+#: core/om_edition.class.php:258
+#, fuzzy
+msgid "choix de l'edition"
+msgstr "Choix de l'édition"
+
+#: core/om_formulaire.class.php:1156
+#, fuzzy
+msgid "Criteres de recherche : "
+msgstr "Critères de la requête"
+
+#: core/om_formulaire.class.php:1199
+#, fuzzy
+msgid "Liaison faite avec l'enregistrement de type "
+msgstr "l'enregistrement de la table"
+
+#: core/om_formulaire.class.php:1204
+#, fuzzy
+msgid "Delier l'enregistrement"
+msgstr "enregistrement"
+
+#: core/om_formulaire.class.php:1205
+msgid "Delier"
+msgstr ""
+
+#: core/om_formulaire.class.php:1582 core/om_formulaire.class.php:1645
+#: core/om_formulaire.class.php:1696 core/om_formulaire.class.php:1756
+msgid "Cliquer ici pour correler"
+msgstr "Cliquer ici pour corréler"
+
+#: core/om_formulaire.class.php:1583 core/om_formulaire.class.php:1646
+#: core/om_formulaire.class.php:1697 core/om_formulaire.class.php:1757
+msgid "Correler"
+msgstr "Corréler"
+
+#: core/om_formulaire.class.php:1927 core/om_formulaire.class.php:1984
+#: core/om_formulaire.class.php:2029 core/om_formulaire.class.php:3503
+#: core/om_formulaire.class.php:3636
+msgid ""
+"Le syteme de stockage n'est pas accessible. Erreur de parametrage. Contactez "
+"votre administrateur."
+msgstr ""
+"Le sytème de stockage n'est pas accessible. Erreur de paramétrage. Contactez "
+"votre administrateur."
+
+#: core/om_formulaire.class.php:1946
+msgid "Ouvrir le fichier"
+msgstr "Ouvrir le fichier"
+
+#: core/om_formulaire.class.php:1948
+msgid "Visualiser"
+msgstr "Visualiser"
+
+#: core/om_formulaire.class.php:1952
+msgid "Enregistrer le fichier"
+msgstr "Enregistrer le fichier"
+
+#: core/om_formulaire.class.php:1959 core/om_formulaire.class.php:2001
+#: core/om_formulaire.class.php:2046 core/om_formulaire.class.php:4488
+#: core/om_formulaire.class.php:5009
+msgid "Le fichier n'existe pas ou n'est pas accessible."
+msgstr "Le fichier n'existe pas ou n'est pas accessible."
+
+#: core/om_formulaire.class.php:2614
+msgid "Cliquer ici pour envoyer un mail a cette adresse"
+msgstr "Cliquer ici pour envoyer un mail à cette adresse"
+
+#: core/om_formulaire.class.php:2615
+msgid "MailTo"
+msgstr "MailTo"
+
+#: core/om_formulaire.class.php:2941
+msgid "Cliquer pour aller a la fiche correspondante"
+msgstr "Cliquer pour aller à la fiche correspondante"
+
+#: core/om_formulaire.class.php:2942 core/om_formulaire.class.php:2948
+msgid "aller"
+msgstr "aller"
+
+#: core/om_formulaire.class.php:2947
+msgid "Cliquer pour aller a la fiche correspondante dans une nouvelle fenetre"
+msgstr "Cliquer pour aller à la fiche correspondante dans une nouvelle fenêtre"
+
+#: core/om_formulaire.class.php:4062
+#, fuzzy
+msgid "Aucun résultat"
+msgstr "résultat"
+
+#: core/om_formulaire.class.php:4068
+#, fuzzy
+msgid "Créer un nouvel enregistrement"
+msgstr "Aucun enregistrement."
+
+#: core/om_formulaire.class.php:4184
+#, fuzzy
+msgid "Erreur de parametres."
+msgstr "Erreur de l'annuaire"
+
+#: core/om_formulaire.class.php:4255
+msgid "Votre saisie ne donne aucune correspondance"
+msgstr "Votre saisie ne donne aucune correspondance"
+
+#: core/om_formulaire.class.php:4319
+msgid ""
+"Selectionner dans la liste ci-dessous la correspondance avec votre recherche"
+msgstr ""
+"Sélectionner dans la liste ci-dessous la correspondance avec votre recherche"
+
+#: core/om_formulaire.class.php:4321
+msgid "Puis valider votre choix en cliquant sur le bouton : \"Valider\"."
+msgstr "Puis valider votre choix en cliquant sur le bouton : \"Valider\"."
+
+#: core/om_formulaire.class.php:4404
+msgid "Vous devez saisir une valeur d'au moins"
+msgstr "Vous devez saisir une valeur d'au moins"
+
+#: core/om_formulaire.class.php:4406
+msgid "caracteres dans le champ"
+msgstr "caractères dans le champ"
+
+#: core/om_formulaire.class.php:4522 core/om_formulaire.class.php:4957
+msgid "Les parametres transmis ne sont pas corrects."
+msgstr "Les paramètres transmis ne sont pas corrects."
+
+#: core/om_formulaire.class.php:4535 core/om_formulaire.class.php:4983
+msgid "Objet inexistant."
+msgstr "Objet inexistant."
+
+#: core/om_formulaire.class.php:4720
+msgid "Upload"
+msgstr "Envoyer"
+
+#: core/om_formulaire.class.php:4723
+msgid ""
+"Cliquer sur 'Parcourir' pour selectionner le fichier a telecharger depuis "
+"votre poste de travail puis cliquer sur le bouton 'Envoyer' pour valider "
+"votre telechargement."
+msgstr ""
+"Cliquer sur 'Parcourir' pour sélectionner le fichier a télécharger depuis "
+"votre poste de travail puis cliquer sur le bouton 'Envoyer' pour valider "
+"votre téléchargement."
+
+#: core/om_formulaire.class.php:4748
+msgid "Vous devez selectionner un fichier."
+msgstr "Vous devez sélectionner un fichier."
+
+#: core/om_formulaire.class.php:4813
+msgid "contient trop de caracteres."
+msgstr "contient trop de caractères."
+
+#: core/om_formulaire.class.php:4813
+msgid "Autorise(s) : 50 caractere(s)."
+msgstr "Autorisé(s) : 50 caractère(s)."
+
+#: core/om_formulaire.class.php:4884
+msgid "Envoyer"
+msgstr "Envoyer"
+
+#: core/om_map.class.php:605
+#, fuzzy
+msgid "Obj obligatoire"
+msgstr "est obligatoire"
+
+#: core/om_map.class.php:1182
+msgid "Filtre de flux - erreur sql de requète : "
+msgstr ""
+
+#: core/om_map.class.php:1190
+msgid "Filtre de flux - la requète ne donne pas qu'une seule ligne: "
+msgstr ""
+
+#: core/om_map.class.php:1199
+msgid "Filtre de flux - la requète ne donne pas qu'une seule colonne: "
+msgstr ""
+
+#: core/om_map.class.php:1689
+#, fuzzy
+msgid "Formulaire"
+msgstr "Sous-formulaire"
+
+#: core/om_map.class.php:1695
+#, fuzzy
+msgid "navigation"
+msgstr "application"
+
+#: core/om_map.class.php:1701
+#, fuzzy
+msgid "Editer"
+msgstr "Édition"
+
+#: core/om_map.class.php:1707
+#, fuzzy
+msgid "Géolocalisation"
+msgstr "Localisation"
+
+#: core/om_map.class.php:1713
+msgid "Mesurer distance"
+msgstr ""
+
+#: core/om_map.class.php:1719
+msgid "Mesurer aire"
+msgstr ""
+
+#: core/om_map.class.php:1742
+msgid "CHOIX GÉOMÉTRIE"
+msgstr ""
+
+#: core/om_map.class.php:1753
+#, fuzzy
+msgid "Dessiner point"
+msgstr "Dessiner"
+
+#: core/om_map.class.php:1761
+#, fuzzy
+msgid "Dessiner Ligne"
+msgstr "Dessiner"
+
+#: core/om_map.class.php:1766
+msgid "<br>Récupération<br>panier"
+msgstr ""
+
+#: core/om_map.class.php:1773
+msgid "Déssiner<br>Polygone"
+msgstr ""
+
+#: core/om_map.class.php:1780
+msgid "Dessiner<br>polygone<br>régulier"
+msgstr ""
+
+#: core/om_map.class.php:1793
+msgid "<br>Sélection(s)<br>Géométrie"
+msgstr ""
+
+#: core/om_map.class.php:1798
+msgid "<br>Modifier<br>Géométrie"
+msgstr ""
+
+#: core/om_map.class.php:1804
+msgid "<br>Effacer<br>Géométrie"
+msgstr ""
+
+#: core/om_map.class.php:1812
+msgid "Naviguer"
+msgstr ""
+
+#: core/om_map.class.php:1818
+msgid "Vérifier"
+msgstr ""
+
+#: core/om_map.class.php:1824
+msgid "Enregistrer"
+msgstr "Enregistrer"
+
+#: core/om_map.class.php:1837
+msgid "Représentation Objets "
+msgstr ""
+
+#: core/om_map.class.php:1845
+msgid "Objets Selectionnes"
+msgstr ""
+
+#: core/om_map.class.php:1961 core/om_map.class.php:2100
+#: core/obj/om_requete.class.php:104
+msgid "objet"
+msgstr "objet"
+
+#: core/om_map.class.php:1961 core/om_map.class.php:2100
+#: core/om_reqmo.class.php:622 core/om_gen.class.php:4943
+#: core/obj/om_sousetat.class.php:250
+msgid "enregistrement"
+msgstr "enregistrement"
+
+#: core/om_map.class.php:2056
+msgid "<BR>&nbsp;&nbsp;"
+msgstr ""
+
+#: core/om_reqmo.class.php:182
+msgid ""
+"Le module 'requetes memorisees' permet d'exporter des donnees de "
+"l'application en fonction de criteres parametrables."
+msgstr ""
+
+#: core/om_reqmo.class.php:231
+#, fuzzy
+msgid "choix de la requete memorisee"
+msgstr "Choix de la requête mémorisée"
+
+#: core/om_reqmo.class.php:373
+#, fuzzy
+msgid "Champs a afficher"
+msgstr "Choix des champs à afficher"
+
+#: core/om_reqmo.class.php:416
+#, fuzzy
+msgid "Options de sortie"
+msgstr "Paramètres de sortie"
+
+#: core/om_reqmo.class.php:418
+#, fuzzy
+msgid "Format de sortie"
+msgstr "Choix du format de sortie"
+
+#: core/om_reqmo.class.php:422
+msgid "Tableau - Affichage a l'ecran"
+msgstr "Tableau - Affichage a l'écran"
+
+#: core/om_reqmo.class.php:422
+msgid "CSV - Export vers logiciel tableur"
+msgstr "CSV - Export vers logiciel tableur"
+
+#: core/om_reqmo.class.php:426
+msgid "Separateur de champs (pour le format CSV)"
+msgstr "Séparateur de champs (pour le format CSV)"
+
+#: core/om_reqmo.class.php:430
+msgid "(pipe)"
+msgstr ""
+
+#: core/om_reqmo.class.php:434
+msgid "Nombre limite d'enregistrements a afficher (pour le format Tableau)"
+msgstr "Nombre limite d'enregistrements à afficher (pour le format Tableau)"
+
+#: core/om_reqmo.class.php:453
+msgid "Executer la requete sur :"
+msgstr "Exécuter la requête sur :"
+
+#: core/om_reqmo.class.php:622
+msgid "aucun"
+msgstr "aucun"
+
+#: core/om_reqmo.class.php:649
+msgid ""
+"Le fichier a ete exporte, vous pouvez l'ouvrir immediatement en cliquant "
+"sur : "
+msgstr ""
+"Le fichier a été exporté, vous pouvez l'ouvrir immédiatement en cliquant "
+"sur : "
+
+#: core/om_reqmo.class.php:652
+#, fuzzy
+msgid "Télécharger le fichier CSV"
+msgstr "Télécharger le fichier"
+
+#: core/om_gen.class.php:298
+msgid "Table"
+msgstr "Table"
+
+#: core/om_gen.class.php:331 core/om_gen.class.php:334
+#: core/om_gen.class.php:761 core/om_gen.class.php:764
+#: core/om_gen.class.php:3081 core/om_gen.class.php:3084
+msgid "Chargement du parametrage"
+msgstr "Chargement du paramétrage"
+
+#: core/om_gen.class.php:1778
+#, fuzzy
+msgid "toutes les tables"
+msgstr "de la table"
+
+#: core/om_gen.class.php:1782
+msgid "Mots-clefs Robot Framework (metier)"
+msgstr ""
+
+#: core/om_gen.class.php:1791 core/om_gen.class.php:1810
+#, fuzzy
+msgid ""
+"Erreur de droits d'ecriture lors de la generation du fichier 'resources' des "
+"tests."
+msgstr "Erreur de droits d'écriture lors de la génération des fichiers"
+
+#: core/om_gen.class.php:1801
+msgid "Mots-clefs Robot Framework (openMairie)"
+msgstr ""
+
+#: core/om_gen.class.php:4146
+msgid ""
+"Generation impossible, aucune cle primaire n'est presente ou plusieurs cles "
+"primaires sont presentes dans la table"
+msgstr ""
+"Génération impossible, aucune clé primaire n'est présente ou plusieurs clés "
+"primaires sont présentes dans la table"
+
+#: core/om_gen.class.php:4375 core/om_gen.class.php:4411
+msgid "Erreur de droits d'ecriture sur"
+msgstr "Erreur de droits d'écriture sur"
+
+#: core/om_gen.class.php:4395
+msgid "Generation de"
+msgstr "Génération de"
+
+#: core/om_gen.class.php:4402
+msgid "Aucun changement de"
+msgstr "Aucun changement de"
+
+#: core/om_gen.class.php:4446
+msgid "Supression de"
+msgstr "Supression de"
+
+#: core/om_gen.class.php:4453
+msgid "Fichier inexistant ou illisible"
+msgstr "Fichier inexistant ou illisible"
+
+#: core/om_gen.class.php:4459
+msgid "Impossible de supprimer"
+msgstr "Impossible de supprimer"
+
+#: core/om_gen.class.php:4847
+msgid "Le fichier existe"
+msgstr "Le fichier existe"
+
+#: core/om_gen.class.php:4852
+msgid "Pas les droits d'ecriture sur le fichier"
+msgstr "Pas les droits d'écriture sur le fichier"
+
+#: core/om_gen.class.php:4859
+msgid "Le dossier n'existe pas ou n'est pas accessible"
+msgstr "Le dossier n'existe pas ou n'est pas accessible"
+
+#: core/om_gen.class.php:4864 core/om_gen.class.php:4873
+msgid "Le fichier n'existe pas ou n'est pas accessible"
+msgstr "Le fichier n'existe pas ou n'est pas accessible"
+
+#: core/om_gen.class.php:4868
+msgid "Pas les droits d'ecriture sur le dossier"
+msgstr "Pas les droits d'écriture sur le dossier"
+
+#: core/om_gen.class.php:4903
+msgid "analyse du modele de donnees"
+msgstr "analyse du modèle de données"
+
+#: core/om_gen.class.php:4930
+msgid "Tables de la base de donnees"
+msgstr "Tables de la base de données"
+
+#: core/om_gen.class.php:4935 core/obj/om_sig_map_comp.class.php:110
+msgid "Table :"
+msgstr "Table :"
+
+#: core/om_gen.class.php:4936
+msgid "cle"
+msgstr "clé"
+
+#: core/om_gen.class.php:4938
+msgid "cle automatique"
+msgstr "clé automatique"
+
+#: core/om_gen.class.php:4940
+msgid "cle manuelle"
+msgstr "clé manuelle"
+
+#: core/om_gen.class.php:4943
+msgid "longueur"
+msgstr "longueur"
+
+#: core/om_gen.class.php:4947
+msgid "Champs"
+msgstr "Champs"
+
+#: core/om_gen.class.php:4959
+msgid "Sous formulaire"
+msgstr "Sous-formulaire"
+
+#: core/om_gen.class.php:4968
+msgid "Cle secondaire"
+msgstr "Clé secondaire"
+
+#: core/om_gen.class.php:4995 core/om_gen.class.php:5197
+#: core/om_gen.class.php:5397
+#, fuzzy
+msgid "table"
+msgstr "table"
+
+#: core/om_gen.class.php:5060 core/om_gen.class.php:5243
+msgid "selection des fichiers"
+msgstr "sélection des fichiers"
+
+#: core/om_gen.class.php:5087 core/om_gen.class.php:5270
+#: core/om_gen.class.php:5982 core/om_gen.class.php:6208
+#: core/om_gen.class.php:6437 core/sql/pgsql/om_logo.inc.php:22
+#: core/gen/sql/pgsql/om_logo.inc.php:32 core/gen/sql/pgsql/om_logo.inc.php:50
+#: core/gen/obj/om_logo.class.php:265
+msgid "fichier"
+msgstr "fichier"
+
+#: core/om_gen.class.php:5094 core/om_gen.class.php:5277
+msgid "informations"
+msgstr "informations"
+
+#: core/om_gen.class.php:5158
+#, fuzzy, php-format
+msgid "generer les fichiers de la table : %s"
+msgstr "Générer les fichiers de la table :"
+
+#: core/om_gen.class.php:5338
+#, fuzzy, php-format
+msgid "supprimer les fichiers de la table : %s"
+msgstr "supprimer les fichiers de la table"
+
+#: core/om_gen.class.php:5439
+msgid "Erreur de droits d'ecriture lors de la generation des fichiers"
+msgstr "Erreur de droits d'écriture lors de la génération des fichiers"
+
+#: core/om_gen.class.php:5487
+msgid "base de donnees"
+msgstr "base de données"
+
+#: core/om_gen.class.php:5495
+#, fuzzy
+msgid ""
+"Le generateur ne prend pas en charge le type de base de donnees\n"
+"                utilise."
+msgstr ""
+"Le générateur ne prend pas en charge le type de base de données que vous "
+"utilisez :"
+
+#: core/om_gen.class.php:5557
+#, fuzzy
+msgid "generer tout"
+msgstr "générateur"
+
+#: core/om_gen.class.php:5559
+msgid ""
+"Cela aura pour effet d'ecraser tous les fichiers existants du repertoire "
+"gen/ et creer les fichiers dans core/, sql/ et obj/ s'ils n'existent pas."
+msgstr ""
+
+#: core/om_gen.class.php:5568 core/om_gen.class.php:5570
+#: core/om_dbform.class.php:2123
+msgid "supprimer"
+msgstr "supprimer"
+
+#: core/om_gen.class.php:5575 core/om_gen.class.php:5577
+#, fuzzy
+msgid "generer"
+msgstr "Générer"
+
+#: core/om_gen.class.php:5590
+msgid "generation basee sur les tables de la base de donnees"
+msgstr "generation basée sur les tables de la base de données"
+
+#: core/om_gen.class.php:5605
+msgid "Génération des permissions"
+msgstr ""
+
+#: core/om_gen.class.php:5609
+msgid "Migration etat, sous etat, lettre type"
+msgstr "Migration état, sous-état, lettre type"
+
+#: core/om_gen.class.php:5613
+msgid "Creation etat"
+msgstr "Création d'état"
+
+#: core/om_gen.class.php:5617
+msgid "Creation sous etat"
+msgstr "Création sous-état"
+
+#: core/om_gen.class.php:5621
+msgid "Creation lettre type"
+msgstr "Création lettre-type"
+
+#: core/om_gen.class.php:5640
+msgid "assistants"
+msgstr "assistants"
+
+#: core/om_gen.class.php:5680
+#, fuzzy
+msgid "Traitement terminé"
+msgstr "traitement"
+
+#: core/om_gen.class.php:5686
+#, fuzzy
+msgid "Erreur"
+msgstr "Erreur de droits d'écriture sur"
+
+#: core/om_gen.class.php:5932
+msgid "génération d'édition - etat"
+msgstr ""
+
+#: core/om_gen.class.php:5936
+#, fuzzy
+msgid ""
+"Cet assistant vous permet de creer des etats directement a partir de vos "
+"tables."
+msgstr ""
+"cet assistant vous permet de créer des sous-états directement à partir de "
+"vos tables "
+
+#: core/om_gen.class.php:5979 core/om_gen.class.php:6206
+#: core/om_gen.class.php:6435
+msgid "Choix table :"
+msgstr "Choix table :"
+
+#: core/om_gen.class.php:6012 core/om_gen.class.php:6235
+#: core/om_gen.class.php:6464
+msgid "choix des champs"
+msgstr "choix des champs"
+
+#: core/om_gen.class.php:6030 core/om_gen.class.php:6252
+#: core/om_gen.class.php:6491
+msgid "Import"
+msgstr "Import"
+
+#: core/om_gen.class.php:6030 core/om_gen.class.php:6252
+#: core/om_gen.class.php:6491
+msgid "dans la base"
+msgstr "dans la base"
+
+#: core/om_gen.class.php:6080 core/om_gen.class.php:6302
+msgid "Requete"
+msgstr "Requête"
+
+#: core/om_gen.class.php:6093 core/om_gen.class.php:6315
+#, fuzzy
+msgid "Erreur lors de l'ajout de la requête. Contactez votre administrateur."
+msgstr "Erreur de base de données. Contactez votre administrateur."
+
+#: core/om_gen.class.php:6128 core/om_gen.class.php:6351
+#, fuzzy
+msgid "Erreur lors de l'ajout de l'état. Contactez votre administrateur."
+msgstr "Erreur de base de données. Contactez votre administrateur."
+
+#: core/om_gen.class.php:6132 core/om_gen.class.php:6356
+#: core/om_gen.class.php:6653
+msgid "enregistre"
+msgstr "enregistré"
+
+#: core/om_gen.class.php:6161
+#, fuzzy
+msgid "génération d'édition - lettre type"
+msgstr "Création lettre-type"
+
+#: core/om_gen.class.php:6164
+msgid ""
+"cet assistant vous permet de creer des lettres type directement a partir de "
+"vos tables "
+msgstr ""
+"cet assistant vous permet de créer des lettres type directement à partir de "
+"vos tables "
+
+#: core/om_gen.class.php:6385
+#, fuzzy
+msgid "génération d'édition - sous etat"
+msgstr "Création sous-état"
+
+#: core/om_gen.class.php:6388
+msgid ""
+"cet assistant vous permet de creer des sous etats directement a partir de "
+"vos tables "
+msgstr ""
+"cet assistant vous permet de créer des sous-états directement à partir de "
+"vos tables "
+
+#: core/om_gen.class.php:6481
+msgid "choisir la cle de selection"
+msgstr "choisir la clé de sélection"
+
+#: core/om_gen.class.php:6588
+msgid "liste"
+msgstr "liste"
+
+#: core/om_gen.class.php:6737
+#, fuzzy
+msgid "import des anciennes éditions"
+msgstr "import des anciennes éditions"
+
+#: core/om_gen.class.php:6741
+#, fuzzy
+msgid ""
+"Cette page vous permet d'importer les anciens etat, sousetat, lettretype "
+"contenu en repertoire ../gen/inc directement dans le nouveau format du "
+"framework."
+msgstr ""
+"Cette page vous permet d'importer les anciens états, sous-états, lettres-"
+"types contenus en repertoire /inc directement dans les tables d'openMairie 4 "
+
+#: core/om_gen.class.php:6770
+#, php-format
+msgid "Le répertoire '%s' de récupération des anciennes éditions n'existe pas."
+msgstr ""
+
+#: core/om_gen.class.php:6794
+#, fuzzy
+msgid "sélection du fichier"
+msgstr "sélection des fichiers"
+
+#: core/om_gen.class.php:6810
+msgid "Ancien fichier d'édition à importer"
+msgstr ""
+
+#: core/om_gen.class.php:6817
+msgid "---"
+msgstr ""
+
+#: core/om_gen.class.php:6951 core/om_gen.class.php:7027
+#: core/om_gen.class.php:7093
+msgid "importe"
+msgstr "importé"
+
+#: core/om_filestorage_filesystem.class.php:451
+#: core/om_filestorage_deprecated.class.php:333
+#: core/om_filestorage_deprecated.class.php:412
+msgid "La suppression du fichier temporaire a echouee."
+msgstr "La suppression du fichier temporaire a échouée."
+
+#: core/om_dbform.class.php:529 core/om_dbform.class.php:703
+msgid "Requete executee"
+msgstr "Requête exécutée"
+
+#: core/om_dbform.class.php:540 core/om_dbform.class.php:706
+#: core/om_dbform.class.php:798
+msgid "Enregistrement"
+msgstr "Enregistrement"
+
+#: core/om_dbform.class.php:541 core/om_dbform.class.php:707
+#: core/om_dbform.class.php:799
+msgid "de la table"
+msgstr "de la table"
+
+#: core/om_dbform.class.php:543
+msgid "enregistrement(s) ajoute(s)"
+msgstr "enregistrement(s) ajouté(s)"
+
+#: core/om_dbform.class.php:546 core/om_dbform.class.php:715
+msgid "Vos modifications ont bien ete enregistrees."
+msgstr "Vos modifications ont bien été enregistrées."
+
+#: core/om_dbform.class.php:551 core/om_dbform.class.php:721
+msgid "SAISIE NON ENREGISTREE"
+msgstr "SAISIE NON ENREGISTRÉE"
+
+#: core/om_dbform.class.php:605
+msgid "L'\"identifiant\" est obligatoire"
+msgstr "L'\"identifiant\" est obligatoire"
+
+#: core/om_dbform.class.php:621
+msgid "cle primaire existante"
+msgstr "clé primaire existante"
+
+#: core/om_dbform.class.php:709
+msgid "enregistrement(s) mis a jour"
+msgstr "enregistrement(s) mis-à-jour"
+
+#: core/om_dbform.class.php:713
+msgid "Attention vous n'avez fait aucune modification."
+msgstr "Attention vous n'avez fait aucune modification."
+
+#: core/om_dbform.class.php:801
+msgid "enregistrement(s) supprime(s)"
+msgstr "enregistrement(s) supprimé(s)"
+
+#: core/om_dbform.class.php:804
+msgid "La suppression a ete correctement effectuee."
+msgstr "La suppression a été correctement effectuée."
+
+#: core/om_dbform.class.php:809
+msgid "SUPPRESSION NON EFFECTUEE"
+msgstr "SUPPRESSION NON EFFECTUÉE"
+
+#: core/om_dbform.class.php:901
+msgid "La valeur saisie dans le champ"
+msgstr "La valeur saisie dans le champ"
+
+#: core/om_dbform.class.php:901
+msgid "existe deja, veuillez saisir une nouvelle valeur."
+msgstr "existe déjà, veuillez saisir une nouvelle valeur."
+
+#: core/om_dbform.class.php:921
+msgid "Les valeurs saisies dans les champs"
+msgstr "Les valeurs saisies dans les champs"
+
+#: core/om_dbform.class.php:921
+msgid "existent deja, veuillez saisir de nouvelles valeurs."
+msgstr "existent déjà, veuillez saisir de nouvelles valeurs."
+
+#: core/om_dbform.class.php:1057 core/obj/om_sig_map.class.php:117
+msgid "Le champ"
+msgstr "Le champ"
+
+#: core/om_dbform.class.php:1057 core/obj/om_sig_map.class.php:117
+msgid "est obligatoire"
+msgstr "est obligatoire"
+
+#: core/om_dbform.class.php:1448 core/om_dbform.class.php:1468
+msgid "Erreur lors de la creation du fichier sur le champ"
+msgstr "Erreur lors de la création du fichier sur le champ"
+
+#: core/om_dbform.class.php:1460 core/om_dbform.class.php:1510
+#: core/om_dbform.class.php:1584
+msgid "Le fichier sur le champ"
+msgstr "Le fichier sur le champ"
+
+#: core/om_dbform.class.php:1461 core/om_dbform.class.php:1511
+#: core/om_dbform.class.php:1585
+msgid "est verouille. "
+msgstr ""
+
+#: core/om_dbform.class.php:1463 core/om_dbform.class.php:1513
+#: core/om_dbform.class.php:1587
+#, fuzzy
+msgid "Veuillez revalider le formulaire"
+msgstr "Vider le formulaire"
+
+#: core/om_dbform.class.php:1495 core/om_dbform.class.php:1518
+#, fuzzy
+msgid "Erreur lors de la mise a jour du fichier sur le champ"
+msgstr "Erreur lors de la mise à jour du fichier sur le champ"
+
+#: core/om_dbform.class.php:1497 core/om_dbform.class.php:1512
+#: core/om_dbform.class.php:1520 core/om_dbform.class.php:1586
+#: core/om_dbform.class.php:1594 core/sql/pgsql/om_etat.inc.php:19
+#: core/sql/pgsql/om_etat.inc.php:31 core/sql/pgsql/om_sig_flux.inc.php:27
+#: core/sql/pgsql/om_sig_flux.inc.php:39 core/sql/pgsql/om_sig_map.inc.php:41
+#: core/sql/pgsql/om_sig_map.inc.php:58 core/sql/pgsql/om_logo.inc.php:19
+#: core/sql/pgsql/om_logo.inc.php:34 core/sql/pgsql/om_sousetat.inc.php:19
+#: core/sql/pgsql/om_sousetat.inc.php:31
+#: core/sql/pgsql/om_lettretype.inc.php:19
+#: core/sql/pgsql/om_lettretype.inc.php:31 core/obj/om_sig_map.class.php:117
+#: core/gen/sql/pgsql/om_etat.inc.php:31 core/gen/sql/pgsql/om_etat.inc.php:69
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:30
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:50
+#: core/gen/sql/pgsql/om_sig_map.inc.php:33
+#: core/gen/sql/pgsql/om_sig_map.inc.php:67
+#: core/gen/sql/pgsql/om_logo.inc.php:29 core/gen/sql/pgsql/om_logo.inc.php:47
+#: core/gen/sql/pgsql/om_sousetat.inc.php:29
+#: core/gen/sql/pgsql/om_sousetat.inc.php:99
+#: core/gen/sql/pgsql/om_lettretype.inc.php:31
+#: core/gen/sql/pgsql/om_lettretype.inc.php:69
+#: core/gen/obj/om_sig_flux.class.php:284 core/gen/obj/om_etat.class.php:521
+#: core/gen/obj/om_sousetat.class.php:797
+#: core/gen/obj/om_lettretype.class.php:527
+#: core/gen/obj/om_sig_map.class.php:492 core/gen/obj/om_logo.class.php:262
+msgid "id"
+msgstr "id"
+
+#: core/om_dbform.class.php:1497 core/om_dbform.class.php:1512
+#: core/om_dbform.class.php:1520 core/om_dbform.class.php:1586
+#: core/om_dbform.class.php:1594
+#, fuzzy
+msgid "uid fichier"
+msgstr "fichier"
+
+#: core/om_dbform.class.php:1592
+#, fuzzy
+msgid "Erreur lors de la suppression du fichier sur le champ"
+msgstr "Erreur lors de la suppression du fichier sur le champ"
+
+#: core/om_dbform.class.php:1644
+#, fuzzy
+msgid "L'etat de l'enregistrement n'a pas pu etre réinitialisé"
+msgstr "L'état de l'enregistrement n'a pas pu être réinitialisé"
+
+#: core/om_dbform.class.php:1668 core/om_dbform.class.php:1692
+msgid "L'état de l'enregistrement n'a pas pu être réinitialisé"
+msgstr ""
+
+#: core/om_dbform.class.php:1708
+msgid "Une erreur s'est produite. Contactez votre administrateur."
+msgstr "Une erreur s'est produite. Contactez votre administrateur."
+
+#: core/om_dbform.class.php:1793 core/om_dbform.class.php:3432
+msgid ""
+"Opération illégale. Ce formulaire a déjà été soumis, il est impossible de le "
+"soumettre une seconde fois."
+msgstr ""
+
+#: core/om_dbform.class.php:2106
+msgid "modifier"
+msgstr "modifier"
+
+#: core/om_dbform.class.php:3739
+msgid "enregistrement(s) lie(s) a cet enregistrement dans la table"
+msgstr "enregistrement(s) lié(s) à cet enregistrement dans la table"
+
+#: core/om_dbform.class.php:3775 core/obj/om_widget.class.php:98
+msgid "choisir"
+msgstr "Choisir"
+
+#: core/om_dbform.class.php:4017
+msgid "Cette action n'est pas disponible."
+msgstr "Cette action n'est pas disponible."
+
+#: core/om_dbform.class.php:4201 core/om_dbform.class.php:4214
+#: core/om_dbform.class.php:4233 core/om_dbform.class.php:4279
+#: core/om_dbform.class.php:4289 core/om_dbform.class.php:4306
+#: core/om_dbform.class.php:4320
+#, fuzzy, php-format
+msgid "La date %s n'est pas valide."
+msgstr "n'est pas une date valide"
+
+#: core/om_dbform.class.php:4400 core/om_dbform.class.php:4428
+#: core/om_dbform.class.php:4456 core/om_dbform.class.php:4484
+msgid "n'est pas une date valide"
+msgstr "n'est pas une date valide"
+
+#: core/om_dbform.class.php:4401
+msgid "[calcul date php]"
+msgstr "[calcul date php]"
+
+#: core/om_dbform.class.php:4429
+msgid "[calcul annee php]"
+msgstr "[calcul année php]"
+
+#: core/om_dbform.class.php:4457
+msgid "[calcul mois php]"
+msgstr "[calcul mois php]"
+
+#: core/om_dbform.class.php:4485
+msgid "[calcul jour php]"
+msgstr "[calcul jour php]"
+
+#: core/om_dbform.class.php:4661
+#, fuzzy
+msgid "oui"
+msgstr "Oui"
+
+#: core/om_dbform.class.php:4666
+#, fuzzy
+msgid "non"
+msgstr "Non"
+
+#: core/om_dbform.class.php:4794
+msgid "Numéro de la page"
+msgstr ""
+
+#: core/om_dbform.class.php:4795
+#, fuzzy
+msgid "Nombre total de pages"
+msgstr "Nouveau mot de passe"
+
+#: core/om_dbform.class.php:4825
+msgid "Aucune variable de remplacement."
+msgstr ""
+
+#: core/sql/pgsql/om_etat.inc.php:20 core/sql/pgsql/om_etat.inc.php:32
+#: core/sql/pgsql/om_sig_flux.inc.php:28 core/sql/pgsql/om_sig_flux.inc.php:38
+#: core/sql/pgsql/om_sig_map.inc.php:59 core/sql/pgsql/om_logo.inc.php:20
+#: core/sql/pgsql/om_logo.inc.php:35 core/sql/pgsql/om_sousetat.inc.php:20
+#: core/sql/pgsql/om_sousetat.inc.php:32
+#: core/sql/pgsql/om_parametre.inc.php:19
+#: core/sql/pgsql/om_parametre.inc.php:29
+#: core/sql/pgsql/om_lettretype.inc.php:20
+#: core/sql/pgsql/om_lettretype.inc.php:32
+#: core/gen/sql/pgsql/om_etat.inc.php:32 core/gen/sql/pgsql/om_etat.inc.php:70
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:29
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:49
+#: core/gen/sql/pgsql/om_widget.inc.php:27
+#: core/gen/sql/pgsql/om_widget.inc.php:40
+#: core/gen/sql/pgsql/om_sig_map.inc.php:34
+#: core/gen/sql/pgsql/om_sig_map.inc.php:68
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:30
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:47
+#: core/gen/sql/pgsql/om_droit.inc.php:29
+#: core/gen/sql/pgsql/om_droit.inc.php:38
+#: core/gen/sql/pgsql/om_logo.inc.php:30 core/gen/sql/pgsql/om_logo.inc.php:48
+#: core/gen/sql/pgsql/om_sousetat.inc.php:30
+#: core/gen/sql/pgsql/om_sousetat.inc.php:100
+#: core/gen/sql/pgsql/om_collectivite.inc.php:27
+#: core/gen/sql/pgsql/om_collectivite.inc.php:36
+#: core/gen/sql/pgsql/om_parametre.inc.php:29
+#: core/gen/sql/pgsql/om_parametre.inc.php:43
+#: core/gen/sql/pgsql/om_lettretype.inc.php:32
+#: core/gen/sql/pgsql/om_lettretype.inc.php:70
+#: core/gen/sql/pgsql/om_permission.inc.php:27
+#: core/gen/sql/pgsql/om_permission.inc.php:36
+#: core/gen/sql/pgsql/om_requete.inc.php:28
+#: core/gen/sql/pgsql/om_requete.inc.php:43
+#: core/gen/sql/pgsql/om_profil.inc.php:27
+#: core/gen/sql/pgsql/om_profil.inc.php:36 core/gen/obj/om_droit.class.php:173
+#: core/gen/obj/om_profil.class.php:145 core/gen/obj/om_sig_flux.class.php:282
+#: core/gen/obj/om_etat.class.php:522 core/gen/obj/om_permission.class.php:141
+#: core/gen/obj/om_sousetat.class.php:798
+#: core/gen/obj/om_sig_map_comp.class.php:267
+#: core/gen/obj/om_requete.class.php:203 core/gen/obj/om_widget.class.php:181
+#: core/gen/obj/om_lettretype.class.php:528
+#: core/gen/obj/om_collectivite.class.php:145
+#: core/gen/obj/om_sig_map.class.php:493 core/gen/obj/om_logo.class.php:263
+#: core/gen/obj/om_parametre.class.php:216
+msgid "libelle"
+msgstr "libellé"
+
+#: core/sql/pgsql/om_etat.inc.php:21 core/sql/pgsql/om_logo.inc.php:24
+#: core/sql/pgsql/om_sousetat.inc.php:21
+#: core/sql/pgsql/om_lettretype.inc.php:21 core/obj/om_sig_map.class.php:425
+#: core/obj/om_sig_map.class.php:426 core/gen/sql/pgsql/om_etat.inc.php:33
+#: core/gen/sql/pgsql/om_sig_map.inc.php:35
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:32
+#: core/gen/sql/pgsql/om_logo.inc.php:34
+#: core/gen/sql/pgsql/om_sousetat.inc.php:31
+#: core/gen/sql/pgsql/om_lettretype.inc.php:33
+#: core/gen/obj/om_etat.class.php:523 core/gen/obj/om_sousetat.class.php:799
+#: core/gen/obj/om_sig_map_comp.class.php:269
+#: core/gen/obj/om_lettretype.class.php:529
+#: core/gen/obj/om_sig_map.class.php:494 core/gen/obj/om_logo.class.php:267
+msgid "actif"
+msgstr "actif"
+
+#: core/sql/pgsql/om_etat.inc.php:22 core/sql/pgsql/om_etat.inc.php:33
+#: core/sql/pgsql/om_logo.inc.php:25 core/sql/pgsql/om_logo.inc.php:38
+#: core/sql/pgsql/om_sousetat.inc.php:22 core/sql/pgsql/om_sousetat.inc.php:33
+#: core/sql/pgsql/om_lettretype.inc.php:22
+#: core/sql/pgsql/om_lettretype.inc.php:33
+#: core/obj/om_collectivite.class.php:103
+#: core/obj/om_collectivite.class.php:104
+#: core/gen/sql/pgsql/om_collectivite.inc.php:28
+#: core/gen/sql/pgsql/om_collectivite.inc.php:37
+#: core/gen/obj/om_collectivite.class.php:146
+msgid "niveau"
+msgstr "niveau"
+
+#: core/sql/pgsql/om_etat.inc.php:26 core/sql/pgsql/om_etat.inc.php:37
+#: core/sql/pgsql/om_sig_flux.inc.php:33 core/sql/pgsql/om_sig_flux.inc.php:43
+#: core/sql/pgsql/om_sig_map.inc.php:53 core/sql/pgsql/om_logo.inc.php:29
+#: core/sql/pgsql/om_logo.inc.php:42 core/sql/pgsql/om_sousetat.inc.php:26
+#: core/sql/pgsql/om_sousetat.inc.php:37
+#: core/sql/pgsql/om_parametre.inc.php:24
+#: core/sql/pgsql/om_parametre.inc.php:34
+#: core/sql/pgsql/om_lettretype.inc.php:26
+#: core/sql/pgsql/om_lettretype.inc.php:37
+#: core/obj/om_collectivite.class.php:102
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:38
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:56
+#: core/gen/sql/pgsql/om_etat.inc.php:56 core/gen/sql/pgsql/om_etat.inc.php:93
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:40
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:60
+#: core/gen/sql/pgsql/om_sig_map.inc.php:56
+#: core/gen/sql/pgsql/om_sig_map.inc.php:80
+#: core/gen/sql/pgsql/om_logo.inc.php:38 core/gen/sql/pgsql/om_logo.inc.php:55
+#: core/gen/sql/pgsql/om_sousetat.inc.php:88
+#: core/gen/sql/pgsql/om_sousetat.inc.php:157
+#: core/gen/sql/pgsql/om_parametre.inc.php:33
+#: core/gen/sql/pgsql/om_parametre.inc.php:47
+#: core/gen/sql/pgsql/om_lettretype.inc.php:56
+#: core/gen/sql/pgsql/om_lettretype.inc.php:93
+msgid "collectivite"
+msgstr "collectivité"
+
+#: core/sql/pgsql/om_sig_flux.inc.php:20 core/sql/pgsql/om_sig_map.inc.php:23
+#: core/sql/pgsql/om_sig_map_flux.inc.php:17
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:7
+msgid "flux appliqué à une carte"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_flux.inc.php:26 core/sql/pgsql/om_sig_flux.inc.php:37
+#: core/sql/pgsql/om_sig_extent.inc.php:26
+#: core/sql/pgsql/om_sig_extent.inc.php:32
+#: core/sql/pgsql/om_sig_map.inc.php:40 core/sql/pgsql/om_sig_map.inc.php:57
+#: core/sql/pgsql/om_sig_map_comp.inc.php:21
+#: core/sql/pgsql/om_sig_map_flux.inc.php:21
+#: core/sql/pgsql/om_sig_map_flux.inc.php:32
+msgid "n°"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_extent.inc.php:27
+#: core/sql/pgsql/om_sig_extent.inc.php:33 core/obj/om_sig_map.class.php:292
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:31
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:49
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:27
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:37
+#: core/gen/obj/om_utilisateur.class.php:287
+#: core/gen/obj/om_sig_extent.class.php:159
+msgid "nom"
+msgstr "nom"
+
+#: core/sql/pgsql/om_sig_map.inc.php:20
+#: core/sql/pgsql/om_sig_map_comp.inc.php:17
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:7
+#, fuzzy
+msgid "géométrie"
+msgstr "géométrie"
+
+#: core/sql/pgsql/om_sig_map.inc.php:42
+#, fuzzy
+msgid "Libellé"
+msgstr "libellé"
+
+#: core/sql/pgsql/om_sig_map.inc.php:43
+msgid "Act"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:44
+msgid "Idx"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:45
+msgid "ReqMo"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:46
+msgid "Rec."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:47
+msgid "Src.Flux"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:48
+#, fuzzy
+msgid "Fond"
+msgstr "fond"
+
+#: core/sql/pgsql/om_sig_map.inc.php:49
+#, fuzzy
+msgid "Etendue"
+msgstr "étendue"
+
+#: core/sql/pgsql/om_sig_map.inc.php:60
+#: core/gen/sql/pgsql/om_sig_map.inc.php:46
+#: core/gen/sql/pgsql/om_sig_map.inc.php:72
+#: core/gen/obj/om_sig_map.class.php:507
+msgid "source_flux"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:61
+#: core/gen/sql/pgsql/om_sig_map.inc.php:36
+#: core/gen/sql/pgsql/om_sig_map.inc.php:69
+#: core/gen/obj/om_sig_map.class.php:495
+msgid "zoom"
+msgstr "zoom"
+
+#: core/sql/pgsql/om_sig_map.inc.php:62
+#: core/gen/sql/pgsql/om_sig_map.inc.php:37
+#: core/gen/obj/om_sig_map.class.php:496
+#, fuzzy
+msgid "fond_osm"
+msgstr "fond OpenStreetMap"
+
+#: core/sql/pgsql/om_sig_map.inc.php:63
+#: core/gen/sql/pgsql/om_sig_map.inc.php:38
+#: core/gen/obj/om_sig_map.class.php:497
+#, fuzzy
+msgid "fond_bing"
+msgstr "Fond Bing"
+
+#: core/sql/pgsql/om_sig_map.inc.php:64
+#: core/gen/sql/pgsql/om_sig_map.inc.php:39
+#: core/gen/obj/om_sig_map.class.php:498
+msgid "fond_sat"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:65
+#: core/gen/sql/pgsql/om_sig_map.inc.php:40
+#: core/gen/obj/om_sig_map.class.php:499
+msgid "layer_info"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:66
+#: core/gen/sql/pgsql/om_sig_map.inc.php:47
+#: core/gen/sql/pgsql/om_sig_map.inc.php:73
+#: core/gen/obj/om_sig_map.class.php:508
+msgid "fond_default"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map.inc.php:67
+msgid "etendue"
+msgstr "étendue"
+
+#: core/sql/pgsql/om_sig_map.inc.php:68
+#: core/gen/sql/pgsql/om_sig_map.inc.php:41
+#: core/gen/sql/pgsql/om_sig_map.inc.php:70
+#: core/gen/obj/om_sig_map.class.php:500
+msgid "projection_externe"
+msgstr "Projection externe"
+
+#: core/sql/pgsql/om_sig_map.inc.php:69
+#: core/gen/sql/pgsql/om_sig_map.inc.php:42
+#: core/gen/sql/pgsql/om_sig_map.inc.php:71
+#: core/gen/obj/om_sig_map.class.php:503
+msgid "retour"
+msgstr "Retour"
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:23
+#, fuzzy
+msgid "libellé"
+msgstr "libellé"
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:24
+msgid "Obj."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:25
+#: core/sql/pgsql/om_sig_map_flux.inc.php:26
+#: core/sql/pgsql/om_sig_map_flux.inc.php:37
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:31
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:48
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:34
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:57
+#: core/gen/obj/om_sig_map_comp.class.php:268
+#: core/gen/obj/om_sig_map_flux.class.php:364
+msgid "ordre"
+msgstr "ordre"
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:26
+msgid "Act."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:27
+msgid "Maj."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_comp.inc.php:28
+msgid "Req."
+msgstr ""
+
+#: core/sql/pgsql/om_logo.inc.php:21 core/sql/pgsql/om_logo.inc.php:36
+#: core/gen/sql/pgsql/om_logo.inc.php:31 core/gen/sql/pgsql/om_logo.inc.php:49
+#: core/gen/sql/pgsql/om_requete.inc.php:29
+#: core/gen/sql/pgsql/om_requete.inc.php:44
+#: core/gen/obj/om_requete.class.php:204 core/gen/obj/om_logo.class.php:264
+msgid "description"
+msgstr "description"
+
+#: core/sql/pgsql/om_logo.inc.php:23 core/sql/pgsql/om_logo.inc.php:37
+#: core/gen/sql/pgsql/om_logo.inc.php:33 core/gen/sql/pgsql/om_logo.inc.php:51
+#: core/gen/obj/om_logo.class.php:266
+msgid "resolution"
+msgstr "résolution"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:24
+#: core/sql/pgsql/om_sig_map_flux.inc.php:35
+msgid "nom OL"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:25
+#, fuzzy
+msgid "Base"
+msgstr "Aucune base de données à déconnecter"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:27
+msgid "Vis."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:28
+#: core/sql/pgsql/om_sig_map_flux.inc.php:39
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:36
+#: core/gen/obj/om_sig_map_flux.class.php:366
+msgid "panier"
+msgstr "panier"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:36
+#, fuzzy
+msgid "base"
+msgstr "Aucune base de données à déconnecter"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:38
+msgid "vis."
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:40
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:37
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:58
+#: core/gen/obj/om_sig_map_flux.class.php:367
+#, fuzzy
+msgid "pa_nom"
+msgstr "pa_nom"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:41
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:38
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:59
+#: core/gen/obj/om_sig_map_flux.class.php:368
+#, fuzzy
+msgid "pa_layer"
+msgstr "pa_layer"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:42
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:48
+#: core/gen/obj/om_sig_map_flux.class.php:371
+#, fuzzy
+msgid "pa_sql"
+msgstr "pa_sql"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:43
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:39
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:60
+#: core/gen/obj/om_sig_map_flux.class.php:369
+#, fuzzy
+msgid "pa_attribut"
+msgstr "pa_attribut"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:44
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:40
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:61
+#: core/gen/obj/om_sig_map_flux.class.php:370
+#, fuzzy
+msgid "pa_encaps"
+msgstr "pa_encaps"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:45
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:41
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:62
+#: core/gen/obj/om_sig_map_flux.class.php:372
+#, fuzzy
+msgid "pa_type_geometrie"
+msgstr "pa_type_geometrie"
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:46
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:49
+#: core/gen/obj/om_sig_map_flux.class.php:373
+msgid "sql_filter"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:47
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:43
+#: core/gen/obj/om_sig_map_flux.class.php:375
+msgid "singletile"
+msgstr ""
+
+#: core/sql/pgsql/om_sig_map_flux.inc.php:48
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:44
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:63
+#: core/gen/obj/om_sig_map_flux.class.php:376
+msgid "maxzoomlevel"
+msgstr ""
+
+#: core/sql/pgsql/om_parametre.inc.php:20
+#: core/sql/pgsql/om_parametre.inc.php:30
+#: core/gen/sql/pgsql/om_parametre.inc.php:37
+#: core/gen/obj/om_parametre.class.php:217
+msgid "valeur"
+msgstr "valeur"
+
+#: core/obj/om_utilisateur.class.php:155
+msgid "Vous ne pouvez pas supprimer votre utilisateur."
+msgstr "Vous ne pouvez pas supprimer votre utilisateur."
+
+#: core/obj/om_utilisateur.class.php:184
+#, fuzzy
+msgid "synchronisation annuaire"
+msgstr "Synchronisation des utilisateurs"
+
+#: core/obj/om_utilisateur.class.php:204
+msgid ""
+"Cette page vous permet de synchroniser vos utilisateurs depuis un annuaire."
+msgstr ""
+"Cette page vous permet de synchroniser vos utilisateurs depuis un annuaire."
+
+#: core/obj/om_utilisateur.class.php:243 core/obj/om_utilisateur.class.php:249
+#: core/obj/om_utilisateur.class.php:255
+msgid "Il y a"
+msgstr "Il y a"
+
+#: core/obj/om_utilisateur.class.php:244
+msgid ""
+"utilisateur(s) present(s) dans l'annuaire et non present(s) dans la base"
+msgstr ""
+"utilisateur(s) présent(s) dans l'annuaire et non présent(s) dans la base"
+
+#: core/obj/om_utilisateur.class.php:245
+msgid "ajout(s)"
+msgstr "ajout(s)"
+
+#: core/obj/om_utilisateur.class.php:250
+msgid ""
+"utilisateur(s) present(s) dans la base et non present(s) dans l'annuaire"
+msgstr ""
+"utilisateur(s) présent(s) dans la base et non présent(s) dans l'annuaire"
+
+#: core/obj/om_utilisateur.class.php:251
+msgid "suppression(s)"
+msgstr "suppression(s)"
+
+#: core/obj/om_utilisateur.class.php:256
+msgid "utilisateur(s) present(s) a la fois dans la base et l'annuaire"
+msgstr "utilisateur(s) présent(s) à la fois dans la base et l'annuaire"
+
+#: core/obj/om_utilisateur.class.php:257
+msgid "mise(s) a jour"
+msgstr "mise(s) à jour"
+
+#: core/obj/om_utilisateur.class.php:266
+msgid "Synchroniser"
+msgstr "Synchroniser"
+
+#: core/obj/om_sig_flux.class.php:90
+msgid "libelle : "
+msgstr "libellé :"
+
+#: core/obj/om_sig_flux.class.php:91
+msgid "Type de flux : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:92
+msgid "couches (séparées par ,) : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:94 core/obj/om_sig_flux.class.php:102
+msgid "URL : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:95 core/obj/om_sig_flux.class.php:96
+#: core/obj/om_sig_map_flux.class.php:163
+#: core/obj/om_sig_map_flux.class.php:164
+#: core/obj/om_sig_map_flux.class.php:165
+#: core/obj/om_sig_map_flux.class.php:166
+#: core/obj/om_sig_map_flux.class.php:167
+#: core/obj/om_sig_map_flux.class.php:168
+#: core/obj/om_sig_map_flux.class.php:169
+#: core/obj/om_sig_map_flux.class.php:170
+#: core/obj/om_sig_map_flux.class.php:171
+#: core/obj/om_sig_map_flux.class.php:173
+#: core/obj/om_sig_map_flux.class.php:174
+#: core/obj/om_sig_map_flux.class.php:175
+#: core/obj/om_sig_map_flux.class.php:176
+#: core/obj/om_sig_map_flux.class.php:177
+#: core/obj/om_sig_map_flux.class.php:178
+#: core/obj/om_sig_map_flux.class.php:179
+#: core/obj/om_sig_map_flux.class.php:181
+msgid "sans objet"
+msgstr "sans objet"
+
+#: core/obj/om_sig_flux.class.php:98
+msgid "URL ([EXTENT], [LAYERS]) : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:99
+msgid "largeur carte dans composeur x 2 : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:100
+msgid "hauteur carte dans composeur x 2 : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:103
+msgid "URL pour GetFeatureInfo : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:104
+msgid "couches pour GetFeatureInfo : "
+msgstr ""
+
+#: core/obj/om_sig_flux.class.php:147
+#, fuzzy
+msgid "adresse"
+msgstr "adresse"
+
+#: core/obj/om_sig_flux.class.php:150
+msgid "paramètres"
+msgstr ""
+
+#: core/obj/om_dashboard.class.php:97
+msgid "Tableau de bord pour le profil"
+msgstr "Tableau de bord pour le profil"
+
+#: core/obj/om_dashboard.class.php:130
+msgid "choisir le profil"
+msgstr "choisir le profil"
+
+#: core/obj/om_dashboard.class.php:185
+msgid "Ajouter un widget"
+msgstr "Ajouter un widget"
+
+#: core/obj/om_dashboard.class.php:444
+msgid ""
+"Selectionner le widget a inserer puis cliquer sur le bouton 'Valider' pour "
+"valider votre selection."
+msgstr ""
+"Sélectionner le widget à insérer puis cliquer sur le bouton 'Valider' pour "
+"valider votre sélection."
+
+#: core/obj/om_dashboard.class.php:478
+msgid "Ajouter un nouveau widget"
+msgstr "Ajouter un nouveau widget"
+
+#: core/obj/om_dashboard.class.php:606
+msgid "Acceder au lien"
+msgstr "Accéder au lien"
+
+#: core/obj/om_etat.class.php:42 core/obj/om_sousetat.class.php:42
+#: core/obj/om_lettretype.class.php:42
+#, fuzzy
+msgid "copier"
+msgstr "Copier"
+
+#: core/obj/om_etat.class.php:58 core/obj/om_lettretype.class.php:58
+msgid "previsualiser"
+msgstr "prévisualiser"
+
+#: core/obj/om_etat.class.php:154 core/obj/om_lettretype.class.php:155
+#: core/gen/sql/pgsql/om_requete.inc.php:37
+#: core/gen/obj/om_requete.class.php:206
+msgid "merge_fields"
+msgstr "champ(s) de fusion"
+
+#: core/obj/om_etat.class.php:155 core/obj/om_lettretype.class.php:156
+msgid "substitution_vars"
+msgstr "variables de remplacement"
+
+#: core/obj/om_etat.class.php:157 core/obj/om_etat.class.php:158
+#: core/obj/om_lettretype.class.php:158 core/obj/om_lettretype.class.php:159
+#, fuzzy
+msgid "espacement"
+msgstr "traitement"
+
+#: core/obj/om_etat.class.php:220 core/obj/om_sousetat.class.php:130
+#: core/obj/om_lettretype.class.php:221
+msgid "portrait"
+msgstr "portrait"
+
+#: core/obj/om_etat.class.php:220 core/obj/om_sousetat.class.php:130
+#: core/obj/om_lettretype.class.php:221
+msgid "paysage"
+msgstr "paysage"
+
+#: core/obj/om_etat.class.php:230 core/obj/om_sousetat.class.php:140
+#: core/obj/om_lettretype.class.php:231
+msgid "normal"
+msgstr "normal"
+
+#: core/obj/om_etat.class.php:230 core/obj/om_sousetat.class.php:140
+#: core/obj/om_lettretype.class.php:231
+msgid "italique"
+msgstr "italique"
+
+#: core/obj/om_etat.class.php:230 core/obj/om_sousetat.class.php:140
+#: core/obj/om_lettretype.class.php:231
+msgid "gras"
+msgstr "gras"
+
+#: core/obj/om_etat.class.php:230 core/obj/om_sousetat.class.php:140
+#: core/obj/om_lettretype.class.php:231
+msgid "souligne"
+msgstr "souligné"
+
+#: core/obj/om_etat.class.php:245 core/obj/om_sousetat.class.php:150
+#: core/obj/om_lettretype.class.php:246
+msgid "gauche"
+msgstr "gauche"
+
+#: core/obj/om_etat.class.php:245 core/obj/om_sousetat.class.php:150
+#: core/obj/om_lettretype.class.php:246
+msgid "droite"
+msgstr "droite"
+
+#: core/obj/om_etat.class.php:245 core/obj/om_sousetat.class.php:150
+#: core/obj/om_lettretype.class.php:246
+msgid "justifie"
+msgstr "justifié"
+
+#: core/obj/om_etat.class.php:245 core/obj/om_sousetat.class.php:150
+#: core/obj/om_lettretype.class.php:246
+msgid "centre"
+msgstr "centré"
+
+#: core/obj/om_etat.class.php:251 core/obj/om_sousetat.class.php:155
+#: core/obj/om_lettretype.class.php:252
+msgid "sans"
+msgstr "sans"
+
+#: core/obj/om_etat.class.php:251 core/obj/om_sousetat.class.php:155
+#: core/obj/om_lettretype.class.php:252
+msgid "avec"
+msgstr "avec"
+
+#: core/obj/om_etat.class.php:297 core/obj/om_lettretype.class.php:298
+msgid "Parametres generaux de l'edition"
+msgstr "Paramètres généraux de l'édition"
+
+#: core/obj/om_etat.class.php:299 core/obj/om_lettretype.class.php:300
+msgid "Orientation et format"
+msgstr "Orientation et format"
+
+#: core/obj/om_etat.class.php:301 core/obj/om_lettretype.class.php:302
+msgid "Logo et positionnement"
+msgstr "Logo et positionnement"
+
+#: core/obj/om_etat.class.php:303 core/obj/om_lettretype.class.php:304
+msgid "Marges du document"
+msgstr ""
+
+#: core/obj/om_etat.class.php:308 core/obj/om_lettretype.class.php:309
+msgid "En-tête"
+msgstr ""
+
+#: core/obj/om_etat.class.php:313 core/obj/om_lettretype.class.php:314
+msgid "Titre"
+msgstr "Titre"
+
+#: core/obj/om_etat.class.php:315 core/obj/om_lettretype.class.php:316
+msgid "Parametres du titre de l'edition"
+msgstr "Paramètres du titre de l'édition"
+
+#: core/obj/om_etat.class.php:316 core/obj/om_lettretype.class.php:317
+msgid "Positionnement"
+msgstr "Positionnement"
+
+#: core/obj/om_etat.class.php:322 core/obj/om_lettretype.class.php:323
+msgid "Bordure"
+msgstr "Bordure"
+
+#: core/obj/om_etat.class.php:326 core/obj/om_lettretype.class.php:327
+msgid "Corps"
+msgstr "Corps"
+
+#: core/obj/om_etat.class.php:328 core/obj/om_lettretype.class.php:329
+msgid "Parametres des sous-etats"
+msgstr "Paramètres des sous-états"
+
+#: core/obj/om_etat.class.php:332 core/obj/om_lettretype.class.php:333
+msgid "Pied de page"
+msgstr ""
+
+#: core/obj/om_etat.class.php:337 core/obj/om_lettretype.class.php:338
+msgid "Champ(s) de fusion"
+msgstr "Champ(s) de fusion"
+
+#: core/obj/om_etat.class.php:360 core/obj/om_sousetat.class.php:422
+#: core/obj/om_sousetat.class.php:500 core/obj/om_lettretype.class.php:361
+msgid "Texte du titre"
+msgstr "Texte du titre"
+
+#: core/obj/om_etat.class.php:371 core/obj/om_lettretype.class.php:372
+msgid "Texte du corps"
+msgstr "Texte du corps"
+
+#: core/obj/om_etat.class.php:463 core/obj/om_lettretype.class.php:464
+#, php-format
+msgid "Le champ %s ne peut pas contenir plusieurs occurences du sous-etat %s."
+msgstr ""
+
+#: core/obj/om_etat.class.php:467 core/obj/om_lettretype.class.php:468
+#: core/gen/sql/pgsql/om_etat.inc.php:62
+#: core/gen/sql/pgsql/om_lettretype.inc.php:62
+#: core/gen/obj/om_etat.class.php:535 core/gen/obj/om_lettretype.class.php:541
+msgid "corps_om_htmletatex"
+msgstr ""
+
+#: core/obj/om_etat.class.php:502
+msgid ""
+"etat(s) existant(s) dans l'etat actif. Il n'est pas possible d'avoir plus "
+"d'un etat"
+msgstr ""
+"état(s) existant(s) dans l'état actif. Il n'est pas possible d'avoir plus "
+"d'un état"
+
+#: core/obj/om_etat.class.php:504 core/obj/om_sousetat.class.php:617
+#: core/obj/om_logo.class.php:102
+msgid "actif par collectivite."
+msgstr "actif par collectivité."
+
+#: core/obj/om_etat.class.php:524 core/obj/om_sousetat.class.php:637
+#: core/obj/om_lettretype.class.php:525
+#, php-format
+msgid "copie du %s"
+msgstr ""
+
+#: core/obj/om_etat.class.php:544 core/obj/om_sousetat.class.php:654
+#: core/obj/om_lettretype.class.php:545
+#, fuzzy
+msgid "L'element a ete correctement duplique."
+msgstr "La suppression a été correctement effectuée."
+
+#: core/obj/om_sousetat.class.php:160
+msgid "transparent"
+msgstr "transparent"
+
+#: core/obj/om_sousetat.class.php:160 core/obj/om_sousetat.class.php:355
+#: core/obj/om_sousetat.class.php:367 core/obj/om_sousetat.class.php:374
+#: core/obj/om_sousetat.class.php:375 core/obj/om_sousetat.class.php:384
+#: core/obj/om_sousetat.class.php:387 core/obj/om_sousetat.class.php:391
+#: core/obj/om_sousetat.class.php:394 core/obj/om_sousetat.class.php:398
+#: core/obj/om_sousetat.class.php:401 core/obj/om_sig_map.class.php:342
+msgid "fond"
+msgstr "fond"
+
+#: core/obj/om_sousetat.class.php:200
+msgid "parametres"
+msgstr "paramètres"
+
+#: core/obj/om_sousetat.class.php:200 core/obj/om_sousetat.class.php:347
+#: core/obj/om_sig_map.class.php:333 core/gen/sql/pgsql/om_sousetat.inc.php:93
+#: core/gen/obj/om_sousetat.class.php:800
+msgid "titre"
+msgstr "titre"
+
+#: core/obj/om_sousetat.class.php:213
+msgid "entete"
+msgstr "entête"
+
+#: core/obj/om_sousetat.class.php:213 core/obj/om_sousetat.class.php:222
+#: core/obj/om_sousetat.class.php:229 core/obj/om_sousetat.class.php:236
+#: core/obj/om_sousetat.class.php:243 core/obj/om_sousetat.class.php:250
+#: core/obj/om_sousetat.class.php:257
+msgid "tableau"
+msgstr "tableau"
+
+#: core/obj/om_sousetat.class.php:222
+msgid "data"
+msgstr "data"
+
+#: core/obj/om_sousetat.class.php:229 core/obj/om_sousetat.class.php:380
+#: core/obj/om_sousetat.class.php:384 core/obj/om_sousetat.class.php:391
+#: core/obj/om_sousetat.class.php:398
+msgid "cellule"
+msgstr "cellule"
+
+#: core/obj/om_sousetat.class.php:236 core/obj/om_sousetat.class.php:406
+msgid "total"
+msgstr "total"
+
+#: core/obj/om_sousetat.class.php:243 core/obj/om_sousetat.class.php:407
+msgid "moyenne"
+msgstr "moyenne"
+
+#: core/obj/om_sousetat.class.php:250 core/obj/om_sousetat.class.php:408
+msgid "nombre"
+msgstr "nombre"
+
+#: core/obj/om_sousetat.class.php:257
+msgid "operations"
+msgstr "opérations"
+
+#: core/obj/om_sousetat.class.php:349 core/obj/om_sousetat.class.php:363
+#: core/obj/om_sousetat.class.php:378 core/obj/om_sousetat.class.php:386
+#: core/obj/om_sousetat.class.php:393 core/obj/om_sousetat.class.php:400
+msgid "hauteur"
+msgstr "hauteur"
+
+#: core/obj/om_sousetat.class.php:350
+msgid "font"
+msgstr "font"
+
+#: core/obj/om_sousetat.class.php:352 core/obj/om_sousetat.class.php:372
+#: core/obj/om_sousetat.class.php:385 core/obj/om_sousetat.class.php:392
+#: core/obj/om_sousetat.class.php:399
+msgid "taille"
+msgstr "taille"
+
+#: core/obj/om_sousetat.class.php:353 core/obj/om_sousetat.class.php:365
+#: core/obj/om_sousetat.class.php:371 core/obj/om_sousetat.class.php:373
+#: core/obj/om_sousetat.class.php:380 core/obj/om_sousetat.class.php:381
+#: core/obj/om_sousetat.class.php:388 core/obj/om_sousetat.class.php:395
+#: core/obj/om_sousetat.class.php:402
+msgid "bordure"
+msgstr "bordure"
+
+#: core/obj/om_sousetat.class.php:354 core/obj/om_sousetat.class.php:366
+#: core/obj/om_sousetat.class.php:382 core/obj/om_sousetat.class.php:389
+#: core/obj/om_sousetat.class.php:396 core/obj/om_sousetat.class.php:403
+msgid "align"
+msgstr "align"
+
+#: core/obj/om_sousetat.class.php:356 core/gen/sql/pgsql/om_widget.inc.php:33
+#: core/gen/obj/om_widget.class.php:183
+msgid "texte"
+msgstr "texte"
+
+#: core/obj/om_sousetat.class.php:357
+msgid "intervalle"
+msgstr "intervalle"
+
+#: core/obj/om_sousetat.class.php:357
+msgid "debut"
+msgstr "début"
+
+#: core/obj/om_sousetat.class.php:358 core/obj/om_sousetat.class.php:361
+msgid "fin"
+msgstr "fin"
+
+#: core/obj/om_sousetat.class.php:360
+msgid "flag"
+msgstr "flag"
+
+#: core/obj/om_sousetat.class.php:362 core/gen/sql/pgsql/om_etat.inc.php:34
+#: core/gen/sql/pgsql/om_etat.inc.php:71
+#: core/gen/sql/pgsql/om_lettretype.inc.php:34
+#: core/gen/sql/pgsql/om_lettretype.inc.php:71
+#: core/gen/obj/om_etat.class.php:524 core/gen/obj/om_lettretype.class.php:530
+msgid "orientation"
+msgstr "orientation"
+
+#: core/obj/om_sousetat.class.php:368
+msgid "couleur"
+msgstr "couleur"
+
+#: core/obj/om_sousetat.class.php:370 core/obj/om_sousetat.class.php:379
+msgid "largeur"
+msgstr "largeur"
+
+#: core/obj/om_sousetat.class.php:374
+msgid "un"
+msgstr "un"
+
+#: core/obj/om_sousetat.class.php:375
+msgid "deux"
+msgstr "deux"
+
+#: core/obj/om_sousetat.class.php:405
+msgid "numerique"
+msgstr "numérique"
+
+#: core/obj/om_sousetat.class.php:410 core/gen/sql/pgsql/om_etat.inc.php:44
+#: core/gen/sql/pgsql/om_etat.inc.php:81
+#: core/gen/sql/pgsql/om_sig_map.inc.php:62
+#: core/gen/sql/pgsql/om_sousetat.inc.php:94
+#: core/gen/sql/pgsql/om_lettretype.inc.php:44
+#: core/gen/sql/pgsql/om_lettretype.inc.php:81
+#: core/gen/obj/om_etat.class.php:536 core/gen/obj/om_sousetat.class.php:854
+#: core/gen/obj/om_lettretype.class.php:542
+#: core/gen/obj/om_sig_map.class.php:502
+msgid "om_sql"
+msgstr "SQL"
+
+#: core/obj/om_sousetat.class.php:615
+msgid ""
+"sous-etat(s) existant(s) dans l'etat actif. Il n'est pas possible d'avoir "
+"plus d'un sous-etat"
+msgstr ""
+"sous-état(s) existant(s) dans l'état actif. Il n'est pas possible d'avoir "
+"plus d'un sous-état"
+
+#: core/obj/om_sig_map_comp.class.php:104
+msgid "Nom géométrie : "
+msgstr ""
+
+#: core/obj/om_sig_map_comp.class.php:105
+msgid "Actif : "
+msgstr "Actif : "
+
+#: core/obj/om_sig_map_comp.class.php:106
+#, fuzzy
+msgid "Objet : "
+msgstr "objet"
+
+#: core/obj/om_sig_map_comp.class.php:107
+msgid "Ordre d'affichage : "
+msgstr "Ordre d'affichage : "
+
+#: core/obj/om_sig_map_comp.class.php:108
+msgid "Mis a jour : "
+msgstr "Mis à jour : "
+
+#: core/obj/om_sig_map_comp.class.php:109
+#, fuzzy
+msgid "Type de géometrie : "
+msgstr "Type de géométrie : "
+
+#: core/obj/om_sig_map_comp.class.php:111
+#, fuzzy
+msgid "Champ idx :"
+msgstr "Champ :"
+
+#: core/obj/om_sig_map_comp.class.php:112
+msgid "Champ géographique :"
+msgstr ""
+
+#: core/obj/om_sig_map_comp.class.php:127
+msgid "Mise a jour"
+msgstr "mise-à-jour"
+
+#: core/obj/om_requete.class.php:102
+msgid "SQL"
+msgstr ""
+
+#: core/obj/om_requete.class.php:165
+#, fuzzy
+msgid "Enregistrement de type"
+msgstr "Enregistrement"
+
+#: core/obj/om_widget.class.php:83
+msgid "web - le contenu du widget provient du champs texte ci-dessous"
+msgstr "web - le contenu du widget provient du champs texte ci-dessous"
+
+#: core/obj/om_widget.class.php:84
+msgid "file - le contenu du widget provient d'un script sur le serveur"
+msgstr "file - le contenu du widget provient d'un script sur le serveur"
+
+#: core/obj/om_widget.class.php:98 core/obj/om_widget.class.php:112
+#: core/gen/sql/pgsql/om_widget.inc.php:34
+#: core/gen/obj/om_widget.class.php:185
+msgid "script"
+msgstr ""
+
+#: core/obj/om_widget.class.php:113 core/gen/sql/pgsql/om_widget.inc.php:35
+#: core/gen/obj/om_widget.class.php:186
+msgid "arguments"
+msgstr ""
+
+#: core/obj/om_widget.class.php:127
+msgid "Le script n'existe pas."
+msgstr "Le script n'existe pas."
+
+#: core/obj/om_sig_map_flux.class.php:118
+msgid "flux WMS : "
+msgstr "flux WMS : "
+
+#: core/obj/om_sig_map_flux.class.php:119
+msgid "nom map OpenLayer : "
+msgstr "nom map OpenLayer : "
+
+#: core/obj/om_sig_map_flux.class.php:120
+#: core/obj/om_sig_map_flux.class.php:162
+msgid "fond de carte :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:121
+msgid "niveau de zoom maximum :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:122
+msgid "ordre : "
+msgstr "ordre : "
+
+#: core/obj/om_sig_map_flux.class.php:123
+msgid "visible par défaut :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:124
+msgid "singletile OL :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:125
+#, fuzzy
+msgid "panier :"
+msgstr "panier"
+
+#: core/obj/om_sig_map_flux.class.php:126
+msgid "nom du panier :"
+msgstr "nom du panier :"
+
+#: core/obj/om_sig_map_flux.class.php:127
+msgid "couche du panier :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:128
+msgid "attribut de la couche du panier :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:129
+msgid "caractère d'encapsulation de valeur panier :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:130
+msgid "requète d'union (&lst) du panier :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:131
+msgid "type de géometrie du panier :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:132
+msgid "requète de filtrage (&idx) :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:180
+msgid "requète de titres (&idx, &user) :"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:182
+msgid "requète de filtrage (&idx):"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:202
+msgid "Paramètres généraux"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:208
+msgid "Paramètres avancés"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:270
+msgid "niveau de zoom maximum obligatoire"
+msgstr ""
+
+#: core/obj/om_sig_map_flux.class.php:275
+msgid ""
+"Tous les champs de définitions du panier sont obligatoires à l'exception du "
+"caractère d'encapsulation"
+msgstr ""
+
+#: core/obj/om_lettretype.class.php:503
+msgid ""
+"lettre(s) type existante(s) dans l'etat actif. Il n'est pas possible d'avoir "
+"plus d'une lettre type"
+msgstr ""
+"lettre(s) type existante(s) dans l'état actif. Il n'est pas possible d'avoir "
+"plus d'une lettre type"
+
+#: core/obj/om_lettretype.class.php:505
+msgid "active par collectivite."
+msgstr "active par collectivité."
+
+#: core/obj/om_collectivite.class.php:80
+msgid "mono"
+msgstr "mono"
+
+#: core/obj/om_collectivite.class.php:80
+msgid "multi"
+msgstr "multi"
+
+#: core/obj/om_collectivite.class.php:102 core/obj/om_sig_map.class.php:424
+msgid "existant"
+msgstr "existant"
+
+#: core/obj/om_collectivite.class.php:103
+msgid "vous ne pouvez avoir qu une collectivite"
+msgstr "vous ne pouvez avoir qu'une collectivité"
+
+#: core/obj/om_collectivite.class.php:104
+msgid "de"
+msgstr "de"
+
+#: core/obj/om_collectivite.class.php:122
+msgid "Vous ne pouvez pas supprimer de collectivite."
+msgstr "Vous ne pouvez pas supprimer de collectivité."
+
+#: core/obj/om_sig_map.class.php:135
+msgid "Le fond osm ne peut être choisi par défaut"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:141
+msgid "Le fond bing ne peut être choisi par défaut"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:147
+msgid "Le fond sat ne peut être choisi par défaut"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:165
+msgid "Ce flux ne peut être choisi par défaut"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:337
+#, fuzzy
+msgid "Cas d'utilisation"
+msgstr "administration"
+
+#: core/obj/om_sig_map.class.php:350
+msgid "Paramètres cartographiques"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:355
+msgid "marqueurs"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:358
+msgid "SLD"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:369
+msgid "à partir d'un enregistrement donné : "
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:370
+msgid "d'une recherche : "
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:371
+msgid "d'une requète mémorisée : "
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:372
+msgid "Flux en provedance de la carte : "
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:373
+msgid "Fond par défaut : "
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:374
+msgid "osm : "
+msgstr "osm:"
+
+#: core/obj/om_sig_map.class.php:375
+msgid "bing : "
+msgstr "Bing :"
+
+#: core/obj/om_sig_map.class.php:376
+msgid "sat : "
+msgstr "sat :"
+
+#: core/obj/om_sig_map.class.php:378
+msgid "Restreindre la navigation sur l'étendue"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:379
+msgid "Centrer sur le point (si différent du centre de l'étendue)"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:380
+msgid "projection"
+msgstr "projection"
+
+#: core/obj/om_sig_map.class.php:381 core/gen/sql/pgsql/om_sig_map.inc.php:61
+#: core/gen/obj/om_sig_map.class.php:501
+msgid "url"
+msgstr "URL"
+
+#: core/obj/om_sig_map.class.php:382
+msgid "requete sql"
+msgstr "requête sql"
+
+#: core/obj/om_sig_map.class.php:383
+msgid "Fichier SLD pour les marqueurs"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:384
+msgid "Fichier SLD pour les données (om_sig_map_comp)"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:424
+#, fuzzy
+msgid "sig_map"
+msgstr "om_sig_map"
+
+#: core/obj/om_sig_map.class.php:425
+msgid "vous ne pouvez avoir qu un sig_map"
+msgstr ""
+
+#: core/obj/om_sig_map.class.php:426
+msgid "par collectivite et par cas d utilisation"
+msgstr ""
+
+#: core/obj/om_logo.class.php:100
+msgid ""
+"logo(s) existant(s) dans l'etat actif. Il n'est pas possible d'avoir plus "
+"d'un logo"
+msgstr ""
+"logo(s) existant(s) dans l'état actif. Il n'est pas possible d'avoir plus "
+"d'un logo"
+
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:32
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:50
+#: core/gen/obj/om_utilisateur.class.php:288
+msgid "email"
+msgstr "email"
+
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:33
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:51
+#: core/gen/obj/om_utilisateur.class.php:289
+msgid "login"
+msgstr "login"
+
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:42
+#: core/gen/obj/om_utilisateur.class.php:290
+msgid "pwd"
+msgstr "mot de passe"
+
+#: core/gen/sql/pgsql/om_utilisateur.inc.php:44
+#: core/gen/obj/om_utilisateur.class.php:292
+msgid "om_type"
+msgstr "Type"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:35 core/gen/sql/pgsql/om_etat.inc.php:72
+#: core/gen/sql/pgsql/om_lettretype.inc.php:35
+#: core/gen/sql/pgsql/om_lettretype.inc.php:72
+#: core/gen/obj/om_etat.class.php:525 core/gen/obj/om_lettretype.class.php:531
+msgid "format"
+msgstr "format"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:36 core/gen/sql/pgsql/om_etat.inc.php:73
+#: core/gen/sql/pgsql/om_lettretype.inc.php:36
+#: core/gen/sql/pgsql/om_lettretype.inc.php:73
+#: core/gen/obj/om_etat.class.php:526 core/gen/obj/om_lettretype.class.php:532
+msgid "logo"
+msgstr "logo"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:37 core/gen/sql/pgsql/om_etat.inc.php:74
+#: core/gen/sql/pgsql/om_lettretype.inc.php:37
+#: core/gen/sql/pgsql/om_lettretype.inc.php:74
+#: core/gen/obj/om_etat.class.php:527 core/gen/obj/om_lettretype.class.php:533
+msgid "logoleft"
+msgstr "gauche"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:38 core/gen/sql/pgsql/om_etat.inc.php:75
+#: core/gen/sql/pgsql/om_lettretype.inc.php:38
+#: core/gen/sql/pgsql/om_lettretype.inc.php:75
+#: core/gen/obj/om_etat.class.php:528 core/gen/obj/om_lettretype.class.php:534
+msgid "logotop"
+msgstr "haut"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:39 core/gen/sql/pgsql/om_etat.inc.php:76
+#: core/gen/sql/pgsql/om_lettretype.inc.php:39
+#: core/gen/sql/pgsql/om_lettretype.inc.php:76
+#: core/gen/obj/om_etat.class.php:530 core/gen/obj/om_lettretype.class.php:536
+msgid "titreleft"
+msgstr "gauche"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:40 core/gen/sql/pgsql/om_etat.inc.php:77
+#: core/gen/sql/pgsql/om_lettretype.inc.php:40
+#: core/gen/sql/pgsql/om_lettretype.inc.php:77
+#: core/gen/obj/om_etat.class.php:531 core/gen/obj/om_lettretype.class.php:537
+msgid "titretop"
+msgstr "haut"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:41 core/gen/sql/pgsql/om_etat.inc.php:78
+#: core/gen/sql/pgsql/om_lettretype.inc.php:41
+#: core/gen/sql/pgsql/om_lettretype.inc.php:78
+#: core/gen/obj/om_etat.class.php:532 core/gen/obj/om_lettretype.class.php:538
+msgid "titrelargeur"
+msgstr "largeur"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:42 core/gen/sql/pgsql/om_etat.inc.php:79
+#: core/gen/sql/pgsql/om_sousetat.inc.php:32
+#: core/gen/sql/pgsql/om_sousetat.inc.php:101
+#: core/gen/sql/pgsql/om_lettretype.inc.php:42
+#: core/gen/sql/pgsql/om_lettretype.inc.php:79
+#: core/gen/obj/om_etat.class.php:533 core/gen/obj/om_sousetat.class.php:801
+#: core/gen/obj/om_lettretype.class.php:539
+msgid "titrehauteur"
+msgstr "hauteur"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:43 core/gen/sql/pgsql/om_etat.inc.php:80
+#: core/gen/sql/pgsql/om_sousetat.inc.php:36
+#: core/gen/sql/pgsql/om_sousetat.inc.php:105
+#: core/gen/sql/pgsql/om_lettretype.inc.php:43
+#: core/gen/sql/pgsql/om_lettretype.inc.php:80
+#: core/gen/obj/om_etat.class.php:534 core/gen/obj/om_sousetat.class.php:805
+#: core/gen/obj/om_lettretype.class.php:540
+msgid "titrebordure"
+msgstr "bordure"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:45 core/gen/sql/pgsql/om_etat.inc.php:82
+#: core/gen/sql/pgsql/om_lettretype.inc.php:49
+#: core/gen/sql/pgsql/om_lettretype.inc.php:86
+#: core/gen/obj/om_etat.class.php:537 core/gen/obj/om_lettretype.class.php:547
+msgid "se_font"
+msgstr "police"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:46 core/gen/sql/pgsql/om_etat.inc.php:83
+#: core/gen/sql/pgsql/om_lettretype.inc.php:50
+#: core/gen/sql/pgsql/om_lettretype.inc.php:87
+#: core/gen/obj/om_etat.class.php:538 core/gen/obj/om_lettretype.class.php:548
+msgid "se_couleurtexte"
+msgstr "couleur du texte"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:47 core/gen/sql/pgsql/om_etat.inc.php:84
+#: core/gen/sql/pgsql/om_lettretype.inc.php:45
+#: core/gen/sql/pgsql/om_lettretype.inc.php:82
+#: core/gen/obj/om_etat.class.php:539 core/gen/obj/om_lettretype.class.php:543
+msgid "margeleft"
+msgstr "marge gauche"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:48 core/gen/sql/pgsql/om_etat.inc.php:85
+#: core/gen/sql/pgsql/om_lettretype.inc.php:46
+#: core/gen/sql/pgsql/om_lettretype.inc.php:83
+#: core/gen/obj/om_etat.class.php:540 core/gen/obj/om_lettretype.class.php:544
+msgid "margetop"
+msgstr "marge haut"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:49 core/gen/sql/pgsql/om_etat.inc.php:86
+#: core/gen/sql/pgsql/om_lettretype.inc.php:47
+#: core/gen/sql/pgsql/om_lettretype.inc.php:84
+#: core/gen/obj/om_etat.class.php:541 core/gen/obj/om_lettretype.class.php:545
+msgid "margeright"
+msgstr "marge droite"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:50 core/gen/sql/pgsql/om_etat.inc.php:87
+#: core/gen/sql/pgsql/om_lettretype.inc.php:48
+#: core/gen/sql/pgsql/om_lettretype.inc.php:85
+#: core/gen/obj/om_etat.class.php:542 core/gen/obj/om_lettretype.class.php:546
+msgid "margebottom"
+msgstr "marge bas"
+
+#: core/gen/sql/pgsql/om_etat.inc.php:51 core/gen/sql/pgsql/om_etat.inc.php:88
+#: core/gen/sql/pgsql/om_lettretype.inc.php:51
+#: core/gen/sql/pgsql/om_lettretype.inc.php:88
+#: core/gen/obj/om_etat.class.php:544 core/gen/obj/om_lettretype.class.php:550
+msgid "header_offset"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_etat.inc.php:52 core/gen/sql/pgsql/om_etat.inc.php:89
+#: core/gen/sql/pgsql/om_lettretype.inc.php:52
+#: core/gen/sql/pgsql/om_lettretype.inc.php:89
+#: core/gen/obj/om_etat.class.php:546 core/gen/obj/om_lettretype.class.php:552
+msgid "footer_offset"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_etat.inc.php:61
+#: core/gen/sql/pgsql/om_lettretype.inc.php:61
+#: core/gen/obj/om_etat.class.php:529 core/gen/obj/om_lettretype.class.php:535
+msgid "titre_om_htmletat"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_etat.inc.php:63
+#: core/gen/sql/pgsql/om_lettretype.inc.php:63
+#: core/gen/obj/om_etat.class.php:543 core/gen/obj/om_lettretype.class.php:549
+msgid "header_om_htmletat"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_etat.inc.php:64
+#: core/gen/sql/pgsql/om_lettretype.inc.php:64
+#: core/gen/obj/om_etat.class.php:545 core/gen/obj/om_lettretype.class.php:551
+msgid "footer_om_htmletat"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:28
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:48
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:31
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:54
+#: core/gen/obj/om_sig_flux.class.php:281
+#: core/gen/obj/om_sig_map_flux.class.php:361
+msgid "om_sig_flux"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:31
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:51
+#: core/gen/obj/om_sig_flux.class.php:285
+#, fuzzy
+msgid "attribution"
+msgstr "attribut :"
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:32
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:52
+#: core/gen/obj/om_sig_flux.class.php:286
+msgid "chemin"
+msgstr "chemin"
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:33
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:53
+#: core/gen/obj/om_sig_flux.class.php:287
+msgid "couches"
+msgstr "couches"
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:34
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:54
+#: core/gen/obj/om_sig_flux.class.php:288
+msgid "cache_type"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:35
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:55
+#: core/gen/obj/om_sig_flux.class.php:289
+msgid "cache_gfi_chemin"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:36
+#: core/gen/sql/pgsql/om_sig_flux.inc.php:56
+#: core/gen/obj/om_sig_flux.class.php:290
+msgid "cache_gfi_couches"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_widget.inc.php:28
+#: core/gen/sql/pgsql/om_widget.inc.php:41
+#: core/gen/sql/pgsql/om_permission.inc.php:28
+#: core/gen/sql/pgsql/om_permission.inc.php:37
+#: core/gen/sql/pgsql/om_requete.inc.php:30
+#: core/gen/sql/pgsql/om_requete.inc.php:45
+#: core/gen/obj/om_permission.class.php:142
+#: core/gen/obj/om_requete.class.php:207 core/gen/obj/om_widget.class.php:184
+msgid "type"
+msgstr "type"
+
+#: core/gen/sql/pgsql/om_widget.inc.php:32
+#: core/gen/obj/om_widget.class.php:182
+msgid "lien"
+msgstr "lien"
+
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:26
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:36
+#: core/gen/sql/pgsql/om_sig_map.inc.php:48
+#: core/gen/sql/pgsql/om_sig_map.inc.php:74
+#: core/gen/obj/om_sig_extent.class.php:158
+#: core/gen/obj/om_sig_map.class.php:509
+#, fuzzy
+msgid "om_sig_extent"
+msgstr "Sous-état"
+
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:28
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:38
+#: core/gen/obj/om_sig_extent.class.php:160
+#, fuzzy
+msgid "extent"
+msgstr "texte"
+
+#: core/gen/sql/pgsql/om_sig_extent.inc.php:29
+#: core/gen/obj/om_sig_extent.class.php:161
+#, fuzzy
+msgid "valide"
+msgstr "Valider"
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:32
+#: core/gen/sql/pgsql/om_sig_map.inc.php:66
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:29
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:46
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:32
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:55
+#: core/gen/obj/om_sig_map_comp.class.php:266
+#: core/gen/obj/om_sig_map_flux.class.php:362
+#: core/gen/obj/om_sig_map.class.php:490
+#, fuzzy
+msgid "om_sig_map"
+msgstr "om_sig_map"
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:43
+#: core/gen/obj/om_sig_map.class.php:504
+msgid "util_idx"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:44
+#: core/gen/obj/om_sig_map.class.php:505
+msgid "util_reqmo"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:45
+#: core/gen/obj/om_sig_map.class.php:506
+#, fuzzy
+msgid "util_recherche"
+msgstr "Recherche"
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:49
+#: core/gen/obj/om_sig_map.class.php:510
+#, fuzzy
+msgid "restrict_extent"
+msgstr "Projection externe"
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:50
+#: core/gen/sql/pgsql/om_sig_map.inc.php:75
+#: core/gen/obj/om_sig_map.class.php:511
+msgid "sld_marqueur"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:51
+#: core/gen/sql/pgsql/om_sig_map.inc.php:76
+#: core/gen/obj/om_sig_map.class.php:512
+#, fuzzy
+msgid "sld_data"
+msgstr "data"
+
+#: core/gen/sql/pgsql/om_sig_map.inc.php:52
+#: core/gen/obj/om_sig_map.class.php:513
+#, fuzzy
+msgid "point_centrage"
+msgstr "centré"
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:28
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:45
+#: core/gen/obj/om_sig_map_comp.class.php:265
+msgid "om_sig_map_comp"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:33
+#: core/gen/obj/om_sig_map_comp.class.php:270
+msgid "comp_maj"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:34
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:49
+#: core/gen/obj/om_sig_map_comp.class.php:271
+#, fuzzy
+msgid "type_geometrie"
+msgstr "pa_type_geometrie"
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:35
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:50
+#: core/gen/obj/om_sig_map_comp.class.php:272
+msgid "comp_table_update"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:36
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:51
+#: core/gen/obj/om_sig_map_comp.class.php:273
+msgid "comp_champ"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:37
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:52
+#: core/gen/obj/om_sig_map_comp.class.php:274
+msgid "comp_champ_idx"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:38
+#: core/gen/sql/pgsql/om_sig_map_comp.inc.php:53
+#: core/gen/obj/om_sig_map_comp.class.php:275
+msgid "obj_class"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_dashboard.inc.php:7
+#: core/gen/sql/pgsql/om_dashboard.inc.php:30
+#: core/gen/sql/pgsql/om_dashboard.inc.php:41
+#: core/gen/obj/om_dashboard.class.php:222
+msgid "om_dashboard"
+msgstr "tableau de bord"
+
+#: core/gen/sql/pgsql/om_dashboard.inc.php:32
+#: core/gen/sql/pgsql/om_dashboard.inc.php:43
+#: core/gen/obj/om_dashboard.class.php:224
+msgid "bloc"
+msgstr "bloc"
+
+#: core/gen/sql/pgsql/om_dashboard.inc.php:33
+#: core/gen/sql/pgsql/om_dashboard.inc.php:44
+#: core/gen/obj/om_dashboard.class.php:225
+msgid "position"
+msgstr "position"
+
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:30
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:53
+#: core/gen/obj/om_sig_map_flux.class.php:360
+msgid "om_sig_map_flux"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:33
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:56
+#: core/gen/obj/om_sig_map_flux.class.php:363
+#, fuzzy
+msgid "ol_map"
+msgstr "ol_map"
+
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:35
+#: core/gen/obj/om_sig_map_flux.class.php:365
+msgid "visibility"
+msgstr "visibility"
+
+#: core/gen/sql/pgsql/om_sig_map_flux.inc.php:42
+#: core/gen/obj/om_sig_map_flux.class.php:374
+msgid "baselayer"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:33
+#: core/gen/sql/pgsql/om_sousetat.inc.php:102
+#: core/gen/obj/om_sousetat.class.php:802
+msgid "titrefont"
+msgstr "police"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:34
+#: core/gen/sql/pgsql/om_sousetat.inc.php:103
+#: core/gen/obj/om_sousetat.class.php:803
+msgid "titreattribut"
+msgstr "attribut"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:35
+#: core/gen/sql/pgsql/om_sousetat.inc.php:104
+#: core/gen/obj/om_sousetat.class.php:804
+msgid "titretaille"
+msgstr "taille"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:37
+#: core/gen/sql/pgsql/om_sousetat.inc.php:106
+#: core/gen/obj/om_sousetat.class.php:806
+msgid "titrealign"
+msgstr "alignement"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:38
+#: core/gen/sql/pgsql/om_sousetat.inc.php:107
+#: core/gen/obj/om_sousetat.class.php:807
+msgid "titrefond"
+msgstr "fond"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:39
+#: core/gen/sql/pgsql/om_sousetat.inc.php:108
+#: core/gen/obj/om_sousetat.class.php:808
+msgid "titrefondcouleur"
+msgstr "couleur de fond"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:40
+#: core/gen/sql/pgsql/om_sousetat.inc.php:109
+#: core/gen/obj/om_sousetat.class.php:809
+msgid "titretextecouleur"
+msgstr "couleur du texte"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:41
+#: core/gen/sql/pgsql/om_sousetat.inc.php:110
+#: core/gen/obj/om_sousetat.class.php:810
+msgid "intervalle_debut"
+msgstr "Début d'intervalle"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:42
+#: core/gen/sql/pgsql/om_sousetat.inc.php:111
+#: core/gen/obj/om_sousetat.class.php:811
+msgid "intervalle_fin"
+msgstr "Fin d'intervalle"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:43
+#: core/gen/sql/pgsql/om_sousetat.inc.php:112
+#: core/gen/obj/om_sousetat.class.php:812
+msgid "entete_flag"
+msgstr "entête active"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:44
+#: core/gen/sql/pgsql/om_sousetat.inc.php:113
+#: core/gen/obj/om_sousetat.class.php:813
+msgid "entete_fond"
+msgstr "fond"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:45
+#: core/gen/sql/pgsql/om_sousetat.inc.php:114
+#: core/gen/obj/om_sousetat.class.php:814
+msgid "entete_orientation"
+msgstr "orientation"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:46
+#: core/gen/sql/pgsql/om_sousetat.inc.php:115
+#: core/gen/obj/om_sousetat.class.php:815
+msgid "entete_hauteur"
+msgstr "hauteur"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:47
+#: core/gen/sql/pgsql/om_sousetat.inc.php:116
+#: core/gen/obj/om_sousetat.class.php:816
+msgid "entetecolone_bordure"
+msgstr "bordure"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:48
+#: core/gen/sql/pgsql/om_sousetat.inc.php:117
+#: core/gen/obj/om_sousetat.class.php:817
+msgid "entetecolone_align"
+msgstr "alignement"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:49
+#: core/gen/sql/pgsql/om_sousetat.inc.php:118
+#: core/gen/obj/om_sousetat.class.php:818
+msgid "entete_fondcouleur"
+msgstr "couleur de fond"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:50
+#: core/gen/sql/pgsql/om_sousetat.inc.php:119
+#: core/gen/obj/om_sousetat.class.php:819
+msgid "entete_textecouleur"
+msgstr "couleur du texte"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:51
+#: core/gen/sql/pgsql/om_sousetat.inc.php:120
+#: core/gen/obj/om_sousetat.class.php:820
+msgid "tableau_largeur"
+msgstr "largeur"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:52
+#: core/gen/sql/pgsql/om_sousetat.inc.php:121
+#: core/gen/obj/om_sousetat.class.php:821
+msgid "tableau_bordure"
+msgstr "bordure"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:53
+#: core/gen/sql/pgsql/om_sousetat.inc.php:122
+#: core/gen/obj/om_sousetat.class.php:822
+msgid "tableau_fontaille"
+msgstr "taille de police"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:54
+#: core/gen/sql/pgsql/om_sousetat.inc.php:123
+#: core/gen/obj/om_sousetat.class.php:823
+msgid "bordure_couleur"
+msgstr "Couleur de bordure"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:55
+#: core/gen/sql/pgsql/om_sousetat.inc.php:124
+#: core/gen/obj/om_sousetat.class.php:824
+msgid "se_fond1"
+msgstr "fond 1"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:56
+#: core/gen/sql/pgsql/om_sousetat.inc.php:125
+#: core/gen/obj/om_sousetat.class.php:825
+msgid "se_fond2"
+msgstr "Fond 2"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:57
+#: core/gen/sql/pgsql/om_sousetat.inc.php:126
+#: core/gen/obj/om_sousetat.class.php:826
+msgid "cellule_fond"
+msgstr "Fond de cellule"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:58
+#: core/gen/sql/pgsql/om_sousetat.inc.php:127
+#: core/gen/obj/om_sousetat.class.php:827
+msgid "cellule_hauteur"
+msgstr "Hauteur de cellule"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:59
+#: core/gen/sql/pgsql/om_sousetat.inc.php:128
+#: core/gen/obj/om_sousetat.class.php:828
+msgid "cellule_largeur"
+msgstr "Largeur de cellule"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:60
+#: core/gen/sql/pgsql/om_sousetat.inc.php:129
+#: core/gen/obj/om_sousetat.class.php:829
+msgid "cellule_bordure_un"
+msgstr "Cellule bordure un"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:61
+#: core/gen/sql/pgsql/om_sousetat.inc.php:130
+#: core/gen/obj/om_sousetat.class.php:830
+msgid "cellule_bordure"
+msgstr "Bordure de cellule"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:62
+#: core/gen/sql/pgsql/om_sousetat.inc.php:131
+#: core/gen/obj/om_sousetat.class.php:831
+msgid "cellule_align"
+msgstr "alignement"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:63
+#: core/gen/sql/pgsql/om_sousetat.inc.php:132
+#: core/gen/obj/om_sousetat.class.php:832
+msgid "cellule_fond_total"
+msgstr "fond du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:64
+#: core/gen/sql/pgsql/om_sousetat.inc.php:133
+#: core/gen/obj/om_sousetat.class.php:833
+msgid "cellule_fontaille_total"
+msgstr "taille de police du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:65
+#: core/gen/sql/pgsql/om_sousetat.inc.php:134
+#: core/gen/obj/om_sousetat.class.php:834
+msgid "cellule_hauteur_total"
+msgstr "hauteur du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:66
+#: core/gen/sql/pgsql/om_sousetat.inc.php:135
+#: core/gen/obj/om_sousetat.class.php:835
+msgid "cellule_fondcouleur_total"
+msgstr "couleur de fond du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:67
+#: core/gen/sql/pgsql/om_sousetat.inc.php:136
+#: core/gen/obj/om_sousetat.class.php:836
+msgid "cellule_bordure_total"
+msgstr "bordure du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:68
+#: core/gen/sql/pgsql/om_sousetat.inc.php:137
+#: core/gen/obj/om_sousetat.class.php:837
+msgid "cellule_align_total"
+msgstr "alignement du total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:69
+#: core/gen/sql/pgsql/om_sousetat.inc.php:138
+#: core/gen/obj/om_sousetat.class.php:838
+msgid "cellule_fond_moyenne"
+msgstr "fond de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:70
+#: core/gen/sql/pgsql/om_sousetat.inc.php:139
+#: core/gen/obj/om_sousetat.class.php:839
+msgid "cellule_fontaille_moyenne"
+msgstr "taille de police de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:71
+#: core/gen/sql/pgsql/om_sousetat.inc.php:140
+#: core/gen/obj/om_sousetat.class.php:840
+msgid "cellule_hauteur_moyenne"
+msgstr "hauteur de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:72
+#: core/gen/sql/pgsql/om_sousetat.inc.php:141
+#: core/gen/obj/om_sousetat.class.php:841
+#, fuzzy
+msgid "cellule_fondcouleur_moyenne"
+msgstr "couleur de fond de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:73
+#: core/gen/sql/pgsql/om_sousetat.inc.php:142
+#: core/gen/obj/om_sousetat.class.php:842
+#, fuzzy
+msgid "cellule_bordure_moyenne"
+msgstr "bordure de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:74
+#: core/gen/sql/pgsql/om_sousetat.inc.php:143
+#: core/gen/obj/om_sousetat.class.php:843
+#, fuzzy
+msgid "cellule_align_moyenne"
+msgstr "alignement de la moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:75
+#: core/gen/sql/pgsql/om_sousetat.inc.php:144
+#: core/gen/obj/om_sousetat.class.php:844
+#, fuzzy
+msgid "cellule_fond_nbr"
+msgstr "fond nombres"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:76
+#: core/gen/sql/pgsql/om_sousetat.inc.php:145
+#: core/gen/obj/om_sousetat.class.php:845
+#, fuzzy
+msgid "cellule_fontaille_nbr"
+msgstr "taille de police nombres"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:77
+#: core/gen/sql/pgsql/om_sousetat.inc.php:146
+#: core/gen/obj/om_sousetat.class.php:846
+#, fuzzy
+msgid "cellule_hauteur_nbr"
+msgstr "hauteur"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:78
+#: core/gen/sql/pgsql/om_sousetat.inc.php:147
+#: core/gen/obj/om_sousetat.class.php:847
+#, fuzzy
+msgid "cellule_fondcouleur_nbr"
+msgstr "couleur de fond"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:79
+#: core/gen/sql/pgsql/om_sousetat.inc.php:148
+#: core/gen/obj/om_sousetat.class.php:848
+#, fuzzy
+msgid "cellule_bordure_nbr"
+msgstr "bordure"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:80
+#: core/gen/sql/pgsql/om_sousetat.inc.php:149
+#: core/gen/obj/om_sousetat.class.php:849
+#, fuzzy
+msgid "cellule_align_nbr"
+msgstr "alignement nombres"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:81
+#: core/gen/sql/pgsql/om_sousetat.inc.php:150
+#: core/gen/obj/om_sousetat.class.php:850
+#, fuzzy
+msgid "cellule_numerique"
+msgstr "cellule numérique"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:82
+#: core/gen/sql/pgsql/om_sousetat.inc.php:151
+#: core/gen/obj/om_sousetat.class.php:851
+#, fuzzy
+msgid "cellule_total"
+msgstr "cellule Total"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:83
+#: core/gen/sql/pgsql/om_sousetat.inc.php:152
+#: core/gen/obj/om_sousetat.class.php:852
+#, fuzzy
+msgid "cellule_moyenne"
+msgstr "cellule Moyenne"
+
+#: core/gen/sql/pgsql/om_sousetat.inc.php:84
+#: core/gen/sql/pgsql/om_sousetat.inc.php:153
+#: core/gen/obj/om_sousetat.class.php:853
+#, fuzzy
+msgid "cellule_compteur"
+msgstr "cellule Compteur"
+
+#: core/gen/sql/pgsql/om_permission.inc.php:7
+#: core/gen/sql/pgsql/om_permission.inc.php:26
+#: core/gen/sql/pgsql/om_permission.inc.php:35
+#: core/gen/obj/om_permission.class.php:140
+#, fuzzy
+msgid "om_permission"
+msgstr "Version"
+
+#: core/gen/sql/pgsql/om_requete.inc.php:27
+#: core/gen/sql/pgsql/om_requete.inc.php:42
+#: core/gen/obj/om_requete.class.php:202
+msgid "code"
+msgstr "code"
+
+#: core/gen/sql/pgsql/om_requete.inc.php:31
+#: core/gen/sql/pgsql/om_requete.inc.php:46
+#: core/gen/obj/om_requete.class.php:208
+msgid "classe"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_requete.inc.php:32
+#: core/gen/sql/pgsql/om_requete.inc.php:47
+#: core/gen/obj/om_requete.class.php:209
+msgid "methode"
+msgstr ""
+
+#: core/gen/sql/pgsql/om_requete.inc.php:36
+#: core/gen/obj/om_requete.class.php:205
+msgid "requete"
+msgstr "requête"
+
+#: core/gen/sql/pgsql/om_profil.inc.php:28
+#: core/gen/sql/pgsql/om_profil.inc.php:37
+#: core/gen/obj/om_profil.class.php:146
+msgid "hierarchie"
+msgstr "hiérarchie"
+
+#~ msgid "application"
+#~ msgstr "application"
+
+#~ msgid "traitement"
+#~ msgstr "traitement"

@@ -1,0 +1,93 @@
+/**
+ * Cette feuille de style contient le style dédié au champ de texte riche
+ * TinyMCE.
+ *
+ * @package framework_openmairie
+ * @version SVN : $Id: tinymce.css 4348 2018-07-20 16:49:26Z softime $
+ */
+
+/**
+ * TINYMCE - default.
+ *
+ * Police et taille par défaut. Ce sont les attributs qui sont définis par
+ * défaut dans l'édition PDF lorsque aucun attribut supplémentaire n'est
+ * défini.
+ */
+body {
+    font-family: Helvetica;
+    font-size: 12pt;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.mce-item-table {
+    width:100%;
+}
+
+/**
+ * TINYMCE - min_maj.
+ */
+.mce_min, .mce_maj {
+    border: 1px dotted #000000;
+}
+.mce_min {
+    text-transform: lowercase;
+}
+.mce_maj {
+    text-transform: uppercase;
+}
+
+/**
+ * TINYMCE - barcode.
+ *
+ * Propriétés CSS permettant de visualiser dans l'éditeur tinymce si la
+ * propriété code barres est activée ou non sur une chaîne de caractères.
+ */
+.mce_codebarre {
+    border: 1px dotted #000000;
+    background: #DEDEDE url("../img/barcode.png") no-repeat left top;
+    background-position :  0% 0%;
+    background-size: 24px;
+    padding-left : 28px;
+    padding-top:0;
+}
+.mce_codebarre:after {
+    content: "\a  ";
+    white-space: pre;
+}
+
+/**
+ * TINYMCE - sousetat.
+ */
+.mce_sousetat {
+    border: 1px dotted #000000;
+    background: #DEDEDE url("../img/sousetat.png") no-repeat left top;
+    background-position :  0% 0%;
+    background-size: 16px;
+    padding-left : 20px;
+    padding-top:0;
+}
+
+/**
+ * TINYMCE - table_unbreakable_breakable_property.
+ *
+ * Propriétés CSS permettant de visualiser dans l'éditeur si la propriété est
+ * activée sur un tableau ou non.
+ */
+table[nobr="true"] {
+    border: 1px dotted #000000;
+    background: transparent url("../img/mce_table_unbreakable_breakable_property.png") no-repeat left top;
+}
+
+/**
+ * TINYMCE - pagebreak.
+ *
+ * L'image qui représente le saut de page dans l'éditeur tinymce ajoute un
+ * ascenseur horizontal dans l'éditeur. En réduisant la largeur on supprime
+ * l'ascenseur en question.
+ */
+.mce-pagebreak {
+    width: 99%;
+}
+

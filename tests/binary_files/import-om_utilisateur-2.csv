@@ -1,0 +1,3 @@
+om_utilisateur;nom;email;login;pwd;om_collectivite;om_type;om_profil
+0;Gérard MARTIN;gmartin@example.com;gmartin;azerty;1;db;1
+0;Jacques BLANC;jblanc@example.com;jblanc;azerty;1;db;1
