@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 09:48
+//gen openMairie le 05/05/2026 16:15
 
 require_once PATH_OPENMAIRIE."om_dbform.class.php";
 
@@ -14,7 +14,9 @@ class animal_gen extends dbform {
     var $required_field = array(
         "animal"
     );
-    
+    var $unique_key = array(
+      "num_identification",
+    );
     var $foreign_keys_extended = array(
         "animal_espece" => array("animal_espece", ),
         "animal_race" => array("animal_race", ),
@@ -43,6 +45,8 @@ class animal_gen extends dbform {
             "animal_race",
             "animal_sexe",
             "personne",
+            "num_identification",
+            "description",
         );
     }
 
@@ -150,6 +154,12 @@ class animal_gen extends dbform {
         } else {
             $this->valF['personne'] = $val['personne'];
         }
+        if ($val['num_identification'] == "") {
+            $this->valF['num_identification'] = NULL;
+        } else {
+            $this->valF['num_identification'] = $val['num_identification'];
+        }
+            $this->valF['description'] = $val['description'];
     }
 
     //=================================================
@@ -204,6 +214,8 @@ class animal_gen extends dbform {
             } else {
                 $form->setType("personne", "select");
             }
+            $form->setType("num_identification", "text");
+            $form->setType("description", "textarea");
         }
 
         // MDOE MODIFIER
@@ -231,6 +243,8 @@ class animal_gen extends dbform {
             } else {
                 $form->setType("personne", "select");
             }
+            $form->setType("num_identification", "text");
+            $form->setType("description", "textarea");
         }
 
         // MODE SUPPRIMER
@@ -242,6 +256,8 @@ class animal_gen extends dbform {
             $form->setType("animal_race", "selectstatic");
             $form->setType("animal_sexe", "selectstatic");
             $form->setType("personne", "selectstatic");
+            $form->setType("num_identification", "hiddenstatic");
+            $form->setType("description", "hiddenstatic");
         }
 
         // MODE CONSULTER
@@ -253,6 +269,8 @@ class animal_gen extends dbform {
             $form->setType("animal_race", "selectstatic");
             $form->setType("animal_sexe", "selectstatic");
             $form->setType("personne", "selectstatic");
+            $form->setType("num_identification", "static");
+            $form->setType("description", "textareastatic");
         }
 
     }
@@ -278,6 +296,8 @@ class animal_gen extends dbform {
         $form->setTaille("animal_race", 11);
         $form->setTaille("animal_sexe", 11);
         $form->setTaille("personne", 11);
+        $form->setTaille("num_identification", 10);
+        $form->setTaille("description", 80);
     }
 
     /**
@@ -291,6 +311,8 @@ class animal_gen extends dbform {
         $form->setMax("animal_race", 11);
         $form->setMax("animal_sexe", 11);
         $form->setMax("personne", 11);
+        $form->setMax("num_identification", -5);
+        $form->setMax("description", 6);
     }
 
 
@@ -303,6 +325,8 @@ class animal_gen extends dbform {
         $form->setLib('animal_race', __('animal_race'));
         $form->setLib('animal_sexe', __('animal_sexe'));
         $form->setLib('personne', __('personne'));
+        $form->setLib('num_identification', __('num_identification'));
+        $form->setLib('description', __('description'));
     }
     /**
      *
@@ -386,14 +410,14 @@ class animal_gen extends dbform {
     function cleSecondaire($id, &$dnu1 = null, $val = array(), $dnu2 = null) {
         // On appelle la methode de la classe parent
         parent::cleSecondaire($id);
-        // Verification de la cle secondaire : facture_sejour
-        $this->rechercheTable($this->f->db, "facture_sejour", "animal", $id);
-        // Verification de la cle secondaire : facture_soin
-        $this->rechercheTable($this->f->db, "facture_soin", "animal", $id);
+        // Verification de la cle secondaire : animal_entree
+        $this->rechercheTable($this->f->db, "animal_entree", "animal", $id);
+        // Verification de la cle secondaire : animal_sortie
+        $this->rechercheTable($this->f->db, "animal_sortie", "animal", $id);
         // Verification de la cle secondaire : medicament
         $this->rechercheTable($this->f->db, "medicament", "animal", $id);
-        // Verification de la cle secondaire : sejour
-        $this->rechercheTable($this->f->db, "sejour", "animal", $id);
+        // Verification de la cle secondaire : medicament_suivi
+        $this->rechercheTable($this->f->db, "medicament_suivi", "animal", $id);
         // Verification de la cle secondaire : soin
         $this->rechercheTable($this->f->db, "soin", "animal", $id);
     }

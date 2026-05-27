@@ -27,37 +27,42 @@ $tab_actions['left']['état'] = array(
 );
 
 // Recherche avancée
-
-$champs['nom'] = array(
-	'table' => 'veterinaire',
-	'colonne' => 'nom',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('nom')
-);
-
-$champs['prenom'] = array(
-	'table' => 'veterinaire',
-	'colonne' => 'nom',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('prénom')
-);
-
-$champs['civilite'] = array(
-	'table' => 'veterinaire',
-	'colonne' => 'civilite',
-	'type' => 'select',
-	'taille' => 10,
-	'libelle' => _('civilité')
-);
-
-$champs['clinique'] = array(
-	'table' => 'veterinaire',
-	'colonne' => 'clinique',
-	'type' => 'select',
-	'taille' => 10,
-	'libelle' => _('clinique')
+$champs= array(
+	'veterinaire' => array(
+		'table' => 'veterinaire',
+		'colonne' => 'veterinaire',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'nom' => array(
+		'table' => 'veterinaire',
+		'colonne' => 'nom',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('nom')
+	),
+	'prenom' => array(
+		'table' => 'veterinaire',
+		'colonne' => 'nom',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('prénom')
+	),
+	'civilite' => array(
+		'table' => 'veterinaire',
+		'colonne' => 'civilite',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('civilité')
+	),
+	'clinique' => array(
+		'table' => 'veterinaire',
+		'colonne' => 'clinique',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('clinique')
+	)
 );
 
 $options[] = array(

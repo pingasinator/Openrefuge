@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 03/05/2018 08:49
+//gen openMairie le 28/04/2026 10:31
 
 require_once PATH_OPENMAIRIE."om_dbform.class.php";
 
@@ -24,11 +24,11 @@ class om_etat_gen extends dbform {
         "orientation",
         "se_couleurtexte",
         "se_font",
+        "titre_om_htmletat",
         "titrebordure",
         "titrehauteur",
         "titrelargeur",
         "titreleft",
-        "titre_om_htmletat",
         "titretop"
     );
     

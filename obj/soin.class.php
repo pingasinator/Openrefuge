@@ -37,4 +37,16 @@ class soin extends soin_gen {
         );
     }
 
+    function get_var_sql_forminc__champs() {
+        return array(
+            "soin",
+            "animal",
+            "soin_type",
+            "date_soin",
+            "veterinaire",
+            "clinique",
+            "posologie",
+            "description"
+        );
+    }
 }

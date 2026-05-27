@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 17/03/2026 09:06
+//gen openMairie le 23/04/2026 10:41
 
 $DEBUG=0;
 $serie=15;
@@ -38,7 +38,6 @@ $champAffiche = array(
     'animal.nom as "'.__("animal").'"',
     'clinique.nom as "'.__("clinique").'"',
     'soin_type.libelle as "'.__("soin_type").'"',
-    'soin.tarif as "'.__("tarif").'"',
     );
 //
 $champNonAffiche = array(
@@ -52,7 +51,6 @@ $champRecherche = array(
     'animal.nom as "'.__("animal").'"',
     'clinique.nom as "'.__("clinique").'"',
     'soin_type.libelle as "'.__("soin_type").'"',
-    'soin.tarif as "'.__("tarif").'"',
     );
 $tri="ORDER BY soin.date_soin ASC NULLS LAST";
 $edition="soin";
@@ -89,7 +87,6 @@ if (in_array($retourformulaire, $foreign_keys_extended["veterinaire"])) {
  * Gestion SOUSFORMULAIRE => $sousformulaire
  */
 $sousformulaire = array(
-    'facture_soin',
     'medicament',
 );
 

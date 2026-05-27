@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 09:48
+//gen openMairie le 05/05/2026 16:15
 
 $DEBUG=0;
 $serie=15;
@@ -38,9 +38,11 @@ $champAffiche = array(
     'animal_race.nom as "'.__("animal_race").'"',
     'animal_sexe.libelle as "'.__("animal_sexe").'"',
     'personne.nom as "'.__("personne").'"',
+    'animal.num_identification as "'.__("num_identification").'"',
     );
 //
 $champNonAffiche = array(
+    'animal.description as "'.__("description").'"',
     );
 //
 $champRecherche = array(
@@ -50,6 +52,7 @@ $champRecherche = array(
     'animal_race.nom as "'.__("animal_race").'"',
     'animal_sexe.libelle as "'.__("animal_sexe").'"',
     'personne.nom as "'.__("personne").'"',
+    'animal.num_identification as "'.__("num_identification").'"',
     );
 $tri="ORDER BY animal.nom ASC NULLS LAST";
 $edition="animal";
@@ -86,10 +89,10 @@ if (in_array($retourformulaire, $foreign_keys_extended["personne"])) {
  * Gestion SOUSFORMULAIRE => $sousformulaire
  */
 $sousformulaire = array(
-    'facture_sejour',
-    'facture_soin',
+    'animal_entree',
+    'animal_sortie',
     'medicament',
-    'sejour',
+    'medicament_suivi',
     'soin',
 );
 

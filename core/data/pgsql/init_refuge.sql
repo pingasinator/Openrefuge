@@ -184,7 +184,7 @@ NO CYCLE
 CACHE 1;
 
 CREATE SEQUENCE animal_race_seq
-START WITH 1
+START WITH 176
 INCREMENT BY 1
 NO MINVALUE 
 NO MAXVALUE 
@@ -358,3 +358,6 @@ ADD CONSTRAINT fk_sejour_tarif FOREIGN KEY (sejour_tarif) REFERENCES sejour_tari
 ADD CONSTRAINT fk_animal FOREIGN KEY (animal) REFERENCES animal(animal),
 ADD CONSTRAINT fk_provenance FOREIGN KEY (provenance) REFERENCES provenance(provenance),
 ADD CONSTRAINT fk_hebergement FOREIGN KEY (hebergement) REFERENCES hebergement(hebergement);
+
+ALTER SEQUENCE om_etat_seq
+RESTART WITH 10;

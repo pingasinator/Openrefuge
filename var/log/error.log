@@ -17006,3 +17006,1623 @@ LIGNE 4 : from facture_soin left join openrefuge.facture on facture_so...
                ^ [DEBUG]
 2026-03-17 11:09:11 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
 
+
+2026-04-10 11:09:16 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal_race&validation=1&action=0&premier=0&retour=form
+2026-04-10 11:09:16 database::isError(): QUERY => INSERT INTO openrefuge.animal_race (animal_race,nom,animal_espece) VALUES ('1','malinois','2')  [DEBUG]
+2026-04-10 11:09:16 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « animal_race_pkey »
+DÉTAIL : La clé « (animal_race)=(1) » existe déjà. [DEBUG]
+2026-04-10 11:09:16 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:09:22 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal_race&validation=2&action=0&premier=0&retour=form
+2026-04-10 11:09:22 database::isError(): QUERY => INSERT INTO openrefuge.animal_race (animal_race,nom,animal_espece) VALUES ('2','malinois','2')  [DEBUG]
+2026-04-10 11:09:22 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « animal_race_pkey »
+DÉTAIL : La clé « (animal_race)=(2) » existe déjà. [DEBUG]
+2026-04-10 11:09:22 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:09:23 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal_race&validation=3&action=0&premier=0&retour=form
+2026-04-10 11:09:23 database::isError(): QUERY => INSERT INTO openrefuge.animal_race (animal_race,nom,animal_espece) VALUES ('3','malinois','2')  [DEBUG]
+2026-04-10 11:09:23 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « animal_race_pkey »
+DÉTAIL : La clé « (animal_race)=(3) » existe déjà. [DEBUG]
+2026-04-10 11:09:23 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:09:44 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal_race&validation=4&action=0&premier=0&retour=form
+2026-04-10 11:09:44 database::isError(): QUERY => INSERT INTO openrefuge.animal_race (animal_race,nom,animal_espece) VALUES ('4','malinois','2')  [DEBUG]
+2026-04-10 11:09:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « animal_race_pkey »
+DÉTAIL : La clé « (animal_race)=(4) » existe déjà. [DEBUG]
+2026-04-10 11:09:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:09:49 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal_race&validation=5&action=0&premier=0&retour=form
+2026-04-10 11:09:49 database::isError(): QUERY => INSERT INTO openrefuge.animal_race (animal_race,nom,animal_espece) VALUES ('5','malinois','2')  [DEBUG]
+2026-04-10 11:09:49 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « animal_race_pkey »
+DÉTAIL : La clé « (animal_race)=(5) » existe déjà. [DEBUG]
+2026-04-10 11:09:49 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:36:08 ERROR [admin] /openrefuge/app/index.php?module=reqmo&obj=animal_prestation
+2026-04-10 11:36:08 database::isError(): QUERY => select * from openrefuge.prestation  [DEBUG]
+2026-04-10 11:36:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.prestation » n'existe pas
+LIGNE 1 : select * from openrefuge.prestation
+                        ^ [DEBUG]
+2026-04-10 11:36:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-10 11:36:11 ERROR [admin] /openrefuge/app/index.php?module=reqmo&obj=animal_pension
+2026-04-10 11:36:11 database::isError(): QUERY => select * from openrefuge.pension  [DEBUG]
+2026-04-10 11:36:11 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.pension » n'existe pas
+LIGNE 1 : select * from openrefuge.pension
+                        ^ [DEBUG]
+2026-04-10 11:36:11 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:00:56 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=medicament
+2026-04-22 11:00:56 database::isError(): QUERY =>  SELECT medicament, nom, date_debut, date_fin, dose, frequence, unite_mesure, soin, animal  FROM openrefuge.medicament    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 11:00:56 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « unite_mesure » n'existe pas
+LIGNE 1 : ...ment, nom, date_debut, date_fin, dose, frequence, unite_mesu...
+                                                               ^ [DEBUG]
+2026-04-22 11:00:56 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 11:00:56 database::isError(): QUERY => SELECT unite_mesure.unite_mesure, unite_mesure.libelle FROM openrefuge.unite_mesure ORDER BY unite_mesure.libelle ASC  [DEBUG]
+2026-04-22 11:00:56 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 1 : ...te_mesure.unite_mesure, unite_mesure.libelle FROM openrefuge...
+                                                               ^ [DEBUG]
+2026-04-22 11:00:56 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:01:12 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=medicament
+2026-04-22 11:01:12 database::isError(): QUERY => SELECT medicament.medicament as "ID",medicament.nom as "nom",to_char(medicament.date_debut ,'DD/MM/YYYY') as "date de debut",to_char(medicament.date_fin ,'DD/MM/YYYY') as "date de fin",concat(medicament.dose,' ',unite_mesure.libelle) as "dose",medicament.frequence as "fréquence",soin.soin as "soin",animal.nom as "animal" FROM openrefuge.medicament
+    LEFT JOIN openrefuge.animal 
+        ON medicament.animal=animal.animal 
+    LEFT JOIN openrefuge.soin 
+        ON medicament.soin=soin.soin   ORDER BY medicament.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 11:01:12 database::isError(): SGBD ERROR => nativecode=ERREUR:  entrée manquante de la clause FROM pour la table « unite_mesure »
+LIGNE 1 : ...YYY') as "date de fin",concat(medicament.dose,' ',unite_mesu...
+                                                               ^ [DEBUG]
+2026-04-22 11:01:12 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:42:27 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=sejour
+2026-04-22 11:42:27 database::isError(): QUERY =>  SELECT sejour, date_entree, date_sortie, paye, animal, provenance, hebergement, sejour_tarif  FROM openrefuge.sejour    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 11:42:27 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.sejour » n'existe pas
+LIGNE 1 : ...imal, provenance, hebergement, sejour_tarif  FROM openrefuge...
+                                                               ^ [DEBUG]
+2026-04-22 11:42:27 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 11:42:27 database::isError(): QUERY => SELECT sejour.sejour as "id",animal.nom as "animal",hebergement.adresse as "hebergement",provenance.provenance as "provenance",to_char(sejour.date_entree ,'DD/MM/YYYY') as "date d'entée",to_char(sejour.date_sortie ,'DD/MM/YYYY') as "date de sortie",sejour.date_sortie - sejour.date_entree as "nb de jours",round(coalesce(sejour_tarif.prix,'0')::numeric,2) as "tarif",round(coalesce(cast((sejour.date_sortie - sejour.date_entree) as int) * sejour_tarif.prix,'0')::numeric,2) as  "somme",case sejour.paye when 't' then 'Oui' else 'Non' end as "payé" FROM openrefuge.sejour
+    LEFT JOIN openrefuge.animal 
+        ON sejour.animal=animal.animal 
+    LEFT JOIN openrefuge.hebergement 
+        ON sejour.hebergement=hebergement.hebergement 
+    LEFT JOIN openrefuge.provenance 
+        ON sejour.provenance=provenance.provenance 
+    LEFT JOIN openrefuge.sejour_tarif 
+        ON sejour.sejour_tarif=sejour_tarif.sejour_tarif   ORDER BY sejour.date_entree ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 11:42:27 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.sejour » n'existe pas
+LIGNE 1 : ...when 't' then 'Oui' else 'Non' end as "payé" FROM openrefuge...
+                                                               ^ [DEBUG]
+2026-04-22 11:42:27 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:47:22 ERROR [admin] /openrefuge/app/index.php?module=gen&view=gen_generate&table=hebergement
+2026-04-22 11:47:22 database::isError(): QUERY => SELECT attname, attnotnull, atttypmod FROM pg_attribute WHERE attrelid = 'openrefuge.hebergement'::regclass AND attstattarget = -1;  [DEBUG]
+2026-04-22 11:47:22 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.hebergement » n'existe pas
+LIGNE 1 : ...ull, atttypmod FROM pg_attribute WHERE attrelid = 'openrefug...
+                                                               ^ [DEBUG]
+2026-04-22 11:47:22 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:52:01 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=hebergement
+2026-04-22 11:52:01 database::isError(): QUERY =>  SELECT hebergement, nom, adresse, ville, telephone, hebergement_type  FROM openrefuge.hebergement    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 11:52:01 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « nom » n'existe pas
+LIGNE 1 :  SELECT hebergement, nom, adresse, ville, telephone, heberge...
+                               ^ [DEBUG]
+2026-04-22 11:52:01 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 11:52:01 database::isError(): QUERY => SELECT hebergement.hebergement as "ID",hebergement.nom as "nom",hebergement_type.libelle as "type d'hébergement",hebergement.adresse as "adresse",ville.nom as "ville",ville.code_postal as "code postal",hebergement.telephone as "telephone" FROM openrefuge.hebergement
+    LEFT JOIN openrefuge.hebergement_type 
+        ON hebergement.hebergement_type=hebergement_type.hebergement_type 
+    LEFT JOIN openrefuge.ville 
+        ON hebergement.ville=ville.ville   ORDER BY hebergement.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 11:52:01 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne hebergement.hebergement_type n'existe pas
+LIGNE 3 :         ON hebergement.hebergement_type=hebergement_type.heb...
+                     ^ [DEBUG]
+2026-04-22 11:52:01 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:52:02 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=hebergement
+2026-04-22 11:52:02 database::isError(): QUERY =>  SELECT hebergement, nom, adresse, ville, telephone, hebergement_type  FROM openrefuge.hebergement    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 11:52:02 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « nom » n'existe pas
+LIGNE 1 :  SELECT hebergement, nom, adresse, ville, telephone, heberge...
+                               ^ [DEBUG]
+2026-04-22 11:52:02 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 11:52:02 database::isError(): QUERY => SELECT hebergement.hebergement as "ID",hebergement.nom as "nom",hebergement_type.libelle as "type d'hébergement",hebergement.adresse as "adresse",ville.nom as "ville",ville.code_postal as "code postal",hebergement.telephone as "telephone" FROM openrefuge.hebergement
+    LEFT JOIN openrefuge.hebergement_type 
+        ON hebergement.hebergement_type=hebergement_type.hebergement_type 
+    LEFT JOIN openrefuge.ville 
+        ON hebergement.ville=ville.ville   ORDER BY hebergement.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 11:52:02 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne hebergement.hebergement_type n'existe pas
+LIGNE 3 :         ON hebergement.hebergement_type=hebergement_type.heb...
+                     ^ [DEBUG]
+2026-04-22 11:52:02 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 11:58:58 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 11:58:58 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 11:58:58 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 11:58:58 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 11:58:58 database::isError(): QUERY => SELECT soin.soin as "ID",soin_type.libelle as "type de soin",to_char(soin.date_soin ,'DD/MM/YYYY') as "date du soin",soin.posologie as "posologie",animal.nom as "animal",veterinaire.nom as "vétérinaire",clinique.nom as "clinique",round(coalesce(soin.tarif,0)::numeric,2) as "tarif" FROM openrefuge.soin
+    LEFT JOIN openrefuge.animal 
+        ON soin.animal=animal.animal 
+    LEFT JOIN openrefuge.clinique 
+        ON soin.clinique=clinique.clinique 
+    LEFT JOIN openrefuge.soin_type 
+        ON soin.soin_type=soin_type.soin_type 
+    LEFT JOIN openrefuge.veterinaire 
+        ON soin.veterinaire=veterinaire.veterinaire   ORDER BY soin.date_soin ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 11:58:58 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne soin.tarif n'existe pas
+LIGNE 1 : ...inaire",clinique.nom as "clinique",round(coalesce(soin.tarif...
+                                                               ^ [DEBUG]
+2026-04-22 11:58:58 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 13:55:12 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 13:55:12 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 13:55:12 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:12 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 13:55:12 database::isError(): QUERY => SELECT soin.soin as "ID",soin_type.libelle as "type de soin",to_char(soin.date_soin ,'DD/MM/YYYY') as "date du soin",soin.posologie as "posologie",animal.nom as "animal",veterinaire.nom as "vétérinaire",clinique.nom as "clinique",round(coalesce(soin.tarif,0)::numeric,2) as "tarif" FROM openrefuge.soin
+    LEFT JOIN openrefuge.animal 
+        ON soin.animal=animal.animal 
+    LEFT JOIN openrefuge.clinique 
+        ON soin.clinique=clinique.clinique 
+    LEFT JOIN openrefuge.soin_type 
+        ON soin.soin_type=soin_type.soin_type 
+    LEFT JOIN openrefuge.veterinaire 
+        ON soin.veterinaire=veterinaire.veterinaire   ORDER BY soin.date_soin ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 13:55:12 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne soin.tarif n'existe pas
+LIGNE 1 : ...inaire",clinique.nom as "clinique",round(coalesce(soin.tarif...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:12 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 13:55:48 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 13:55:48 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 13:55:48 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:48 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 13:55:48 database::isError(): QUERY => SELECT soin.soin as "ID",soin_type.libelle as "type de soin",to_char(soin.date_soin ,'DD/MM/YYYY') as "date du soin",soin.posologie as "posologie",animal.nom as "animal",veterinaire.nom as "vétérinaire",clinique.nom as "clinique",round(coalesce(soin.tarif,0)::numeric,2) as "tarif" FROM openrefuge.soin
+    LEFT JOIN openrefuge.animal 
+        ON soin.animal=animal.animal 
+    LEFT JOIN openrefuge.clinique 
+        ON soin.clinique=clinique.clinique 
+    LEFT JOIN openrefuge.soin_type 
+        ON soin.soin_type=soin_type.soin_type 
+    LEFT JOIN openrefuge.veterinaire 
+        ON soin.veterinaire=veterinaire.veterinaire   ORDER BY soin.date_soin ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 13:55:48 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne soin.tarif n'existe pas
+LIGNE 1 : ...inaire",clinique.nom as "clinique",round(coalesce(soin.tarif...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:48 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 13:55:57 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 13:55:57 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 13:55:57 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:57 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-22 13:55:57 database::isError(): QUERY => SELECT soin.soin as "ID",soin_type.libelle as "type de soin",to_char(soin.date_soin ,'DD/MM/YYYY') as "date du soin",soin.posologie as "posologie",animal.nom as "animal",veterinaire.nom as "vétérinaire",clinique.nom as "clinique",round(coalesce(soin.tarif,0)::numeric,2) as "tarif" FROM openrefuge.soin
+    LEFT JOIN openrefuge.animal 
+        ON soin.animal=animal.animal 
+    LEFT JOIN openrefuge.clinique 
+        ON soin.clinique=clinique.clinique 
+    LEFT JOIN openrefuge.soin_type 
+        ON soin.soin_type=soin_type.soin_type 
+    LEFT JOIN openrefuge.veterinaire 
+        ON soin.veterinaire=veterinaire.veterinaire   ORDER BY soin.date_soin ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 13:55:57 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne soin.tarif n'existe pas
+LIGNE 1 : ...inaire",clinique.nom as "clinique",round(coalesce(soin.tarif...
+                                                               ^ [DEBUG]
+2026-04-22 13:55:57 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 13:56:10 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 13:56:10 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 13:56:10 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 13:56:10 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 14:36:47 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 14:36:47 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 14:36:47 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 14:36:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 15:12:04 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=animal
+2026-04-22 15:12:04 database::isError(): QUERY => SELECT animal.animal as "ID",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",personne.prenom as "personne",provenance.provenance as "provenance" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne   ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-22 15:12:04 database::isError(): SGBD ERROR => nativecode=ERREUR:  entrée manquante de la clause FROM pour la table « provenance »
+LIGNE 1 : ...e.libelle as "sexe",personne.prenom as "personne",provenance...
+                                                               ^ [DEBUG]
+2026-04-22 15:12:04 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-22 16:41:08 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-22 16:41:08 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-22 16:41:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-22 16:41:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 08:47:45 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-23 08:47:45 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 08:47:45 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-23 08:47:45 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 08:53:05 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=soin
+2026-04-23 08:53:05 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 08:53:05 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-23 08:53:05 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:41 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=1&action=0&premier=0&retour=form
+2026-04-23 09:56:41 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('135','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:41 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(135) » existe déjà. [DEBUG]
+2026-04-23 09:56:41 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:43 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=2&action=0&premier=0&retour=form
+2026-04-23 09:56:43 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('136','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:43 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(136) » existe déjà. [DEBUG]
+2026-04-23 09:56:43 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:44 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=3&action=0&premier=0&retour=form
+2026-04-23 09:56:44 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('137','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(137) » existe déjà. [DEBUG]
+2026-04-23 09:56:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:44 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=4&action=0&premier=0&retour=form
+2026-04-23 09:56:44 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('138','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(138) » existe déjà. [DEBUG]
+2026-04-23 09:56:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:45 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=5&action=0&premier=0&retour=form
+2026-04-23 09:56:45 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('139','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:45 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(139) » existe déjà. [DEBUG]
+2026-04-23 09:56:45 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:45 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=6&action=0&premier=0&retour=form
+2026-04-23 09:56:45 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('140','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:45 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(140) » existe déjà. [DEBUG]
+2026-04-23 09:56:45 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:46 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=7&action=0&premier=0&retour=form
+2026-04-23 09:56:46 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('141','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:46 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(141) » existe déjà. [DEBUG]
+2026-04-23 09:56:46 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:46 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=8&action=0&premier=0&retour=form
+2026-04-23 09:56:46 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('142','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:46 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(142) » existe déjà. [DEBUG]
+2026-04-23 09:56:46 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:47 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=9&action=0&premier=0&retour=form
+2026-04-23 09:56:47 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('143','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:47 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(143) » existe déjà. [DEBUG]
+2026-04-23 09:56:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:48 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=10&action=0&premier=0&retour=form
+2026-04-23 09:56:48 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('144','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:48 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(144) » existe déjà. [DEBUG]
+2026-04-23 09:56:48 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:49 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=11&action=0&premier=0&retour=form
+2026-04-23 09:56:49 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('145','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:49 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(145) » existe déjà. [DEBUG]
+2026-04-23 09:56:49 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:49 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=12&action=0&premier=0&retour=form
+2026-04-23 09:56:49 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('146','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:49 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(146) » existe déjà. [DEBUG]
+2026-04-23 09:56:49 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 09:56:50 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_droit&validation=13&action=0&premier=0&retour=form
+2026-04-23 09:56:50 database::isError(): QUERY => INSERT INTO openrefuge.om_droit (om_droit,libelle,om_profil) VALUES ('147','animal_sortie','1')  [DEBUG]
+2026-04-23 09:56:50 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_droit_pkey »
+DÉTAIL : La clé « (om_droit)=(147) » existe déjà. [DEBUG]
+2026-04-23 09:56:50 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 10:40:51 ERROR [admin] /openrefuge/app/index.php?module=sousform&obj=soin&action=0&advs_id=17769332092482&premiersf=0&trisf=&valide=&retourformulaire=animal&idxformulaire=3&retour=form&_=1776933651343
+2026-04-23 10:40:51 database::isError(): QUERY =>  SELECT soin, date_soin, description, posologie, veterinaire, animal, clinique, soin_type, tarif  FROM openrefuge.soin    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 10:40:51 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « tarif » n'existe pas
+LIGNE 1 : ...ologie, veterinaire, animal, clinique, soin_type, tarif  FRO...
+                                                               ^ [DEBUG]
+2026-04-23 10:40:51 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:38:52 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=personne
+2026-04-23 11:38:52 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:38:52 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:38:52 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-23 11:38:52 database::isError(): QUERY => SELECT personne.personne as "ID",personne.nom as "nom",personne.prenom as "prenom",civilite.libelle as "civilité",personne.adresse as "adresse",ville.nom as "Ville",ville.code_postal as "code postal",personne.telephone as "telephone",personne.telephone_sec as "telephone sec",personne.mail as "mail" FROM openrefuge.personne
+    LEFT JOIN openrefuge.civilite 
+        ON personne.civilite=civilite.civilite 
+    LEFT JOIN openrefuge.ville 
+        ON personne.ville=ville.ville   ORDER BY personne.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-23 11:38:52 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 1 : ...prenom as "prenom",civilite.libelle as "civilité",personne.a...
+                                                               ^ [DEBUG]
+2026-04-23 11:38:52 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:39:08 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=personne
+2026-04-23 11:39:08 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:39:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:39:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-23 11:39:08 database::isError(): QUERY => SELECT personne.personne as "ID",personne.nom as "nom",personne.prenom as "prenom",civilite.libelle as "civilité",personne.adresse as "adresse",ville.nom as "Ville",ville.code_postal as "code postal",personne.telephone as "telephone",personne.telephone_sec as "telephone sec",personne.mail as "mail" FROM openrefuge.personne
+    LEFT JOIN openrefuge.civilite 
+        ON personne.civilite=civilite.civilite 
+    LEFT JOIN openrefuge.rue 
+        ON personne.rue=rue.rue 
+    LEFT JOIN openrefuge.ville 
+        ON personne.ville=ville.ville   ORDER BY personne.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-23 11:39:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 1 : ...prenom as "prenom",civilite.libelle as "civilité",personne.a...
+                                                               ^ [DEBUG]
+2026-04-23 11:39:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:39:38 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=personne
+2026-04-23 11:39:38 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:39:38 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:39:38 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:40:04 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=personne
+2026-04-23 11:40:04 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:40:04 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:40:04 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:40:07 ERROR [admin] /openrefuge/app/index.php?module=form&obj=personne&action=0&advs_id=&premier=0&tricol=&valide=&retour=form
+2026-04-23 11:40:07 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:40:07 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:40:07 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:40:08 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=personne&advs_id=&premier=0&tricol=&valide=
+2026-04-23 11:40:08 database::isError(): QUERY =>  SELECT nom, prenom, adresse, telephone, telephone_sec, mail, personne, civilite, ville  FROM openrefuge.personne    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-23 11:40:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « adresse » n'existe pas
+LIGNE 1 :  SELECT nom, prenom, adresse, telephone, telephone_sec, mail...
+                               ^ [DEBUG]
+2026-04-23 11:40:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:40:56 ERROR [admin] /openrefuge/app/index.php?module=form&obj=personne&action=102&idx=2
+2026-04-23 11:40:56 database::isError(): QUERY => select personne.nom as nom,
+personne.prenom as prenom,
+civilite.libelle as civilité,
+personne.adresse as adresse,
+ville.nom as ville,
+ville.code_postal as code_postal,
+personne.telephone as telephone,
+personne.telephone_sec as telephone_sec,
+personne.mail as mail,
+current_date
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.civilite on civilite.civilite = personne.civilite where personne.personne='2'  [DEBUG]
+2026-04-23 11:40:56 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 4 : personne.adresse as adresse,
+          ^ [DEBUG]
+2026-04-23 11:40:56 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 11:45:25 ERROR [admin] /openrefuge/app/index.php?module=form&obj=personne&action=102&idx=6
+2026-04-23 11:45:25 database::isError(): QUERY => select personne.nom as nom,
+personne.prenom as prenom,
+civilite.libelle as civilité,
+personne.adresse as adresse,
+ville.nom as ville,
+ville.code_postal as code_postal,
+personne.telephone as telephone,
+personne.telephone_sec as telephone_sec,
+personne.mail as mail,
+current_date
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.civilite on civilite.civilite = personne.civilite where personne.personne='-1'  [DEBUG]
+2026-04-23 11:45:25 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 4 : personne.adresse as adresse,
+          ^ [DEBUG]
+2026-04-23 11:45:25 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 15:36:24 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=animal_entree
+2026-04-23 15:36:24 database::isError(): QUERY => SELECT animal.animal  as "animal",animal.num_identification as "num identification",to_char(animal_entree.date_entree ,'DD/MM/YYYY') as "date d'entrée",provenance.libelle as "provenance" FROM openrefuge.animal_entree
+    LEFT JOIN openrefuge.animal 
+        ON animal_entree.animal=animal.animal 
+    LEFT JOIN openrefuge.provenance 
+        ON animal_entree.provenance=provenance.provenance   ORDER BY animal_entree.date_entree ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-23 15:36:24 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne provenance.libelle n'existe pas
+LIGNE 1 : ...ree.date_entree ,'DD/MM/YYYY') as "date d'entrée",provenance...
+                                                               ^ [DEBUG]
+2026-04-23 15:36:24 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:25:01 ERROR [admin] /openrefuge/app/index.php?module=form&obj=facture&action=102&idx=4
+2026-04-23 16:25:01 database::isError(): QUERY => with soin_tarif as (
+select 
+sum(facture_soin.tarif) as soin_tarif
+from openrefuge.facture_soin left join openrefuge.facture on facture_soin.facture = facture.facture where facture.facture = '4'
+),
+facture_sejour_tarif as (
+select sum((facture_sejour.date_sortie - facture_sejour.date_entree ) * sejour_tarif.prix) as tarif
+from openrefuge.facture_sejour right join openrefuge.facture on facture_sejour.facture = facture.facture left join openrefuge.sejour_tarif on 
+sejour_tarif.sejour_tarif = facture_sejour.sejour_tarif where facture.facture = '4'
+),
+personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '4'
+)
+select personne.*, 
+round(coalesce(soin_tarif.soin_tarif,0)::numeric,2) as soin_tarif, 
+round(coalesce(facture_sejour_tarif.tarif,0)::numeric,2) as facture_sejour_tarif, 
+round(coalesce(facture_sejour_tarif.tarif + soin_tarif.soin_tarif, 0)::numeric,2) as prix_total,
+current_date  
+from personne, soin_tarif , facture_sejour_tarif;  [DEBUG]
+2026-04-23 16:25:01 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_soin » n'existe pas
+LIGNE 4 : from openrefuge.facture_soin left join openrefuge.facture on...
+               ^ [DEBUG]
+2026-04-23 16:25:01 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:25:05 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&action=102&idx=3
+2026-04-23 16:25:05 database::isError(): QUERY => select animal.animal as animal,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance,
+animal.animal_sexe as sexe,
+personne.prenom as personne_prenom,
+personne.nom as personne_nom,
+civilite.libelle as personne_civilite,
+personne.telephone as personne_telephone,
+personne.telephone_sec as personne_telephone_sec,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail,
+current_date
+from openrefuge.animal left join openrefuge.animal_race on animal.animal_race = animal_race.animal_race left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.personne on personne.personne = animal.personne left join openrefuge.civilite on civilite.civilite = personne.civilite left join openrefuge.ville on ville.ville = personne.ville where animal.animal='3'  [DEBUG]
+2026-04-23 16:25:05 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 12 : personne.adresse as personne_adresse,
+           ^ [DEBUG]
+2026-04-23 16:25:05 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:26:48 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:26:48 database::isError(): QUERY => select animal.animal as animal,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance,
+animal.animal_sexe as sexe,
+personne.prenom as personne_prenom,
+personne.nom as personne_nom,
+civilite.libelle as personne_civilite,
+personne.telephone as personne_telephone,
+personne.telephone_sec as personne_telephone_sec,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail,
+current_date
+from openrefuge.animal left join openrefuge.animal_race on animal.animal_race = animal_race.animal_race left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.personne on personne.personne = animal.personne left join openrefuge.civilite on civilite.civilite = personne.civilite left join openrefuge.ville on ville.ville = personne.ville where animal.animal='-1'  [DEBUG]
+2026-04-23 16:26:48 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 12 : personne.adresse as personne_adresse,
+           ^ [DEBUG]
+2026-04-23 16:26:48 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:29:06 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:29:06 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+concat(medicament.dose, unite_mesure.libelle)  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:29:06 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:29:06 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:29:57 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:29:57 database::isError(): QUERY => select animal.animal as animal,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance,
+animal.animal_sexe as sexe,
+personne.prenom as personne_prenom,
+personne.nom as personne_nom,
+civilite.libelle as personne_civilite,
+personne.telephone as personne_telephone,
+personne.telephone_sec as personne_telephone_sec,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail,
+current_date
+from openrefuge.animal left join openrefuge.animal_race on animal.animal_race = animal_race.animal_race left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.personne on personne.personne = animal.personne left join openrefuge.civilite on civilite.civilite = personne.civilite left join openrefuge.ville on ville.ville = personne.ville where animal.animal='-1'  [DEBUG]
+2026-04-23 16:29:57 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 12 : personne.adresse as personne_adresse,
+           ^ [DEBUG]
+2026-04-23 16:29:57 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:29:59 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:29:59 database::isError(): QUERY => select animal.animal as animal,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance,
+animal.animal_sexe as sexe,
+personne.prenom as personne_prenom,
+personne.nom as personne_nom,
+civilite.libelle as personne_civilite,
+personne.telephone as personne_telephone,
+personne.telephone_sec as personne_telephone_sec,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail,
+current_date
+from openrefuge.animal left join openrefuge.animal_race on animal.animal_race = animal_race.animal_race left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.personne on personne.personne = animal.personne left join openrefuge.civilite on civilite.civilite = personne.civilite left join openrefuge.ville on ville.ville = personne.ville where animal.animal='-1'  [DEBUG]
+2026-04-23 16:29:59 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 12 : personne.adresse as personne_adresse,
+           ^ [DEBUG]
+2026-04-23 16:29:59 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:30:00 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:30:00 database::isError(): QUERY => select animal.animal as animal,
+animal.nom as nom,
+animal_espece.nom as espece,
+animal_race.nom as race,
+animal.date_naissance,
+animal.animal_sexe as sexe,
+personne.prenom as personne_prenom,
+personne.nom as personne_nom,
+civilite.libelle as personne_civilite,
+personne.telephone as personne_telephone,
+personne.telephone_sec as personne_telephone_sec,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail,
+current_date
+from openrefuge.animal left join openrefuge.animal_race on animal.animal_race = animal_race.animal_race left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.personne on personne.personne = animal.personne left join openrefuge.civilite on civilite.civilite = personne.civilite left join openrefuge.ville on ville.ville = personne.ville where animal.animal='-1'  [DEBUG]
+2026-04-23 16:30:00 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 12 : personne.adresse as personne_adresse,
+           ^ [DEBUG]
+2026-04-23 16:30:00 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:48:03 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:48:03 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+concat(medicament.dose, unite_mesure.libelle)  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:48:03 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:48:03 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:48:09 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:48:09 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+concat(medicament.dose, unite_mesure.libelle)  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:48:09 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:48:09 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:48:28 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:48:28 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+concat(medicament.dose, unite_mesure.libelle)  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:48:28 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:48:28 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:49:38 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:49:38 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.dose  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:49:38 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:49:38 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-23 16:49:38 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-23 16:49:38 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.dose  as dose,
+medicament.frequence as fréquence,
+medicament.soin as ID_soin
+from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.animal='-1'  [DEBUG]
+2026-04-23 16:49:38 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 8 : from openrefuge.medicament left join openrefuge.unite_mesure...
+                                               ^ [DEBUG]
+2026-04-23 16:49:38 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-24 14:28:03 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&validation=1&idx=10&action=2&premier=0&retour=form
+2026-04-24 14:28:03 database::isError(): QUERY => select count(*) from openrefuge.facture_sejour where animal=10   [DEBUG]
+2026-04-24 14:28:03 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_sejour » n'existe pas
+LIGNE 1 : select count(*) from openrefuge.facture_sejour where animal=...
+                               ^ [DEBUG]
+2026-04-24 14:28:03 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-24 14:28:12 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&validation=1&idx=6&action=2&premier=0&retour=form
+2026-04-24 14:28:12 database::isError(): QUERY => select count(*) from openrefuge.facture_sejour where animal=6   [DEBUG]
+2026-04-24 14:28:12 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_sejour » n'existe pas
+LIGNE 1 : select count(*) from openrefuge.facture_sejour where animal=...
+                               ^ [DEBUG]
+2026-04-24 14:28:12 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-24 14:32:00 ERROR [admin] /openrefuge/app/index.php?module=form&obj=personne&action=102&idx=2
+2026-04-24 14:32:00 database::isError(): QUERY => select personne.nom as nom,
+personne.prenom as prenom,
+civilite.libelle as civilité,
+personne.adresse as adresse,
+ville.nom as ville,
+ville.code_postal as code_postal,
+personne.telephone as telephone,
+personne.telephone_sec as telephone_sec,
+personne.mail as mail,
+current_date
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.civilite on civilite.civilite = personne.civilite where personne.personne='2'  [DEBUG]
+2026-04-24 14:32:00 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne personne.adresse n'existe pas
+LIGNE 4 : personne.adresse as adresse,
+          ^ [DEBUG]
+2026-04-24 14:32:00 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-27 11:49:43 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=clinique
+2026-04-27 11:49:43 database::isError(): QUERY => SELECT clinique.clinique as "ID",clinique.nom as "nom",clinique.adresse as "adresse",ville.nom as "ville",ville.code_postal as "code postal" FROM openrefuge.clinique
+    LEFT JOIN openrefuge.rue 
+        ON clinique.rue=rue.rue 
+    LEFT JOIN openrefuge.ville 
+        ON clinique.ville=ville.ville   ORDER BY clinique.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-27 11:49:43 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne clinique.adresse n'existe pas
+LIGNE 1 : ...T clinique.clinique as "ID",clinique.nom as "nom",clinique.a...
+                                                               ^ [DEBUG]
+2026-04-27 11:49:43 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 09:11:13 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=4&action=5&premier=0&retour=form
+2026-04-28 09:11:13 database::isError(): QUERY => select clinique.adresse as adresse,
+ville.nom as ville,
+ville.code_postal as code_postal,
+clinique.clinique as clinique,
+clinique.nom as nom,
+current_date
+from openrefuge.clinique left join openrefuge.ville on ville.ville = clinique.ville where clinique.clinique='-1'  [DEBUG]
+2026-04-28 09:11:13 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne clinique.adresse n'existe pas
+LIGNE 1 : select clinique.adresse as adresse,
+                 ^ [DEBUG]
+2026-04-28 09:11:13 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 09:16:50 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=7&action=5&premier=0&retour=form
+2026-04-28 09:16:50 database::isError(): QUERY => select medicament.medicament as medicament,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.dose as dose,
+medicament.frequence as fréquence,
+medicament.soin as soin,
+unite_mesure.libelle as unite_mesure,
+animal.animal as animal_animal,
+animal.nom as animal_nom,
+animal.animal_espece as animal_espece,
+animal.animal_race as animal_race,
+animal.date_naissance as animal_date_naissance,
+animal_sexe.libelle as animal_sexe,
+current_date
+from openrefuge.medicament left join openrefuge.animal on medicament.animal = animal.animal left join openrefuge.animal_sexe on animal.animal_sexe = animal_sexe.animal_sexe full join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure .unite_mesure where medicament.medicament='-1'  [DEBUG]
+2026-04-28 09:16:50 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 16 : ...l.animal_sexe = animal_sexe.animal_sexe full join openrefuge...
+                                                                ^ [DEBUG]
+2026-04-28 09:16:50 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 10:26:21 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:26:21 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('1','test','Requête ''test''',NULL,'select test.test as test,test.mon_int as mon_int,test.mon_varchar as mon_varchar from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:26:21 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(1) » existe déjà. [DEBUG]
+2026-04-28 10:26:21 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:26:21 0.051 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:26:39 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:26:39 database::isError(): QUERY => INSERT INTO openrefuge.om_etat (om_etat,om_collectivite,id,libelle,actif,orientation,format,logo,logoleft,logotop,titre_om_htmletat,titreleft,titretop,titrelargeur,titrehauteur,titrebordure,corps_om_htmletatex,om_sql,se_font,se_couleurtexte,margeleft,margetop,margeright,margebottom,header_om_htmletat,header_offset,footer_om_htmletat,footer_offset) VALUES ('1','1','test','test gen le 28/04/2026',FALSE,'P','A4',NULL,10,25,'le &aujourdhui',105,25,95,10,0,' [DEBUG]
+2026-04-28 10:26:39 database::isError(): SGBD ERROR => mon_int] [DEBUG]
+2026-04-28 10:26:39 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:26:39 0.049 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:30:56 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:30:56 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('3','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:30:56 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(3) » existe déjà. [DEBUG]
+2026-04-28 10:30:56 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:30:56 0.050 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:06 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=animal&validation=1
+2026-04-28 10:31:06 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('4','animal','Requête ''animal''',NULL,'select animal.animal as animal from &DB_PREFIXEanimal where animal.animal=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:06 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(4) » existe déjà. [DEBUG]
+2026-04-28 10:31:06 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:06 0.047 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:29 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:29 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('5','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:29 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(5) » existe déjà. [DEBUG]
+2026-04-28 10:31:29 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:29 0.051 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:42 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:42 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('6','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:42 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(6) » existe déjà. [DEBUG]
+2026-04-28 10:31:42 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:42 0.049 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:44 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:44 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('7','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(7) » existe déjà. [DEBUG]
+2026-04-28 10:31:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:44 0.047 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:45 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:45 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('8','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:45 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(8) » existe déjà. [DEBUG]
+2026-04-28 10:31:45 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:45 0.047 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:45 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:45 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('9','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:45 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(9) » existe déjà. [DEBUG]
+2026-04-28 10:31:45 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:45 0.047 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:46 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:46 database::isError(): QUERY => INSERT INTO openrefuge.om_etat (om_etat,om_collectivite,id,libelle,actif,orientation,format,logo,logoleft,logotop,titre_om_htmletat,titreleft,titretop,titrelargeur,titrehauteur,titrebordure,corps_om_htmletatex,om_sql,se_font,se_couleurtexte,margeleft,margetop,margeright,margebottom,header_om_htmletat,header_offset,footer_om_htmletat,footer_offset) VALUES ('2','1','test','test gen le 28/04/2026',FALSE,'P','A4',NULL,10,25,'le &aujourdhui',105,25,95,10,0,' [DEBUG]
+2026-04-28 10:31:46 database::isError(): SGBD ERROR => mon_int]
+','10','helvetica','0-0-0',10,25,10,25,'',10,'<p style="text-align:center;font-size:8pt;"><em>Page &numpage/&nbpages</em></p>',12) [DEBUG]
+2026-04-28 10:31:46 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:46 0.051 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:47 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:47 database::isError(): QUERY => INSERT INTO openrefuge.om_requete (om_requete,code,libelle,description,requete,merge_fields,type,classe,methode) VALUES ('11','test','Requête ''test''',NULL,'select test.mon_int as mon_int from &DB_PREFIXEtest where test.test=''&idx''','','sql',NULL,NULL)  [DEBUG]
+2026-04-28 10:31:47 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « om_requete_pkey »
+DÉTAIL : La clé « (om_requete)=(11) » existe déjà. [DEBUG]
+2026-04-28 10:31:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:47 0.047 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:47 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:47 database::isError(): QUERY => INSERT INTO openrefuge.om_etat (om_etat,om_collectivite,id,libelle,actif,orientation,format,logo,logoleft,logotop,titre_om_htmletat,titreleft,titretop,titrelargeur,titrehauteur,titrebordure,corps_om_htmletatex,om_sql,se_font,se_couleurtexte,margeleft,margetop,margeright,margebottom,header_om_htmletat,header_offset,footer_om_htmletat,footer_offset) VALUES ('3','1','test','test gen le 28/04/2026',FALSE,'P','A4',NULL,10,25,'le &aujourdhui',105,25,95,10,0,' [DEBUG]
+2026-04-28 10:31:47 database::isError(): SGBD ERROR => mon_int]
+','12','helvetica','0-0-0',10,25,10,25,'',10,'<p style="text-align:center;font-size:8pt;"><em>Page &numpage/&nbpages</em></p>',12) [DEBUG]
+2026-04-28 10:31:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:47 0.049 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 10:31:49 ERROR [admin] /openrefuge/app/index.php?module=gen&view=editions_etat&obj=test&validation=1
+2026-04-28 10:31:49 database::isError(): QUERY => INSERT INTO openrefuge.om_etat (om_etat,om_collectivite,id,libelle,actif,orientation,format,logo,logoleft,logotop,titre_om_htmletat,titreleft,titretop,titrelargeur,titrehauteur,titrebordure,corps_om_htmletatex,om_sql,se_font,se_couleurtexte,margeleft,margetop,margeright,margebottom,header_om_htmletat,header_offset,footer_om_htmletat,footer_offset) VALUES ('4','1','test','test gen le 28/04/2026',FALSE,'P','A4',NULL,10,25,'le &aujourdhui',105,25,95,10,0,' [DEBUG]
+2026-04-28 10:31:49 database::isError(): SGBD ERROR => mon_int]
+','13','helvetica','0-0-0',10,25,10,25,'',10,'<p style="text-align:center;font-size:8pt;"><em>Page &numpage/&nbpages</em></p>',12) [DEBUG]
+2026-04-28 10:31:49 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+2026-04-28 10:31:49 0.050 : class framework_openmairie - gen::view_gen_editions_etat():  [DEBUG]
+
+
+2026-04-28 15:38:15 ERROR [admin] /openrefuge/app/index.php?module=reqmo&obj=animal_prestation
+2026-04-28 15:38:15 database::isError(): QUERY => select * from openrefuge.prestation  [DEBUG]
+2026-04-28 15:38:15 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.prestation » n'existe pas
+LIGNE 1 : select * from openrefuge.prestation
+                        ^ [DEBUG]
+2026-04-28 15:38:15 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 15:38:44 ERROR [admin] /openrefuge/app/index.php?module=reqmo&obj=refuge_animale
+2026-04-28 15:38:44 database::isError(): QUERY => select * from openrefuge.animale  [DEBUG]
+2026-04-28 15:38:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.animale » n'existe pas
+LIGNE 1 : select * from openrefuge.animale
+                        ^ [DEBUG]
+2026-04-28 15:38:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:23:27 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=9&action=5&premier=0&retour=form
+2026-04-28 16:23:27 database::isError(): QUERY => select sejour.sejour as sejour,
+sejour.date_entree as date_entree,
+sejour.date_sortie as date_sortie,
+sejour.paye as payé,
+sejour_tarif.prix as tarif from openrefuge.sejour left join openrefuge.sejour_tarif on sejour_tarif.sejour_tarif = sejour.sejour_tarif where sejour.sejour='-1'  [DEBUG]
+2026-04-28 16:23:27 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.sejour » n'existe pas
+LIGNE 5 : sejour_tarif.prix as tarif from openrefuge.sejour left join ...
+                                          ^ [DEBUG]
+2026-04-28 16:23:27 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:23:38 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=6&action=5&premier=0&retour=form
+2026-04-28 16:23:38 database::isError(): QUERY => select soin.date_soin as date_soin,
+soin.posologie as posologie,
+soin.soin as soin,soin.veterinaire as veterinaire,
+soin.animal as animal,
+soin.soin_type as soin_type,
+soin.clinique as clinique,
+soin.description as description,
+animal.animal as animal_animal,
+animal.nom as animal_nom,
+animal.animal_espece as animal_espece,
+animal.animal_race as animal_race,
+animal.date_naissance as animal_date_naissance,
+veterinaire.nom as veterinaire_nom,
+veterinaire.prenom as veterinaire_prenom,
+civilite.libelle as veterinaire_civilite,
+veterinaire.telephone as veterinaire_telephone,
+clinique.nom as clinique_nom,
+clinique.adresse as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.soin left join openrefuge.animal on soin.animal = animal.animal  full join openrefuge.veterinaire on soin.veterinaire = veterinaire.veterinaire full join openrefuge.civilite on veterinaire.civilite = civilite.civilite left join openrefuge.clinique on clinique.clinique = soin.clinique left join openrefuge.ville on clinique.ville = ville.ville where soin.soin='-1'  [DEBUG]
+2026-04-28 16:23:38 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne clinique.adresse n'existe pas
+LIGNE 18 : clinique.adresse as clinique_adresse,
+           ^ [DEBUG]
+2026-04-28 16:23:38 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:24:10 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=6&action=5&premier=0&retour=form
+2026-04-28 16:24:10 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+concat(medicament.dose,unite_mesure.unite_mesure) as dose,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.frequence as fréquence from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.soin='-1'  [DEBUG]
+2026-04-28 16:24:10 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 6 : ...as fréquence from openrefuge.medicament left join openrefuge...
+                                                               ^ [DEBUG]
+2026-04-28 16:24:10 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:26:47 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=6&action=5&premier=0&retour=form
+2026-04-28 16:26:47 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.dose as dose,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.frequence as fréquence from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.soin='-1'  [DEBUG]
+2026-04-28 16:26:47 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 6 : ...as fréquence from openrefuge.medicament left join openrefuge...
+                                                               ^ [DEBUG]
+2026-04-28 16:26:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:26:48 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=6&action=5&premier=0&retour=form
+2026-04-28 16:26:48 database::isError(): QUERY => select medicament.medicament as ID,
+medicament.nom as nom,
+medicament.dose as dose,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.frequence as fréquence from openrefuge.medicament left join openrefuge.unite_mesure on medicament.unite_mesure = unite_mesure.unite_mesure where medicament.soin='-1'  [DEBUG]
+2026-04-28 16:26:48 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.unite_mesure » n'existe pas
+LIGNE 6 : ...as fréquence from openrefuge.medicament left join openrefuge...
+                                                               ^ [DEBUG]
+2026-04-28 16:26:48 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:28:47 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=3&action=5&premier=0&retour=form
+2026-04-28 16:28:47 database::isError(): QUERY => select veterinaire.veterinaire as veterinaire,
+veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+veterinaire.telephone as telephone,
+veterinaire.clinique as clinique,
+civilite.libelle as civilite,
+clinique.nom as clinique_nom,
+clinique.adresse as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.veterinaire left join openrefuge.clinique on clinique.clinique = veterinaire.veterinaire left join openrefuge.ville on ville.ville = clinique.ville , openrefuge.civilite where veterinaire.veterinaire='-1'  [DEBUG]
+2026-04-28 16:28:47 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne clinique.adresse n'existe pas
+LIGNE 8 : clinique.adresse as clinique_adresse,
+          ^ [DEBUG]
+2026-04-28 16:28:47 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:33:32 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=3&action=5&premier=0&retour=form
+2026-04-28 16:33:32 database::isError(): QUERY => select veterinaire.veterinaire as veterinaire,
+veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+veterinaire.telephone as telephone,
+veterinaire.clinique as clinique,
+civilite.libelle as civilite,
+clinique.nom as clinique_nom,
+concat(clinique.num_rue,' ', rue.rue) as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.veterinaire left join openrefuge.clinique on clinique.clinique = veterinaire.veterinaire left join openrefuge.ville on ville.ville = clinique.ville left join openrefuge.civilite on civilite.civilite = veterinaire.civilite where veterinaire.veterinaire='-1'  [DEBUG]
+2026-04-28 16:33:32 database::isError(): SGBD ERROR => nativecode=ERREUR:  entrée manquante de la clause FROM pour la table « rue »
+LIGNE 8 : concat(clinique.num_rue,' ', rue.rue) as clinique_adresse,
+                                       ^ [DEBUG]
+2026-04-28 16:33:32 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:34:08 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=3&action=5&premier=0&retour=form
+2026-04-28 16:34:08 database::isError(): QUERY => select veterinaire.veterinaire as veterinaire,
+veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+veterinaire.telephone as telephone,
+veterinaire.clinique as clinique,
+civilite.libelle as civilite,
+clinique.nom as clinique_nom,
+concat(clinique.num_rue,' ', rue.rue) as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.veterinaire left join openrefuge.clinique on clinique.clinique = veterinaire.veterinaire left join openrefuge.ville on ville.ville = clinique.ville left join openrefuge.civilite on civilite.civilite = veterinaire.civilite left join rue on rue.rue = clinique.rue where veterinaire.veterinaire='-1'  [DEBUG]
+2026-04-28 16:34:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « rue » n'existe pas
+LIGNE 12 : ...ivilite.civilite = veterinaire.civilite left join rue on rue...
+                                                                ^ [DEBUG]
+2026-04-28 16:34:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:34:08 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=3&action=5&premier=0&retour=form
+2026-04-28 16:34:08 database::isError(): QUERY => select veterinaire.veterinaire as veterinaire,
+veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+veterinaire.telephone as telephone,
+veterinaire.clinique as clinique,
+civilite.libelle as civilite,
+clinique.nom as clinique_nom,
+concat(clinique.num_rue,' ', rue.rue) as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.veterinaire left join openrefuge.clinique on clinique.clinique = veterinaire.veterinaire left join openrefuge.ville on ville.ville = clinique.ville left join openrefuge.civilite on civilite.civilite = veterinaire.civilite left join rue on rue.rue = clinique.rue where veterinaire.veterinaire='-1'  [DEBUG]
+2026-04-28 16:34:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « rue » n'existe pas
+LIGNE 12 : ...ivilite.civilite = veterinaire.civilite left join rue on rue...
+                                                                ^ [DEBUG]
+2026-04-28 16:34:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:34:08 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=3&action=5&premier=0&retour=form
+2026-04-28 16:34:08 database::isError(): QUERY => select veterinaire.veterinaire as veterinaire,
+veterinaire.nom as nom,
+veterinaire.prenom as prenom,
+veterinaire.telephone as telephone,
+veterinaire.clinique as clinique,
+civilite.libelle as civilite,
+clinique.nom as clinique_nom,
+concat(clinique.num_rue,' ', rue.rue) as clinique_adresse,
+ville.nom as clinique_ville,
+ville.code_postal as clinique_code_postal,
+current_date
+from openrefuge.veterinaire left join openrefuge.clinique on clinique.clinique = veterinaire.veterinaire left join openrefuge.ville on ville.ville = clinique.ville left join openrefuge.civilite on civilite.civilite = veterinaire.civilite left join rue on rue.rue = clinique.rue where veterinaire.veterinaire='-1'  [DEBUG]
+2026-04-28 16:34:08 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « rue » n'existe pas
+LIGNE 12 : ...ivilite.civilite = veterinaire.civilite left join rue on rue...
+                                                                ^ [DEBUG]
+2026-04-28 16:34:08 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:42:49 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&tricol=0&retour=form
+2026-04-28 16:42:49 database::isError(): QUERY => with soin_tarif as (
+select 
+sum(facture_soin.tarif) as soin_tarif
+from openrefuge.facture_soin left join openrefuge.facture on facture_soin.facture = facture.facture where facture.facture = '-1'
+),
+facture_sejour_tarif as (
+select sum((facture_sejour.date_sortie - facture_sejour.date_entree ) * sejour_tarif.prix) as tarif
+from openrefuge.facture_sejour right join openrefuge.facture on facture_sejour.facture = facture.facture left join openrefuge.sejour_tarif on 
+sejour_tarif.sejour_tarif = facture_sejour.sejour_tarif where facture.facture = '-1'
+),
+personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+round(coalesce(soin_tarif.soin_tarif,0)::numeric,2) as soin_tarif, 
+round(coalesce(facture_sejour_tarif.tarif,0)::numeric,2) as facture_sejour_tarif, 
+round(coalesce(facture_sejour_tarif.tarif + soin_tarif.soin_tarif, 0)::numeric,2) as prix_total,
+current_date  
+from personne, soin_tarif , facture_sejour_tarif;  [DEBUG]
+2026-04-28 16:42:49 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_soin » n'existe pas
+LIGNE 4 : from openrefuge.facture_soin left join openrefuge.facture on...
+               ^ [DEBUG]
+2026-04-28 16:42:49 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:49:54 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&retour=form
+2026-04-28 16:49:54 database::isError(): QUERY => with soin_tarif as (
+select 
+sum(facture_soin.tarif) as soin_tarif
+from openrefuge.facture_soin left join openrefuge.facture on facture_soin.facture = facture.facture where facture.facture = '-1'
+),
+facture_sejour_tarif as (
+select sum((facture_sejour.date_sortie - facture_sejour.date_entree ) * sejour_tarif.prix) as tarif
+from openrefuge.facture_sejour right join openrefuge.facture on facture_sejour.facture = facture.facture left join openrefuge.sejour_tarif on 
+sejour_tarif.sejour_tarif = facture_sejour.sejour_tarif where facture.facture = '-1'
+),
+personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.adresse as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+round(coalesce(soin_tarif.soin_tarif,0)::numeric,2) as soin_tarif, 
+round(coalesce(facture_sejour_tarif.tarif,0)::numeric,2) as facture_sejour_tarif, 
+round(coalesce(facture_sejour_tarif.tarif + soin_tarif.soin_tarif, 0)::numeric,2) as prix_total,
+current_date  
+from personne, soin_tarif , facture_sejour_tarif;  [DEBUG]
+2026-04-28 16:49:54 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_soin » n'existe pas
+LIGNE 4 : from openrefuge.facture_soin left join openrefuge.facture on...
+               ^ [DEBUG]
+2026-04-28 16:49:54 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:50:21 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&retour=form
+2026-04-28 16:50:21 database::isError(): QUERY => with soin_tarif as (
+select 
+sum(facture_soin.tarif) as soin_tarif
+from openrefuge.facture_soin left join openrefuge.facture on facture_soin.facture = facture.facture where facture.facture = '-1'
+),
+facture_sejour_tarif as (
+select sum((facture_sejour.date_sortie - facture_sejour.date_entree ) * sejour_tarif.prix) as tarif
+from openrefuge.facture_sejour right join openrefuge.facture on facture_sejour.facture = facture.facture left join openrefuge.sejour_tarif on 
+sejour_tarif.sejour_tarif = facture_sejour.sejour_tarif where facture.facture = '-1'
+),
+personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.num_rue as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+round(coalesce(soin_tarif.soin_tarif,0)::numeric,2) as soin_tarif, 
+round(coalesce(facture_sejour_tarif.tarif,0)::numeric,2) as facture_sejour_tarif, 
+round(coalesce(facture_sejour_tarif.tarif + soin_tarif.soin_tarif, 0)::numeric,2) as prix_total,
+current_date  
+from personne, soin_tarif , facture_sejour_tarif;  [DEBUG]
+2026-04-28 16:50:21 database::isError(): SGBD ERROR => nativecode=ERREUR:  la relation « openrefuge.facture_soin » n'existe pas
+LIGNE 4 : from openrefuge.facture_soin left join openrefuge.facture on...
+               ^ [DEBUG]
+2026-04-28 16:50:21 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:51:33 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&retour=form
+2026-04-28 16:51:33 database::isError(): QUERY => personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.num_rue as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+current_date  
+from personne  [DEBUG]
+2026-04-28 16:51:33 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « personne »
+LIGNE 1 : personne as (
+          ^ [DEBUG]
+2026-04-28 16:51:33 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-28 16:51:33 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&retour=form
+2026-04-28 16:51:33 database::isError(): QUERY => personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.num_rue as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+current_date  
+from personne  [DEBUG]
+2026-04-28 16:51:33 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « personne »
+LIGNE 1 : personne as (
+          ^ [DEBUG]
+2026-04-28 16:51:33 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 09:12:03 ERROR [admin] /openrefuge/app/index.php?module=form&obj=medicament&action=102&idx=1
+2026-04-29 09:12:03 database::isError(): QUERY => select medicament.medicament as medicament,
+medicament.nom as nom,
+medicament.date_debut as date_debut,
+medicament.date_fin as date_fin,
+medicament.dose as dose,
+medicament.frequence as fréquence,
+medicament.soin as soin,
+animal.animal as animal_animal,
+animal.nom as animal_nom,
+animal_espece.nom as animal_espece,
+animal_race.nom as animal_race,
+animal.date_naissance as animal_date_naissance,
+animal_sexe.libelle as animal_sexe,
+current_date
+from openrefuge.medicament left join openrefuge.animal on medicament.animal = animal.animal left join openrefuge.animal_sexe on animal.animal_sexe = animal_sexe.animal_sexe left join openrefuge.animal_espece on animal_espece.animal_espece = animal.animal_espece left join openrefuge.animal_race.animal_race = animal.animal_race where medicament.medicament='1'  [DEBUG]
+2026-04-29 09:12:03 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « = »
+LIGNE 15 : ...pece left join openrefuge.animal_race.animal_race = animal.a...
+                                                                ^ [DEBUG]
+2026-04-29 09:12:03 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 10:56:32 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&action=102&idx=2
+2026-04-29 10:56:32 database::isError(): QUERY => select soin.soin as id,
+soin_type as soin_type,
+veterinaire.nom as veterinaire,
+clinique.nom as clinique,
+soin.date_soin as date,
+soin.posologie as posologie
+from openrefuge.soin left join openrefuge.veterinaire on veterinaire.veterinaire = soin.veterinaire left join openrefuge.clinique on soin.clinique = clinique.clinique left join openrefuge.soin_type on soin_type.soin_type = soin.soin_type where soin.animal='2'  [DEBUG]
+2026-04-29 10:56:32 database::isError(): SGBD ERROR => nativecode=ERREUR:  la référence à la colonne « soin_type » est ambiguë
+LIGNE 2 : soin_type as soin_type,
+          ^ [DEBUG]
+2026-04-29 10:56:32 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 16:28:19 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&validation=1&idx=12&action=1&premier=0&retour=form
+2026-04-29 16:28:19 database::isError(): QUERY => SELECT count(*) FROM openrefuge.animal WHERE num_identification = '2147483648' AND animal != 12  [DEBUG]
+2026-04-29 16:28:19 database::isError(): SGBD ERROR => nativecode=ERREUR:  la valeur « 2147483648 » est en dehors des limites pour le type integer
+LIGNE 1 : ...FROM openrefuge.animal WHERE num_identification = '214748364...
+                                                               ^ [DEBUG]
+2026-04-29 16:28:19 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 16:42:22 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-29 16:42:22 database::isError(): QUERY => select animal_entree.animal_entree as animal_entree,
+animal_entree.date_entree as date_entree,
+animal_entree.provenance as provenance,
+animal_entree.animal as animal 
+from openrefuge.animal_entree right join openrefuge.animal on animal_entree.animal_entree = animal.animal_entree where animal.animal='-1'  [DEBUG]
+2026-04-29 16:42:22 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne animal.animal_entree n'existe pas
+LIGNE 5 : ...penrefuge.animal on animal_entree.animal_entree = animal.ani...
+                                                               ^ [DEBUG]
+2026-04-29 16:42:22 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 16:46:32 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-29 16:46:32 database::isError(): QUERY => select animal_sortie.animal_sortie as animal_sortie,
+animal_sortie.date_sortie as date_sortie,
+animal_sortie.animal as animal,
+animal_sortie.cause_mort as cause_mort from openrefuge.animal_sortie right animal on animal_sortie.animal = animal.animal where animal_sortie.animal_sortie='-1'  [DEBUG]
+2026-04-29 16:46:32 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « animal »
+LIGNE 4 : ...as cause_mort from openrefuge.animal_sortie right animal on ...
+                                                               ^ [DEBUG]
+2026-04-29 16:46:32 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 16:48:00 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-29 16:48:00 database::isError(): QUERY => select animal_sortie.animal_sortie as animal_sortie,
+animal_sortie.date_sortie as date_sortie,
+animal_sortie.animal as animal,
+animal_sortie.cause_mort as cause_mort from openrefuge.animal_sortie right openrefuge.animal on animal_sortie.animal = animal.animal where animal_sortie.animal_sortie='-1'  [DEBUG]
+2026-04-29 16:48:00 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « openrefuge »
+LIGNE 4 : ...as cause_mort from openrefuge.animal_sortie right openrefuge...
+                                                               ^ [DEBUG]
+2026-04-29 16:48:00 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-29 16:49:03 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=1&action=5&premier=0&retour=form
+2026-04-29 16:49:03 database::isError(): QUERY => select animal_sortie.animal_sortie as animal_sortie,
+animal_sortie.date_sortie as date_sortie,
+animal_sortie.animal as animal,
+animal_sortie.cause_mort as cause_mort from openrefuge.animal_sortie right openrefuge.animal on animal_sortie.animal = animal.animal where animal_sortie.animal_sortie='-1'  [DEBUG]
+2026-04-29 16:49:03 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « openrefuge »
+LIGNE 4 : ...as cause_mort from openrefuge.animal_sortie right openrefuge...
+                                                               ^ [DEBUG]
+2026-04-29 16:49:03 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:15:32 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775405185228&style=tab&onglet=&
+2026-04-30 11:15:32 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( translate(lower(animal.num_identification::varchar),'àáâãäçèéêëìíîïñòóôõöùúûüýÿ','aaaaaceeeeiiiinooooouuuuyy')  LIKE  translate(lower('%2147483647%'::varchar),'àáâãäçèéêëìíîïñòóôõöùúûüýÿ','aaaaaceeeeiiiinooooouuuuyy') and  animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:15:32 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ceeeeiiiinooooouuuuyy') and  animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:15:32 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:15:55 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=1777540554152&style=tab&onglet=&
+2026-04-30 11:15:55 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:15:55 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ovenance.provenance  WHERE ( animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:15:55 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:16:11 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=1777540570284&style=tab&onglet=&
+2026-04-30 11:16:11 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:16:11 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ovenance.provenance  WHERE ( animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:16:11 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:16:22 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775405717799&style=tab&onglet=&
+2026-04-30 11:16:22 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:16:22 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ovenance.provenance  WHERE ( animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:16:22 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:16:33 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=177754058293&style=tab&onglet=&
+2026-04-30 11:16:33 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:16:33 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ovenance.provenance  WHERE ( animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:16:33 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:16:36 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=1777540593951&style=tab&onglet=&
+2026-04-30 11:16:36 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '2' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:16:36 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '2' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:16:36 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:17:07 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775406199135&style=tab&onglet=&
+2026-04-30 11:17:07 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:17:07 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...ovenance.provenance  WHERE ( animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:17:07 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:17:10 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775406270088&style=tab&onglet=&
+2026-04-30 11:17:10 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '1' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:17:10 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '1' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:17:10 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:17:14 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775406303064&style=tab&onglet=&
+2026-04-30 11:17:14 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '2' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:17:14 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '2' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:17:14 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:17:17 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775406343571&style=tab&onglet=&
+2026-04-30 11:17:17 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '2' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:17:17 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '2' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:17:17 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:21:04 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=1777540637049&style=tab&onglet=&
+2026-04-30 11:21:04 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '2' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:21:04 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '2' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:21:04 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 11:21:40 ERROR [admin] /openrefuge/app/index.php?module=tab&validation=0&obj=animal&premier=0&tricol=&valide=&advs_id=17775408944976&style=tab&onglet=&
+2026-04-30 11:21:40 database::isError(): QUERY => SELECT animal.animal as "ID",animal.num_identification as "num d'identification",animal.nom as "nom",animal_espece.nom as "espèce",animal_race.nom as "race",to_char(animal.date_naissance ,'DD/MM/YYYY') as "date de naissance",animal_sexe.libelle as "sexe",concat(personne.prenom,' ',personne.nom) as "personne" FROM openrefuge.animal
+    LEFT JOIN openrefuge.animal_espece 
+        ON animal.animal_espece=animal_espece.animal_espece 
+    LEFT JOIN openrefuge.animal_race 
+        ON animal.animal_race=animal_race.animal_race 
+    LEFT JOIN openrefuge.animal_sexe 
+        ON animal.animal_sexe=animal_sexe.animal_sexe 
+    LEFT JOIN openrefuge.personne 
+        ON animal.personne=personne.personne 
+    LEFT JOIN openrefuge.provenance 
+        ON animal.provenance=provenance.provenance  WHERE ( animal.animal_espece = '1' and animal.animal_race = 'selected') ORDER BY animal.nom ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 11:21:40 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type integer : « selected »
+LIGNE 11 : ...imal.animal_espece = '1' and animal.animal_race = 'selected'...
+                                                                ^ [DEBUG]
+2026-04-30 11:21:40 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 14:27:20 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=animal
+2026-04-30 14:27:20 database::isError(): QUERY =>  SELECT animal, num_identification, nom, date_naissance, provenance, animal_espece, animal_race, animal_sexe, personne, description  FROM openrefuge.animal    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-30 14:27:20 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « provenance » n'existe pas
+LIGNE 1 : ... animal, num_identification, nom, date_naissance, provenance...
+                                                               ^ [DEBUG]
+2026-04-30 14:27:20 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 14:27:22 ERROR [admin] /openrefuge/app/index.php?module=form&obj=animal&action=0&advs_id=&premier=0&tricol=&valide=&retour=form
+2026-04-30 14:27:22 database::isError(): QUERY =>  SELECT animal, num_identification, nom, date_naissance, provenance, animal_espece, animal_race, animal_sexe, personne, description  FROM openrefuge.animal    LIMIT 1 OFFSET 0  [DEBUG]
+2026-04-30 14:27:22 database::isError(): SGBD ERROR => nativecode=ERREUR:  la colonne « provenance » n'existe pas
+LIGNE 1 : ... animal, num_identification, nom, date_naissance, provenance...
+                                                               ^ [DEBUG]
+2026-04-30 14:27:22 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-04-30 14:27:50 ERROR [admin] /openrefuge/app/index.php?module=tab&obj=animal_entree
+2026-04-30 14:27:50 database::isError(): QUERY => SELECT animal_entree.animal_entree as "id",animal.nom as "animal",animal.num_identification as "num identification",to_char(animal_entree.date_entree ,'DD/MM/YYYY') as "date d'entrée",provenance.num_rue as "provenance" FROM openrefuge.animal_entree
+    LEFT JOIN openrefuge.animal 
+        ON animal_entree.animal=animal.animal   ORDER BY animal_entree.date_entree ASC NULLS LAST LIMIT 15 OFFSET 0  [DEBUG]
+2026-04-30 14:27:50 database::isError(): SGBD ERROR => nativecode=ERREUR:  entrée manquante de la clause FROM pour la table « provenance »
+LIGNE 1 : ...ree.date_entree ,'DD/MM/YYYY') as "date d'entrée",provenance...
+                                                               ^ [DEBUG]
+2026-04-30 14:27:50 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-05-05 09:26:20 ERROR [admin] /openrefuge/app/index.php?module=form&obj=om_etat&idx=8&action=5&premier=0&retour=form
+2026-05-05 09:26:20 database::isError(): QUERY => personne as (
+select personne.personne as personne,
+personne.nom as personne_nom,
+personne.prenom as personne_prenom,
+personne.num_rue as personne_adresse,
+ville.nom as ville,
+ville.code_postal as ville_code_postal,
+personne.mail as personne_mail
+from openrefuge.personne left join openrefuge.ville on ville.ville = personne.ville left join openrefuge.facture on personne.personne = facture.personne where facture.facture = '-1'
+)
+select personne.*, 
+current_date  
+from personne  [DEBUG]
+2026-05-05 09:26:20 database::isError(): SGBD ERROR => nativecode=ERREUR:  erreur de syntaxe sur ou près de « personne »
+LIGNE 1 : personne as (
+          ^ [DEBUG]
+2026-05-05 09:26:20 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-05-06 09:21:56 ERROR [admin] /openrefuge/app/index.php?module=form&obj=medicament_suivi&validation=1&action=0&premier=0&retour=form
+2026-05-06 09:21:56 database::isError(): QUERY => INSERT INTO openrefuge.medicament_suivi (medicament_suivi,medicament,animal,date,heure) VALUES ('1','1','3','2026-05-15','5')  [DEBUG]
+2026-05-06 09:21:56 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type time : « 5 »
+LIGNE 1 : ...ent,animal,date,heure) VALUES ('1','1','3','2026-05-15','5')
+                                                                     ^ [DEBUG]
+2026-05-06 09:21:56 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+
+
+2026-05-06 09:22:44 ERROR [admin] /openrefuge/app/index.php?module=form&obj=medicament_suivi&validation=1&action=0&premier=0&retour=form
+2026-05-06 09:22:44 database::isError(): QUERY => INSERT INTO openrefuge.medicament_suivi (medicament_suivi,medicament,animal,date,heure) VALUES ('2','1','3','2026-05-14','5h')  [DEBUG]
+2026-05-06 09:22:44 database::isError(): SGBD ERROR => nativecode=ERREUR:  syntaxe en entrée invalide pour le type time : « 5h »
+LIGNE 1 : ...nt,animal,date,heure) VALUES ('2','1','3','2026-05-14','5h')
+                                                                    ^ [DEBUG]
+2026-05-06 09:22:44 database::isError(): PEAR ERROR => DB Error: unknown error [DEBUG]
+

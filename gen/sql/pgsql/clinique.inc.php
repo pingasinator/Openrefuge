@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 15:55
+//gen openMairie le 27/04/2026 11:49
 
 $DEBUG=0;
 $serie=15;
@@ -21,15 +21,18 @@ if (!isset($valide)) {
 }
 // FROM 
 $table = DB_PREFIXE."clinique
+    LEFT JOIN ".DB_PREFIXE."rue 
+        ON clinique.rue=rue.rue 
     LEFT JOIN ".DB_PREFIXE."ville 
         ON clinique.ville=ville.ville ";
 // SELECT 
 $champAffiche = array(
     'clinique.clinique as "'.__("clinique").'"',
     'clinique.nom as "'.__("nom").'"',
-    'clinique.adresse as "'.__("adresse").'"',
     'ville.nom as "'.__("ville").'"',
     'clinique.telephone as "'.__("telephone").'"',
+    'clinique.num_rue as "'.__("num_rue").'"',
+    'rue.nom as "'.__("rue").'"',
     );
 //
 $champNonAffiche = array(
@@ -38,9 +41,10 @@ $champNonAffiche = array(
 $champRecherche = array(
     'clinique.clinique as "'.__("clinique").'"',
     'clinique.nom as "'.__("nom").'"',
-    'clinique.adresse as "'.__("adresse").'"',
     'ville.nom as "'.__("ville").'"',
     'clinique.telephone as "'.__("telephone").'"',
+    'clinique.num_rue as "'.__("num_rue").'"',
+    'rue.nom as "'.__("rue").'"',
     );
 $tri="ORDER BY clinique.nom ASC NULLS LAST";
 $edition="clinique";
@@ -51,8 +55,13 @@ $edition="clinique";
 $selection = "";
 // Liste des clés étrangères avec leurs éventuelles surcharges
 $foreign_keys_extended = array(
+    "rue" => array("rue", ),
     "ville" => array("ville", ),
 );
+// Filtre listing sous formulaire - rue
+if (in_array($retourformulaire, $foreign_keys_extended["rue"])) {
+    $selection = " WHERE (clinique.rue = ".intval($idxformulaire).") ";
+}
 // Filtre listing sous formulaire - ville
 if (in_array($retourformulaire, $foreign_keys_extended["ville"])) {
     $selection = " WHERE (clinique.ville = ".intval($idxformulaire).") ";
@@ -62,7 +71,6 @@ if (in_array($retourformulaire, $foreign_keys_extended["ville"])) {
  * Gestion SOUSFORMULAIRE => $sousformulaire
  */
 $sousformulaire = array(
-    'facture_soin',
     'soin',
     'veterinaire',
 );

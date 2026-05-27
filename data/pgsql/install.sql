@@ -36,7 +36,8 @@ SET search_path = :schema, public, pg_catalog;
 \i ../../core/data/pgsql/init_permissions.sql
 \i ../../core/data/pgsql/init_parametrage.sql
 \i ../../core/data/pgsql/init_refuge.sql
-\i  ../../core/data/pgsql/init_refuge_data.sql
+\i ../../core/data/pgsql/init_refuge_data.sql
+\i ../../core/data/pgsql/refuge_v2.sql
 -- Mise à jour depuis la dernière version
 -- A commenter/décommenter en cours de développement
 -- \i ../../core/data/pgsql/v4.9.0.dev0.sql

@@ -61,9 +61,9 @@ class framework_openmairie extends application {
 	$parent_menu = $this->config__menu;
 	$menu = array();
 
-	$rubrik = array(
-	"title" => __("édition"),
-	"class" => "édition"
+    $rubrik = array(
+	"title" => __("Animaux"),
+	"class" => "Animaux"
 	);
 
 	$links = array(
@@ -75,7 +75,7 @@ class framework_openmairie extends application {
                 "tab.php|animal",
                 "index.php|animal[module=tab]",
                 "form.php|animal",
-                "index.php|animal[module=form]",
+                "index.php|animal[module=form]"
                 )
 	    ),
         array(
@@ -86,7 +86,7 @@ class framework_openmairie extends application {
                 "tab.php|animal_espece",
                 "index.php|animal_espece[module=tab]",
                 "form.php|animal_espece",
-                "index.php|animal_espece[module=form]",
+                "index.php|animal_espece[module=form]"
 		    )
 	    ),
         array(
@@ -97,9 +97,42 @@ class framework_openmairie extends application {
                 "tab.php|animal_race",
                 "index.php|animal_race[module=tab]",
                 "form.php|animal_race",
-                "index.php|animal_race[module=form]",
+                "index.php|animal_race[module=form]"
 		    )
 	    ),
+        array(
+		    "href" => OM_ROUTE_TAB."&obj=animal_entree",
+                "class" => "animal_entree",
+                "title" => _("entrées"),
+                "open" => array(
+                "tab.php|animal_entree",
+                "index.php|animal_entree[module=tab]",
+                "form.php|animal_entree",
+                "index.php|animal_entree[module=form]"
+		    )
+	    ),
+        array(
+		    "href" => OM_ROUTE_TAB."&obj=animal_sortie",
+            "class" => "animal_sortie",
+            "title" => _("sorties"),
+            "open" => array(
+                "tab.php|animal_sortie",
+                "index.php|animal_sortie[module=tab]",
+                "form.php|animal_sortie",
+                "index.php|animal_sortie[module=form]"
+		    )
+	    )
+	);
+
+	$rubrik['links'] = $links;
+	$menu[] = $rubrik;
+
+	$rubrik = array(
+	"title" => __("édition"),
+	"class" => "édition"
+	);
+
+	$links = array(
 	    array(
 		    "href" => OM_ROUTE_TAB."&obj=personne",
                 "class" => "personne",
@@ -108,18 +141,7 @@ class framework_openmairie extends application {
                 "tab.php|personne",
                 "index.php|personne[module=tab]",
                 "form.php|personne",
-                "index.php|personne[module=form]",
-		    )
-	    ),
-        array(
-		    "href" => OM_ROUTE_TAB."&obj=facture",
-                "class" => "facture",
-                "title" => _("factures"),
-                "open" => array(
-                "tab.php|facture",
-                "index.php|facture[module=tab]",
-                "form.php|facture",
-                "index.php|facture[module=form]",
+                "index.php|personne[module=form]"
 		    )
 	    ),
         array(
@@ -130,7 +152,18 @@ class framework_openmairie extends application {
                 "tab.php|ville",
                 "index.php|ville[module=tab]",
                 "form.php|ville",
-                "index.php|ville[module=form]",
+                "index.php|ville[module=form]"
+		    )
+	    ),
+        array(
+		    "href" => OM_ROUTE_TAB."&obj=rue",
+                "class" => "rue",
+                "title" => _("rues"),
+                "open" => array(
+                "tab.php|rue",
+                "index.php|rue[module=tab]",
+                "form.php|rue",
+                "index.php|rue[module=form]"
 		    )
 	    )
 	);
@@ -138,49 +171,6 @@ class framework_openmairie extends application {
 	$rubrik['links'] = $links;
 	$menu[] = $rubrik;
 
-    $rubrik = array(
-        "title" => __("Logements"),
-        "class" => "sejours"
-    );
-
-    $links = array(
-        array(
-		    "href" => OM_ROUTE_TAB."&obj=hebergement",
-                "class" => "hébergement",
-                "title" => _("hébergements"),
-                "open" => array(
-                "tab.php|hebergement",
-                "index.php|hebergement[module=tab]",
-                "form.php|hebergement",
-                "index.php|hebergement[module=form]",
-		    )
-	    ),
-        array(
-		    "href" => OM_ROUTE_TAB."&obj=sejour",
-                "class" => "séjours",
-                "title" => _("séjours"),
-                "open" => array(
-                "tab.php|sejour",
-                "index.php|sejour[module=tab]",
-                "form.php|sejour",
-                "index.php|sejour[module=form]",
-		    )
-	    ),
-        array(
-		    "href" => OM_ROUTE_TAB."&obj=sejour_tarif",
-                "class" => "sejour_tarif",
-                "title" => _("tarifs"),
-                "open" => array(
-                "tab.php|sejour_tarif",
-                "index.php|sejour_tarif[module=tab]",
-                "form.php|sejour_tarif",
-                "index.php|sejour_tarif[module=form]",
-		    )
-	    )
-    );
-
-    $rubrik['links'] = $links;
-	$menu[] = $rubrik;
 
     $rubrik = array(
 	"title" => __("soins vétérinaires"),
@@ -230,6 +220,17 @@ class framework_openmairie extends application {
             "index.php|medicament[module=tab]",
             "form.php|medicament",
             "index.php|medicament[module=form]",
+	    	)
+	    ),
+        array(
+		    "href" => OM_ROUTE_TAB."&obj=medicament_suivi",
+            "class" => "medicament_suivi",
+            "title" => _("suivi des médicaments"),
+            "open" => array(
+            "tab.php|medicament_suivi",
+            "index.php|medicament_suivi[module=tab]",
+            "form.php|medicament_suivi",
+            "index.php|medicament_suivi[module=form]",
 	    	)
 	    )
     );

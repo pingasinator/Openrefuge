@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 15:57
+//gen openMairie le 23/04/2026 11:39
 
 require_once PATH_OPENMAIRIE."om_dbform.class.php";
 
@@ -17,6 +17,7 @@ class personne_gen extends dbform {
     
     var $foreign_keys_extended = array(
         "civilite" => array("civilite", ),
+        "rue" => array("rue", ),
         "ville" => array("ville", ),
     );
     
@@ -37,12 +38,13 @@ class personne_gen extends dbform {
             "personne",
             "nom",
             "prenom",
-            "adresse",
             "ville",
             "telephone",
             "telephone_sec",
             "mail",
             "civilite",
+            "num_rue",
+            "rue",
         );
     }
 
@@ -60,6 +62,22 @@ class personne_gen extends dbform {
      */
     function get_var_sql_forminc__sql_civilite_by_id() {
         return "SELECT civilite.civilite, civilite.libelle FROM ".DB_PREFIXE."civilite WHERE civilite = <idx>";
+    }
+
+    /**
+     *
+     * @return string
+     */
+    function get_var_sql_forminc__sql_rue() {
+        return "SELECT rue.rue, rue.nom FROM ".DB_PREFIXE."rue ORDER BY rue.nom ASC";
+    }
+
+    /**
+     *
+     * @return string
+     */
+    function get_var_sql_forminc__sql_rue_by_id() {
+        return "SELECT rue.rue, rue.nom FROM ".DB_PREFIXE."rue WHERE rue = <idx>";
     }
 
     /**
@@ -98,11 +116,6 @@ class personne_gen extends dbform {
         } else {
             $this->valF['prenom'] = $val['prenom'];
         }
-        if ($val['adresse'] == "") {
-            $this->valF['adresse'] = NULL;
-        } else {
-            $this->valF['adresse'] = $val['adresse'];
-        }
         if (!is_numeric($val['ville'])) {
             $this->valF['ville'] = NULL;
         } else {
@@ -127,6 +140,16 @@ class personne_gen extends dbform {
             $this->valF['civilite'] = NULL;
         } else {
             $this->valF['civilite'] = $val['civilite'];
+        }
+        if (!is_numeric($val['num_rue'])) {
+            $this->valF['num_rue'] = NULL;
+        } else {
+            $this->valF['num_rue'] = $val['num_rue'];
+        }
+        if (!is_numeric($val['rue'])) {
+            $this->valF['rue'] = NULL;
+        } else {
+            $this->valF['rue'] = $val['rue'];
         }
     }
 
@@ -162,7 +185,6 @@ class personne_gen extends dbform {
             $form->setType("personne", "hidden");
             $form->setType("nom", "text");
             $form->setType("prenom", "text");
-            $form->setType("adresse", "text");
             if ($this->is_in_context_of_foreign_key("ville", $this->retourformulaire)) {
                 $form->setType("ville", "selecthiddenstatic");
             } else {
@@ -175,6 +197,12 @@ class personne_gen extends dbform {
                 $form->setType("civilite", "selecthiddenstatic");
             } else {
                 $form->setType("civilite", "select");
+            }
+            $form->setType("num_rue", "text");
+            if ($this->is_in_context_of_foreign_key("rue", $this->retourformulaire)) {
+                $form->setType("rue", "selecthiddenstatic");
+            } else {
+                $form->setType("rue", "select");
             }
         }
 
@@ -183,7 +211,6 @@ class personne_gen extends dbform {
             $form->setType("personne", "hiddenstatic");
             $form->setType("nom", "text");
             $form->setType("prenom", "text");
-            $form->setType("adresse", "text");
             if ($this->is_in_context_of_foreign_key("ville", $this->retourformulaire)) {
                 $form->setType("ville", "selecthiddenstatic");
             } else {
@@ -197,6 +224,12 @@ class personne_gen extends dbform {
             } else {
                 $form->setType("civilite", "select");
             }
+            $form->setType("num_rue", "text");
+            if ($this->is_in_context_of_foreign_key("rue", $this->retourformulaire)) {
+                $form->setType("rue", "selecthiddenstatic");
+            } else {
+                $form->setType("rue", "select");
+            }
         }
 
         // MODE SUPPRIMER
@@ -204,12 +237,13 @@ class personne_gen extends dbform {
             $form->setType("personne", "hiddenstatic");
             $form->setType("nom", "hiddenstatic");
             $form->setType("prenom", "hiddenstatic");
-            $form->setType("adresse", "hiddenstatic");
             $form->setType("ville", "selectstatic");
             $form->setType("telephone", "hiddenstatic");
             $form->setType("telephone_sec", "hiddenstatic");
             $form->setType("mail", "hiddenstatic");
             $form->setType("civilite", "selectstatic");
+            $form->setType("num_rue", "hiddenstatic");
+            $form->setType("rue", "selectstatic");
         }
 
         // MODE CONSULTER
@@ -217,12 +251,13 @@ class personne_gen extends dbform {
             $form->setType("personne", "static");
             $form->setType("nom", "static");
             $form->setType("prenom", "static");
-            $form->setType("adresse", "static");
             $form->setType("ville", "selectstatic");
             $form->setType("telephone", "static");
             $form->setType("telephone_sec", "static");
             $form->setType("mail", "static");
             $form->setType("civilite", "selectstatic");
+            $form->setType("num_rue", "static");
+            $form->setType("rue", "selectstatic");
         }
 
     }
@@ -233,6 +268,8 @@ class personne_gen extends dbform {
         $form->setOnchange('personne','VerifNum(this)');
         $form->setOnchange('ville','VerifNum(this)');
         $form->setOnchange('civilite','VerifNum(this)');
+        $form->setOnchange('num_rue','VerifNum(this)');
+        $form->setOnchange('rue','VerifNum(this)');
     }
     /**
      * Methode setTaille
@@ -241,12 +278,13 @@ class personne_gen extends dbform {
         $form->setTaille("personne", 11);
         $form->setTaille("nom", 10);
         $form->setTaille("prenom", 10);
-        $form->setTaille("adresse", 10);
         $form->setTaille("ville", 11);
         $form->setTaille("telephone", 10);
         $form->setTaille("telephone_sec", 10);
         $form->setTaille("mail", 10);
         $form->setTaille("civilite", 11);
+        $form->setTaille("num_rue", 11);
+        $form->setTaille("rue", 11);
     }
 
     /**
@@ -256,12 +294,13 @@ class personne_gen extends dbform {
         $form->setMax("personne", 11);
         $form->setMax("nom", -5);
         $form->setMax("prenom", -5);
-        $form->setMax("adresse", -5);
         $form->setMax("ville", 11);
         $form->setMax("telephone", -5);
         $form->setMax("telephone_sec", -5);
         $form->setMax("mail", -5);
         $form->setMax("civilite", 11);
+        $form->setMax("num_rue", 11);
+        $form->setMax("rue", 11);
     }
 
 
@@ -270,12 +309,13 @@ class personne_gen extends dbform {
         $form->setLib('personne', __('personne'));
         $form->setLib('nom', __('nom'));
         $form->setLib('prenom', __('prenom'));
-        $form->setLib('adresse', __('adresse'));
         $form->setLib('ville', __('ville'));
         $form->setLib('telephone', __('telephone'));
         $form->setLib('telephone_sec', __('telephone_sec'));
         $form->setLib('mail', __('mail'));
         $form->setLib('civilite', __('civilite'));
+        $form->setLib('num_rue', __('num_rue'));
+        $form->setLib('rue', __('rue'));
     }
     /**
      *
@@ -291,6 +331,17 @@ class personne_gen extends dbform {
             "civilite",
             $this->get_var_sql_forminc__sql("civilite"),
             $this->get_var_sql_forminc__sql("civilite_by_id"),
+            false
+        );
+        // rue
+        $this->init_select(
+            $form, 
+            $this->f->db,
+            $maj,
+            null,
+            "rue",
+            $this->get_var_sql_forminc__sql("rue"),
+            $this->get_var_sql_forminc__sql("rue_by_id"),
             false
         );
         // ville
@@ -317,6 +368,8 @@ class personne_gen extends dbform {
         if($validation == 0) {
             if($this->is_in_context_of_foreign_key('civilite', $this->retourformulaire))
                 $form->setVal('civilite', $idxformulaire);
+            if($this->is_in_context_of_foreign_key('rue', $this->retourformulaire))
+                $form->setVal('rue', $idxformulaire);
             if($this->is_in_context_of_foreign_key('ville', $this->retourformulaire))
                 $form->setVal('ville', $idxformulaire);
         }// fin validation

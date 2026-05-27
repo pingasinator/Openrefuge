@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 17/03/2026 09:06
+//gen openMairie le 23/04/2026 10:41
 
 require_once PATH_OPENMAIRIE."om_dbform.class.php";
 
@@ -44,7 +44,6 @@ class soin_gen extends dbform {
             "animal",
             "clinique",
             "soin_type",
-            "tarif",
         );
     }
 
@@ -153,11 +152,6 @@ class soin_gen extends dbform {
         } else {
             $this->valF['soin_type'] = $val['soin_type'];
         }
-        if (!is_numeric($val['tarif'])) {
-            $this->valF['tarif'] = NULL;
-        } else {
-            $this->valF['tarif'] = $val['tarif'];
-        }
     }
 
     //=================================================
@@ -213,7 +207,6 @@ class soin_gen extends dbform {
             } else {
                 $form->setType("soin_type", "select");
             }
-            $form->setType("tarif", "text");
         }
 
         // MDOE MODIFIER
@@ -242,7 +235,6 @@ class soin_gen extends dbform {
             } else {
                 $form->setType("soin_type", "select");
             }
-            $form->setType("tarif", "text");
         }
 
         // MODE SUPPRIMER
@@ -255,7 +247,6 @@ class soin_gen extends dbform {
             $form->setType("animal", "selectstatic");
             $form->setType("clinique", "selectstatic");
             $form->setType("soin_type", "selectstatic");
-            $form->setType("tarif", "hiddenstatic");
         }
 
         // MODE CONSULTER
@@ -268,7 +259,6 @@ class soin_gen extends dbform {
             $form->setType("animal", "selectstatic");
             $form->setType("clinique", "selectstatic");
             $form->setType("soin_type", "selectstatic");
-            $form->setType("tarif", "static");
         }
 
     }
@@ -282,7 +272,6 @@ class soin_gen extends dbform {
         $form->setOnchange('animal','VerifNum(this)');
         $form->setOnchange('clinique','VerifNum(this)');
         $form->setOnchange('soin_type','VerifNum(this)');
-        $form->setOnchange('tarif','VerifFloat(this)');
     }
     /**
      * Methode setTaille
@@ -296,7 +285,6 @@ class soin_gen extends dbform {
         $form->setTaille("animal", 11);
         $form->setTaille("clinique", 11);
         $form->setTaille("soin_type", 11);
-        $form->setTaille("tarif", 20);
     }
 
     /**
@@ -311,7 +299,6 @@ class soin_gen extends dbform {
         $form->setMax("animal", 11);
         $form->setMax("clinique", 11);
         $form->setMax("soin_type", 11);
-        $form->setMax("tarif", 20);
     }
 
 
@@ -325,7 +312,6 @@ class soin_gen extends dbform {
         $form->setLib('animal', __('animal'));
         $form->setLib('clinique', __('clinique'));
         $form->setLib('soin_type', __('soin_type'));
-        $form->setLib('tarif', __('tarif'));
     }
     /**
      *
@@ -409,8 +395,6 @@ class soin_gen extends dbform {
     function cleSecondaire($id, &$dnu1 = null, $val = array(), $dnu2 = null) {
         // On appelle la methode de la classe parent
         parent::cleSecondaire($id);
-        // Verification de la cle secondaire : facture_soin
-        $this->rechercheTable($this->f->db, "facture_soin", "soin", $id);
         // Verification de la cle secondaire : medicament
         $this->rechercheTable($this->f->db, "medicament", "soin", $id);
     }

@@ -9,15 +9,14 @@ $tab_title = _("Animaux");
 
 $champAffiche = array(
     'animal.animal as "'.__("ID").'"',
+	'animal.num_identification as "'.__("num d'identification").'"',
     'animal.nom as "'.__("nom").'"',
     'animal_espece.nom as "'.__("espèce").'"',
     'animal_race.nom as "'.__("race").'"',
     'to_char(animal.date_naissance ,\'DD/MM/YYYY\') as "'.__("date de naissance").'"',
 	'animal_sexe.libelle as "'.__("sexe").'"',
-    'personne.prenom as "'.__("personne").'"',
+    'concat(personne.prenom,\' \',personne.nom) as "'.__("personne").'"'
 );
-
-
 
 // EDITION
 $tab_actions['left']['état'] = array(
@@ -30,8 +29,10 @@ $tab_actions['left']['état'] = array(
 
 $sousformulaire = array(
     'soin',
-    'sejour',
-    'medicament'
+    'animal_entree',
+	'animal_sortie',
+    'medicament',
+	'medicament_suivi'
 );
 
 $sousformulaire_parameters = array(
@@ -44,6 +45,20 @@ $sousformulaire_parameters = array(
 // Recherche avancée
 
 $champs = array(
+	'animal' => array(
+		'table' => 'animal',
+		'colonne' => 'animal',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'num_identification' => array(
+		'table' => 'animal',
+		'colonne' => 'num_identification',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('num d\'identification')
+	),
 	'nom' => array(
 		'table' => 'animal',
 		'colonne' => 'nom',

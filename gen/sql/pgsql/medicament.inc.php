@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 10:16
+//gen openMairie le 22/04/2026 11:01
 
 $DEBUG=0;
 $serie=15;
@@ -24,9 +24,7 @@ $table = DB_PREFIXE."medicament
     LEFT JOIN ".DB_PREFIXE."animal 
         ON medicament.animal=animal.animal 
     LEFT JOIN ".DB_PREFIXE."soin 
-        ON medicament.soin=soin.soin 
-    LEFT JOIN ".DB_PREFIXE."unite_mesure 
-        ON medicament.unite_mesure=unite_mesure.unite_mesure ";
+        ON medicament.soin=soin.soin ";
 // SELECT 
 $champAffiche = array(
     'medicament.medicament as "'.__("medicament").'"',
@@ -35,7 +33,6 @@ $champAffiche = array(
     'to_char(medicament.date_fin ,\'DD/MM/YYYY\') as "'.__("date_fin").'"',
     'medicament.dose as "'.__("dose").'"',
     'medicament.frequence as "'.__("frequence").'"',
-    'unite_mesure.libelle as "'.__("unite_mesure").'"',
     'soin.date_soin as "'.__("soin").'"',
     'animal.nom as "'.__("animal").'"',
     );
@@ -48,7 +45,6 @@ $champRecherche = array(
     'medicament.nom as "'.__("nom").'"',
     'medicament.dose as "'.__("dose").'"',
     'medicament.frequence as "'.__("frequence").'"',
-    'unite_mesure.libelle as "'.__("unite_mesure").'"',
     'soin.date_soin as "'.__("soin").'"',
     'animal.nom as "'.__("animal").'"',
     );
@@ -63,7 +59,6 @@ $selection = "";
 $foreign_keys_extended = array(
     "animal" => array("animal", ),
     "soin" => array("soin", ),
-    "unite_mesure" => array("unite_mesure", ),
 );
 // Filtre listing sous formulaire - animal
 if (in_array($retourformulaire, $foreign_keys_extended["animal"])) {
@@ -72,9 +67,5 @@ if (in_array($retourformulaire, $foreign_keys_extended["animal"])) {
 // Filtre listing sous formulaire - soin
 if (in_array($retourformulaire, $foreign_keys_extended["soin"])) {
     $selection = " WHERE (medicament.soin = ".intval($idxformulaire).") ";
-}
-// Filtre listing sous formulaire - unite_mesure
-if (in_array($retourformulaire, $foreign_keys_extended["unite_mesure"])) {
-    $selection = " WHERE (medicament.unite_mesure = ".intval($idxformulaire).") ";
 }
 

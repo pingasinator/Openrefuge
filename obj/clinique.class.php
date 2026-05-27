@@ -36,4 +36,15 @@ class clinique extends clinique_gen {
         "formulaire_clinique-".date('YmdHis').".pdf"
         );
     }
+
+    function get_var_sql_forminc__champs() {
+        return array(
+            "clinique",
+            "nom",
+            "telephone",
+            "num_rue",
+            "rue",
+            "ville"
+        );
+    }
 }

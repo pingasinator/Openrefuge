@@ -36,4 +36,18 @@ class animal extends animal_gen {
         "formulaire_animal-".date('YmdHis').".pdf"
         );
     }
+
+    function get_var_sql_forminc__champs() {
+        return array(
+            "animal",
+            "num_identification",
+            "nom",
+            "date_naissance",
+            "animal_espece",
+            "animal_race",
+            "animal_sexe",
+            "personne",
+            "description"
+        );
+    }
 }

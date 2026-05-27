@@ -9,17 +9,17 @@ $tab_title = _("Soins");
 
 $champAffiche = array(
     'soin.soin as "'.__("ID").'"',
+	'animal.animal as "'.__("id de l'animal").'"',
+	'animal.nom as "'.__("animal").'"',
     'soin_type.libelle as "'.__("type de soin").'"',
     'to_char(soin.date_soin ,\'DD/MM/YYYY\') as "'.__("date du soin").'"',
     'soin.posologie as "'.__("posologie").'"',
-    'animal.nom as "'.__("animal").'"',
     'veterinaire.nom as "'.__("vétérinaire").'"',
-    'clinique.nom as "'.__("clinique").'"',
-    'round(coalesce(soin.tarif,0)::numeric,2) as "'.__("tarif").'"'
+    'clinique.nom as "'.__("clinique").'"'
 );
 
 $sousformulaire = array(
-    'medicaments',
+    'medicament',
 );
 
 // EDITION
@@ -33,6 +33,20 @@ $tab_actions['left']['état'] = array(
 
 // Recherche avancée
 $champs = array(
+	'soin' => array(
+		'table' => 'soin',
+		'colonne' => 'soin',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'animal' => array(
+		'table' => 'soin',
+		'colonne' => 'animal',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('animal')
+	),
 	'soin_type' => array(
 		'table' => 'soin',
 		'colonne' => 'soin_type',
@@ -64,13 +78,6 @@ $champs = array(
     	'taille' => 10,
     	'max' => 8,
     	'where' => 'intervaldate'
-	),
-	'animal' => array(
-		'table' => 'soin',
-		'colonne' => 'animal',
-		'type' => 'select',
-		'taille' => 10,
-		'libelle' => _('animal')
 	)
 );
 

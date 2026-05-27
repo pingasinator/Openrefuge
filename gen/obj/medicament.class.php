@@ -1,6 +1,6 @@
 <?php
 //$Id$ 
-//gen openMairie le 16/03/2026 10:16
+//gen openMairie le 05/05/2026 16:31
 
 require_once PATH_OPENMAIRIE."om_dbform.class.php";
 
@@ -18,7 +18,6 @@ class medicament_gen extends dbform {
     var $foreign_keys_extended = array(
         "animal" => array("animal", ),
         "soin" => array("soin", ),
-        "unite_mesure" => array("unite_mesure", ),
     );
     
     /**
@@ -41,7 +40,6 @@ class medicament_gen extends dbform {
             "date_fin",
             "dose",
             "frequence",
-            "unite_mesure",
             "soin",
             "animal",
         );
@@ -79,22 +77,6 @@ class medicament_gen extends dbform {
         return "SELECT soin.soin, soin.date_soin FROM ".DB_PREFIXE."soin WHERE soin = <idx>";
     }
 
-    /**
-     *
-     * @return string
-     */
-    function get_var_sql_forminc__sql_unite_mesure() {
-        return "SELECT unite_mesure.unite_mesure, unite_mesure.libelle FROM ".DB_PREFIXE."unite_mesure ORDER BY unite_mesure.libelle ASC";
-    }
-
-    /**
-     *
-     * @return string
-     */
-    function get_var_sql_forminc__sql_unite_mesure_by_id() {
-        return "SELECT unite_mesure.unite_mesure, unite_mesure.libelle FROM ".DB_PREFIXE."unite_mesure WHERE unite_mesure = <idx>";
-    }
-
 
 
 
@@ -120,7 +102,7 @@ class medicament_gen extends dbform {
         } else {
             $this->valF['date_fin'] = NULL;
         }
-        if (!is_numeric($val['dose'])) {
+        if ($val['dose'] == "") {
             $this->valF['dose'] = NULL;
         } else {
             $this->valF['dose'] = $val['dose'];
@@ -129,11 +111,6 @@ class medicament_gen extends dbform {
             $this->valF['frequence'] = NULL;
         } else {
             $this->valF['frequence'] = $val['frequence'];
-        }
-        if (!is_numeric($val['unite_mesure'])) {
-            $this->valF['unite_mesure'] = NULL;
-        } else {
-            $this->valF['unite_mesure'] = $val['unite_mesure'];
         }
         if (!is_numeric($val['soin'])) {
             $this->valF['soin'] = NULL;
@@ -182,11 +159,6 @@ class medicament_gen extends dbform {
             $form->setType("date_fin", "date");
             $form->setType("dose", "text");
             $form->setType("frequence", "text");
-            if ($this->is_in_context_of_foreign_key("unite_mesure", $this->retourformulaire)) {
-                $form->setType("unite_mesure", "selecthiddenstatic");
-            } else {
-                $form->setType("unite_mesure", "select");
-            }
             if ($this->is_in_context_of_foreign_key("soin", $this->retourformulaire)) {
                 $form->setType("soin", "selecthiddenstatic");
             } else {
@@ -207,11 +179,6 @@ class medicament_gen extends dbform {
             $form->setType("date_fin", "date");
             $form->setType("dose", "text");
             $form->setType("frequence", "text");
-            if ($this->is_in_context_of_foreign_key("unite_mesure", $this->retourformulaire)) {
-                $form->setType("unite_mesure", "selecthiddenstatic");
-            } else {
-                $form->setType("unite_mesure", "select");
-            }
             if ($this->is_in_context_of_foreign_key("soin", $this->retourformulaire)) {
                 $form->setType("soin", "selecthiddenstatic");
             } else {
@@ -232,7 +199,6 @@ class medicament_gen extends dbform {
             $form->setType("date_fin", "hiddenstatic");
             $form->setType("dose", "hiddenstatic");
             $form->setType("frequence", "hiddenstatic");
-            $form->setType("unite_mesure", "selectstatic");
             $form->setType("soin", "selectstatic");
             $form->setType("animal", "selectstatic");
         }
@@ -245,7 +211,6 @@ class medicament_gen extends dbform {
             $form->setType("date_fin", "datestatic");
             $form->setType("dose", "static");
             $form->setType("frequence", "static");
-            $form->setType("unite_mesure", "selectstatic");
             $form->setType("soin", "selectstatic");
             $form->setType("animal", "selectstatic");
         }
@@ -258,8 +223,6 @@ class medicament_gen extends dbform {
         $form->setOnchange('medicament','VerifNum(this)');
         $form->setOnchange('date_debut','fdate(this)');
         $form->setOnchange('date_fin','fdate(this)');
-        $form->setOnchange('dose','VerifNum(this)');
-        $form->setOnchange('unite_mesure','VerifNum(this)');
         $form->setOnchange('soin','VerifNum(this)');
         $form->setOnchange('animal','VerifNum(this)');
     }
@@ -271,9 +234,8 @@ class medicament_gen extends dbform {
         $form->setTaille("nom", 10);
         $form->setTaille("date_debut", 12);
         $form->setTaille("date_fin", 12);
-        $form->setTaille("dose", 11);
+        $form->setTaille("dose", 10);
         $form->setTaille("frequence", 10);
-        $form->setTaille("unite_mesure", 11);
         $form->setTaille("soin", 11);
         $form->setTaille("animal", 11);
     }
@@ -286,9 +248,8 @@ class medicament_gen extends dbform {
         $form->setMax("nom", -5);
         $form->setMax("date_debut", 12);
         $form->setMax("date_fin", 12);
-        $form->setMax("dose", 11);
+        $form->setMax("dose", -5);
         $form->setMax("frequence", -5);
-        $form->setMax("unite_mesure", 11);
         $form->setMax("soin", 11);
         $form->setMax("animal", 11);
     }
@@ -302,7 +263,6 @@ class medicament_gen extends dbform {
         $form->setLib('date_fin', __('date_fin'));
         $form->setLib('dose', __('dose'));
         $form->setLib('frequence', __('frequence'));
-        $form->setLib('unite_mesure', __('unite_mesure'));
         $form->setLib('soin', __('soin'));
         $form->setLib('animal', __('animal'));
     }
@@ -333,17 +293,6 @@ class medicament_gen extends dbform {
             $this->get_var_sql_forminc__sql("soin_by_id"),
             false
         );
-        // unite_mesure
-        $this->init_select(
-            $form, 
-            $this->f->db,
-            $maj,
-            null,
-            "unite_mesure",
-            $this->get_var_sql_forminc__sql("unite_mesure"),
-            $this->get_var_sql_forminc__sql("unite_mesure_by_id"),
-            false
-        );
     }
 
 
@@ -359,8 +308,6 @@ class medicament_gen extends dbform {
                 $form->setVal('animal', $idxformulaire);
             if($this->is_in_context_of_foreign_key('soin', $this->retourformulaire))
                 $form->setVal('soin', $idxformulaire);
-            if($this->is_in_context_of_foreign_key('unite_mesure', $this->retourformulaire))
-                $form->setVal('unite_mesure', $idxformulaire);
         }// fin validation
         $this->set_form_default_values($form, $maj, $validation);
     }// fin setValsousformulaire
@@ -369,5 +316,15 @@ class medicament_gen extends dbform {
     // cle secondaire
     //==================================
     
+    /**
+     * Methode clesecondaire
+     */
+    function cleSecondaire($id, &$dnu1 = null, $val = array(), $dnu2 = null) {
+        // On appelle la methode de la classe parent
+        parent::cleSecondaire($id);
+        // Verification de la cle secondaire : medicament_suivi
+        $this->rechercheTable($this->f->db, "medicament_suivi", "medicament", $id);
+    }
+
 
 }

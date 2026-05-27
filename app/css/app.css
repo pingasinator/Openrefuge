@@ -18,10 +18,10 @@
 .rubrik h3 a{margin-left: 0px; border-left-width: 7px; border-left-style: solid;}
 
 /* définit les couleurs des rubriques du menu*/
-.édition-20{border-left-color: #ff4848;}
-.ui-state-active .édition-20, .édition-20:hover{background-color: #ff4848;}
-.sejours-20{border-left-color: #48a7ff;}
-.ui-state-active .sejours-20,.sejours-20:hover{background-color: #48a7ff;}
+.Animaux-20{border-left-color: #ff4848;}
+.ui-state-active .Animaux-20, .Animaux-20:hover{background-color: #ff4848;}
+.édition-20{border-left-color: #48a7ff;}
+.ui-state-active .édition-20,.édition-20:hover{background-color: #48a7ff;}
 .soins-20{border-left-color: #48ff48;}
 .soins-20:hover{background-color: #48ff48;}
 .edition-20{border-left-color: #ffbf48;}

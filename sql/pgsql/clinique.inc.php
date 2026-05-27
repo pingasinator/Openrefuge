@@ -14,7 +14,7 @@ $sousformulaire = array(
 $champAffiche = array(
     'clinique.clinique as "'.__("ID").'"',
     'clinique.nom as "'.__("nom").'"',
-    'clinique.adresse as "'.__("adresse").'"',
+    'concat(clinique.num_rue,\' \', rue.nom) as "'.__("adresse").'"',
     'ville.nom as "'.__("ville").'"',
     'ville.code_postal as "'.__("code postal").'"',
 );
@@ -30,36 +30,42 @@ $tab_actions['left']['état'] = array(
 
 // Recherche avancée
 
-$champs['nom'] = array(
-	'table' => 'clinique',
-	'colonne' => 'nom',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('nom')
-);
-
-$champs['adresse'] = array(
-	'table' => 'clinique',
-	'colonne' => 'adresse',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('adresse')
-);
-
-$champs['ville'] = array(
-	'table' => 'clinique',
-	'colonne' => 'ville',
-	'type' => 'select',
-	'taille' => 10,
-	'libelle' => _('ville')
-);
-
-$champs['code_postal'] = array(
-	'table' => 'clinique',
-	'colonne' => 'code_postal',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('code postal')
+$champs = array(
+	'clinique' => array(
+		'table' => 'clinique',
+		'colonne' => 'clinique',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'nom' => array(
+		'table' => 'clinique',
+		'colonne' => 'nom',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('nom')
+	),
+	'adresse' => array(
+		'table' => 'clinique',
+		'colonne' => 'adresse',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('adresse')
+	),
+	'ville' => array(
+		'table' => 'clinique',
+		'colonne' => 'ville',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('ville')
+	),
+	'code_postal' => array(
+		'table' => 'clinique',
+		'colonne' => 'code_postal',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('code postal')
+	)
 );
 
 $options[] = array(

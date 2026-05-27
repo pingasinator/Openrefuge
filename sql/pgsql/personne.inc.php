@@ -12,7 +12,7 @@ $champAffiche = array(
     'personne.nom as "'.__("nom").'"',
     'personne.prenom as "'.__("prenom").'"',
     'civilite.libelle as "'.__("civilité").'"',
-    'personne.adresse as "'.__("adresse").'"',
+	'concat(personne.num_rue,\' \',rue.nom) as "'.__("adresse").'"',
     'ville.nom as "'.__("Ville").'"', 
     'ville.code_postal as "'.__("code postal").'"',
     'personne.telephone as "'.__("telephone").'"',
@@ -42,7 +42,14 @@ $champRecherche = array(
 // Recherche avancée
 
 $champs = array(
-	 'nom' => array(
+	'personne' => array(
+		'table' => 'personne',
+		'colonne' => 'personne',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'nom' => array(
 		'table' => 'personne',
 		'colonne' => 'nom',
 		'type' => 'text',

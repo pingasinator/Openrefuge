@@ -13,7 +13,7 @@ $champAffiche = array(
     'medicament.nom as "'.__("nom").'"',
     'to_char(medicament.date_debut ,\'DD/MM/YYYY\') as "'.__("date de debut").'"',
     'to_char(medicament.date_fin ,\'DD/MM/YYYY\') as "'.__("date de fin").'"',
-    'concat(medicament.dose,\' \',unite_mesure.libelle) as "'.__("dose").'"',
+    'medicament.dose as "'.__("dose").'"',
     'medicament.frequence as "'.__("fréquence").'"',
     'soin.soin as "'.__("soin").'"',
     'animal.nom as "'.__("animal").'"',
@@ -30,52 +30,57 @@ $tab_actions['left']['état'] = array(
 
 // Recherche avancée
 
-$champs['nom'] = array(
-	'table' => 'medicament',
-	'colonne' => 'nom',
-	'type' => 'text',
-	'taille' => 10,
-	'libelle' => _('nom')
-);
-
-$champs['soin'] = array(
-	'table' => 'medicament',
-	'colonne' => 'soin',
-	'type' => 'select',
-	'taille' => 10,
-	'libelle' => _('soin')
-);
-
-$champs['date_debut'] = array(
-	'table' => 'medicament',
-	'colonne' => 'date_debut',
-	'libelle' => _('date de début'),
-    'lib1' => _('du'),
-    'lib2' => _('au'),
-    'type' => 'date',
-    'taille' => 10,
-    'max' => 8,
-    'where' => 'intervaldate'
-);
-
-$champs['date_fin'] = array(
-	'table' => 'medicament',
-	'colonne' => 'date_fin',
-	'libelle' => _('date de fin'),
-    'lib1' => _('du'),
-    'lib2' => _('au'),
-    'type' => 'date',
-    'taille' => 10,
-    'max' => 8,
-    'where' => 'intervaldate'
-);
-
-$champs['animal'] = array(
-	'table' => 'medicament',
-	'colonne' => 'animal',
-	'type' => 'select',
-	'taille' => 10,
-	'libelle' => _('animal')
+$champs = array(
+	'medicament' => array(
+		'table' => 'medicament',
+		'colonne' => 'medicament',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
+	'nom' => array(
+		'table' => 'medicament',
+		'colonne' => 'nom',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('nom')
+	),
+	'soin' => array(
+		'table' => 'medicament',
+		'colonne' => 'soin',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('soin')
+	),
+	'date_debut' => array(
+		'table' => 'medicament',
+		'colonne' => 'date_debut',
+		'libelle' => _('date de début'),
+    	'lib1' => _('du'),
+    	'lib2' => _('au'),
+    	'type' => 'date',
+    	'taille' => 10,
+    	'max' => 8,
+    	'where' => 'intervaldate'
+	),
+	'date_fin' => array(
+		'table' => 'medicament',
+		'colonne' => 'date_fin',
+		'libelle' => _('date de fin'),
+    	'lib1' => _('du'),
+    	'lib2' => _('au'),
+    	'type' => 'date',
+    	'taille' => 10,
+    	'max' => 8,
+    	'where' => 'intervaldate'
+	),
+	'animal' => array(
+		'table' => 'medicament',
+		'colonne' => 'animal',
+		'type' => 'select',
+		'taille' => 10,
+		'libelle' => _('animal')
+	)
 );
 
 $options[] = array(

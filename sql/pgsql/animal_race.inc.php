@@ -14,6 +14,13 @@ $champAffiche = array(
 );
 
 $champs = array(
+    'animal_race' => array(
+		'table' => 'animal_race',
+		'colonne' => 'animal_race',
+		'type' => 'text',
+		'taille' => 10,
+		'libelle' => _('id')
+	),
     'animal_espece' => array(
         'table' => 'animal_race',
         'colonne' => 'animal_espece',

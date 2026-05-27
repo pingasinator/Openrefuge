@@ -26,15 +26,16 @@ class personne extends personne_gen {
 
     function get_var_sql_forminc__champs() {
         return array(
+            "personne",
             "nom",
             "prenom",
-            "adresse",
+            "civilite",
             "telephone",
             "telephone_sec",
             "mail",
-            "personne",
-            "civilite",
-            "ville",
+            "num_rue",
+            "rue",
+            "ville"
         );
     }
     
