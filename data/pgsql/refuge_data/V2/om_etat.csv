@@ -1,0 +1,850 @@
+om_etat,om_collectivite,id,libelle,actif,orientation,format,logo,logoleft,logotop,titre_om_htmletat,titreleft,titretop,titrelargeur,titrehauteur,titrebordure,corps_om_htmletatex,om_sql,se_font,se_couleurtexte,margeleft,margetop,margeright,margebottom,header_om_htmletat,header_offset,footer_om_htmletat,footer_offset
+2,1,personne,personne gen,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<p> </p>
+<table border='0' style='width: 100%; background-color: #414141;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-size: 18pt; color: #ffffff; font-weight: bold;'>Personne</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom Complet :</span></td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey; width: 100%;'><span style='font-size: 11pt;'>[nom]</span></td>
+</tr>
+<tr>
+<td style='width: 100%;'><span style='font-size: 8pt; color: #999999;'>Nom</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey; width: 100%;'><span style='font-size: 11pt;'>[prenom]</span></td>
+</tr>
+<tr>
+<td style='width: 100%;'><span style='color: #999999; font-size: 8pt;'>prénom</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Civilité :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[civilité]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%; vertical-align: middle;'><span style='font-size: 15pt;'>Téléphone :</span></td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[telephone]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>Principale</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[telephone_sec]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'> secondaire</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Adresse :</span></td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[adresse]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>rue</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey;'><span style='font-size: 11pt;'>[ville]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>Ville</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[code_postal]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>code postal</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10px'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>mail :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[mail]</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> <span id='personne.animal' class='mce_sousetat'>personne.animal</span></p>
+<p> </p>
+<p> </p>",3,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+3,1,veterinaire,veterinaire,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-size: 18pt; font-weight: bold;'>Vétérinaire</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom complet :</span></td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[nom]</span></td>
+</tr>
+<tr>
+<td><span style='font-size: 8pt; color: #999999;'>nom de famille</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 37.5%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[prenom]</span></td>
+</tr>
+<tr>
+<td><span style='font-size: 8pt; color: #999999;'>prénom</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Civilité :</span></td>
+<td style='border: solid 1px lightgrey; width: 75%;'><span style='font-size: 11pt;'>[civilite]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Téléphone :</span></td>
+<td style='border: solid 1px lightgrey; width: 75%;'><span style='font-size: 11pt;'>[telephone]</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-size: 18pt; font-weight: bold;'>Clinique</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[clinique_nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>adresse :</span></td>
+<td style='width: 24%;'>
+<table border='0' style='width: 100%;'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_adresse]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>nom de la rue</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_ville]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>ville</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_code_postal]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>code postal</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span id='veterinaire.soin' class='mce_sousetat'>veterinaire.soin</span></p>
+<p> </p>
+<p> </p>",4,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+4,1,clinique,clinique gen le 04/12/2025,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-size: 18pt; font-weight: bold;'>Clinique</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Adresse :</span></td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[adresse]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>nom de la rue</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[ville]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>Ville</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[code_postal]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>code postal</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> <span id='clinique.veterinaire' class='mce_sousetat'>clinique.veterinaire</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>",5,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+7,1,medicament,medicament,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<p> </p>
+<p> </p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-size: 18pt; font-weight: bold; color: #ffffff;'>Médicament</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>ID :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[medicament]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Dosage :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[dose]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Période :</span></td>
+<td style='width: 75%;'>
+<table border='0' style='width: 100%;'>
+<tbody>
+<tr>
+<td style='width: 37.5%;'>
+<table border='0' style='width: 100%;'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 11pt;'>du</span></td>
+<td style='border: 1px solid lightgrey; width: 80%;'><span style='font-size: 11pt;'>[date_debut]</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 37.5%;'>
+<table border='0' style='width: 100%;'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 11pt;'>au</span></td>
+<td style='border: 1px solid lightgrey; width: 80%;'><span style='font-size: 11pt;'>[date_fin]</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Fréquence :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[fréquence]</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-weight: bold; font-size: 18pt;'><span style='color: #ffffff;'>Animal</span></span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>ID :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_animal]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[animal_nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Espèce :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[animal_espece]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Race :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[animal_race]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 12pt;'>Date de naissance :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[animal_date_naissance]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Sexe :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[animal_sexe]</span></td>
+</tr>
+</tbody>
+</table>",8,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+6,1,soin,soin,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-weight: bold; font-size: 18pt; color: #ffffff;'>Soin</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>ID : </span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[soin]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Type de soin :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[soin_type]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Date du soin :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[date_soin]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Description :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[description]</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-weight: bold; font-size: 18pt; color: #ffffff;'>Animal</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>ID :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_animal]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Espèce :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_espece]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Race :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_race]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 13pt;'>Date de naissance :</span></td>
+<td style='border: 1px solid lightgrey; width: 75%;'><span style='font-size: 11pt;'>[animal_date_naissance]</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-weight: bold; font-size: 18pt;'>Vétérinaire</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[veterinaire_nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Prénom :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[veterinaire_prenom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Civilité :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[veterinaire_civilite]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Téléphone :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[veterinaire_telephone]</span></td>
+</tr>
+</tbody>
+</table>
+<p> <br pagebreak='true' /></p>
+<table border='0' style='background-color: #414141; width: 100%;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='font-size: 18pt; color: #ffffff; font-weight: bold;'>Clinique</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Nom :</span></td>
+<td style='width: 75%; border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_nom]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 25%;'><span style='font-size: 15pt;'>Adresse :</span></td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_adresse]</span></td>
+</tr>
+<tr>
+<td><span style='font-size: 8pt; color: #999999;'>nom de la rue</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_ville]</span></td>
+</tr>
+<tr>
+<td><span style='font-size: 8pt; color: #999999;'>ville</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 25%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[clinique_code_postal]</span></td>
+</tr>
+<tr>
+<td><span style='font-size: 8pt; color: #999999;'>code postal</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span id='soins.medicament' class='mce_sousetat'>soins.medicament</span></p>
+<p> </p>
+<p> </p>",7,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+8,1,facture,facture,true,P,A4,,10,25,<p style='text-align: right;'>Date : [current_date]</p>,105,25,95,10,0,"<p style='text-align: right;'> </p>
+<p> </p>
+<p>Nom : [personne_nom]</p>
+<p>Prénom : [personne_prenom]</p>
+<p>Adresse : [personne_adresse]</p>
+<p>Ville : [ville]</p>
+<p>Code postale : [ville_code_postal]</p>
+<p>Mail : [personne_mail]</p>
+<p> </p>
+<table border='0'>
+<tbody>
+<tr>
+<td style='background-color: #414141; text-align: center;' colspan='3'><span style='font-size: 18pt;'><span style='color: #ffffff;'>Total</span></span></td>
+</tr>
+<tr>
+<td style='border: solid 1px #000000;'>Prix des séjours</td>
+<td style='border: solid 1px #000000;'>Prix des soins</td>
+<td style='border: solid 1px #000000;'>Prix total</td>
+</tr>
+<tr>
+<td style='border: solid 1px #000000;'>[facture_sejour_tarif]</td>
+<td style='border: solid 1px #000000;'>[soin_tarif]</td>
+<td style='border: solid 1px #000000;'>[prix_total]</td>
+</tr>
+</tbody>
+</table>",9,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12
+1,1,animal,animal,true,P,A4,,10,25,<p>le [current_date]</p>,105,25,95,10,0,"<table border='0' style='background-color: #414141; width: 100%; margin-left: auto; margin-right: auto;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-size: 18pt; font-weight: bold;'>Animal</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Identifiant :</span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[animal]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Num d'identification : </span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[num_identification]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'>
+<p><span style='font-size: 15pt;'>Nom : </span></p>
+</td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[nom]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Espèce : </span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[espece]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Race :</span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[race]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Date de naissance :</span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[date_naissance]</span></td>
+</tr>
+<tr>
+<td style='width: 40%;'><span style='font-size: 15pt;'>Sexe :</span></td>
+<td style='border: 1px solid lightgrey; width: 60%; text-align: left;'><span style='font-size: 11pt;'>[sexe]</span></td>
+</tr>
+</tbody>
+</table>
+<p style='text-align: left;'> </p>
+<table border='0' style='background-color: #414141; width: 100%; margin-left: auto; margin-right: auto;'>
+<tbody>
+<tr>
+<td style='text-align: center;'><span style='color: #ffffff; font-size: 18pt; font-weight: bold;'>Personne</span></td>
+</tr>
+</tbody>
+</table>
+<p style='text-align: left;'> </p>
+<table border='0' style='width: 100%; margin-bottom: auto; border-spacing: 10px; margin-left: auto; margin-right: auto;' cellspacing='10px 0'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 13pt;'>Nom <span style='font-size: 15pt;'>complet</span> :</span></td>
+<td style='width: 40%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[personne_prenom]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>prénom</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 40%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[personne_nom]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>nom de famille</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 15pt;'>Civilité :</span></td>
+<td style='border: 1px solid lightgrey; width: 80%;'><span style='font-size: 11pt;'>[personne_civilite]</span></td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='border-spacing: 10px 0px; width: 100%;' cellspacing='10px 0'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 13pt;'><span style='font-size: 15pt;'>Téléphone</span> :</span></td>
+<td style='width: 40%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey;'><span style='font-size: 11pt;'>[personne_telephone]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>principale</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 40%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey;'><span style='font-size: 11pt;'>[personne_telephone_sec]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>secondaire</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='border-spacing: 10px; width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 15pt;'>Adresse : </span></td>
+<td style='width: 26%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey;'><span style='font-size: 11pt;'>[personne_adresse]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>nom de la rue</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 26%;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: solid 1px lightgrey;'><span style='font-size: 11pt;'>[ville]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>Ville</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style='width: 26%; text-align: left;'>
+<table border='0'>
+<tbody>
+<tr>
+<td style='border: 1px solid lightgrey;'><span style='font-size: 11pt;'>[ville_code_postal]</span></td>
+</tr>
+<tr>
+<td><span style='color: #999999; font-size: 8pt;'>code postal</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border='0' style='width: 100%;' cellspacing='10'>
+<tbody>
+<tr>
+<td style='width: 20%;'><span style='font-size: 15pt;'>Mail :</span></td>
+<td style='width: 80%; border: 1px solid lightgrey; text-align: left;'><span style='font-size: 11pt;'>[personne_mail]</span></td>
+</tr>
+</tbody>
+</table>
+<p> <br pagebreak='true' /></p>
+<p> </p>
+<p><span id='animal.animal_entree' class='mce_sousetat'>animal.animal_entree</span></p>
+<p><span id='animal.animal_sortie' class='mce_sousetat'>animal.animal_sortie</span></p>
+<p><span id='animal.medicament' class='mce_sousetat'>animal.medicament</span></p>
+<p> </p>
+<p><span id='animal.soin' class='mce_sousetat'>animal.soin</span></p>",1,helvetica,0-0-0,10,25,10,25,,10,<p style='text-align: center; font-size: 8pt;'><em>Page &amp;numpage/&amp;nbpages</em></p>,12

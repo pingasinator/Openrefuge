@@ -1,0 +1,613 @@
+rue,nom
+1,Allée André Réthoré
+2,Allée Auguste Rodin
+3,Allée Camille Blanc
+4,Allée Camille Claudel
+5,Allée de la Source
+6,Allée des Châtaigniers
+7,Allée des Longueraies
+8,Allée Georges Charpak
+9,Allée Germaine Tillion
+10,Allée Guillaume Apollinaire
+11,Allée Hoche
+12,Allée Pierre de Coubertin
+13,Allée Pierre-Gilles de Gennes
+14,Avenue Colonel Frédéric Manhès
+15,Avenue de la République
+16,Avenue de Verdun
+17,Avenue du 14 Juillet
+18,Avenue du 19 mars 1962
+19,Avenue du 8 mai 1945
+20,Avenue du Jonc
+21,Avenue Edouard Vaillant
+22,Avenue Henri Brisson
+23,Avenue Jean Jaurès
+24,Avenue Maréchal de Lattre de Tassigny
+25,Avenue Maréchal Leclerc de Hauteclocque
+26,Avenue Pierre Billes
+27,Avenue Pierre Sémard
+28,Bonègue
+29,Boulevard  Salvador Allende
+30,Boulevard de la Liberté
+31,Boulevard de la Nation
+32,Centre Commercial Chaillot
+33,Chaillot
+34,Chemin Blanc
+35,Chemin de Bois Marteau
+36,Chemin de Charnay
+37,Chemin de Fougery (côté droit)
+38,Chemin de Fougery (côté gauche)
+39,Chemin de l'Abricot
+40,Chemin de l'Étang du Verdin
+41,Chemin de l'île Bragard
+42,Chemin de l'Orme à Lieue
+43,Chemin de la Bazinière
+44,Chemin de la Bercetterie
+45,Chemin de la Cour aux Taureaux
+46,Chemin de la Craillo
+47,Chemin de la Croix
+48,Chemin de la Fosse du Gué
+49,Chemin de la Fringale
+50,Chemin de la Gaillardière
+51,Chemin de la Giraudière
+52,Chemin de la Gratouille
+53,Chemin de la Jonchère
+54,Chemin de la Jouannetterie
+55,Chemin de la Maison Blanche
+56,Chemin de la Petite Noue
+57,Chemin de la Picardière
+58,Chemin de la Prairie de l'Anglée
+59,Chemin de la Touche
+60,Chemin de la Trietterie
+61,Chemin de la Vèvre
+62,Chemin de Saint-Priest
+63,Chemin des Ajoncs
+64,Chemin des Assis
+65,Chemin des Bergeries
+66,Chemin des Bertes
+67,Chemin des Blandières
+68,Chemin des Chavannes
+69,Chemin des Communaux de la Vèvre
+70,Chemin des Crêles
+71,Chemin des Érables
+72,Chemin des Fondereaux
+73,Chemin des Fougères
+74,Chemin des Fromenteaux
+75,Chemin des Gaudrets
+76,Chemin des Genièvres
+77,Chemin des Grandes Crêles
+78,Chemin des Grandes Noues Fontaines
+79,Chemin des Grandes Terres
+80,Chemin des Grandes Vèves
+81,Chemin des Grands Bois
+82,Chemin des Grands Champs
+83,Chemin des Grands Fourneaux
+84,Chemin des Millards (côté droit 1ère partie)
+85,Chemin des Millards (côté gauche)
+86,Chemin des Péages
+87,Chemin des Pelles
+88,Chemin des Pillots
+89,Chemin des Places
+90,Chemin des Rechignardes
+91,Chemin des Riaux
+92,Chemin des Sables de Saint-Prie
+93,Chemin des Tailles
+94,Chemin des Tailles de la  Picardière
+95,Chemin des Terres du Verdin
+96,Chemin des Vallées
+97,Chemin des Varennes
+98,Chemin du Briou
+99,Chemin du Camp
+100,Chemin du Champ Chapelet
+101,Chemin du Champ des Renards
+102,Chemin du Cheval Moreau
+103,Chemin du Chevry
+104,Chemin du Cloître
+105,Chemin du Gardois
+106,Chemin du Grand Orme
+107,Chemin du Joffrois
+108,Chemin du Perdrier
+109,Chemin du Pré Long
+110,Chemin du Ruisseau des Rechignardes
+111,Chemin du Stade Constant Duval
+112,Chemin du Terrichon
+113,Chemin du Tertre
+114,Chemin du Verdin
+115,Chemin du Vieux Domaine
+116,Chemin du Village au Chevry
+117,Chemin du Village d'en Haut
+118,Chemin Pierre Dupont
+119,Cité d'Urgence du Verdin
+120,Clos de la Minée
+121,Cour d'en Haut
+122,Cour de Fougery
+123,Cour des Donneaux
+124,Dournon (côté droit)
+125,Fay
+126,Grande rue de la Genette
+127,Groupe Scolaire Joliot-Curie
+128,Guérigny (route de Bourges)
+129,Guérigny (route de Saint Laurent)
+130,Hameau de la Dumonerie
+131,Hôtel de Ville
+132,Impasse Ancienne Cité de la Verrerie
+133,Impasse André Chénier
+134,Impasse André Ribaud
+135,Impasse Armand Bazille
+136,Impasse Babeuf
+137,Impasse Barbès
+138,Impasse Baudin
+139,Impasse Casimir Lecomte
+140,Impasse Clos du Roy
+141,Impasse de Bellevue
+142,Impasse de Fay
+143,Impasse de Jérusalem
+144,Impasse de la Craillo
+145,Impasse de la Croix Moreau
+146,Impasse de la Glacière
+147,Impasse de la Nation
+148,Impasse de Vieilfond
+149,Impasse des Castors de la Jonchère
+150,Impasse des Feuillures
+151,Impasse des Fontaines
+152,Impasse des Fossés
+153,Impasse des Lunots
+154,Impasse Diderot
+155,Impasse du Clos Chabot
+156,Impasse du Grelet
+157,Impasse du Mouton
+158,Impasse Étienne Marcel
+159,Impasse George Sand
+160,Impasse Jean Rostand
+161,Impasse Jean-Baptiste Clément
+162,Impasse Karl Marx
+163,Impasse Kléber
+164,Impasse Mozart
+165,Impasse Pierre Debournou
+166,Impasse Raspail
+167,Impasse Riparia
+168,Impasse Saint Léonard
+169,Impasse Suzanne Masson
+170,L'Orme à Lieue  (côté gauche)
+171,La Bercetterie
+172,La Bidauderie
+173,La Corbinerie
+174,La Coudre
+175,La Croix d'en Bas
+176,La Croix d'en Haut
+177,La Croix Moreau
+178,La Gaillardière
+179,La Giraudière
+180,La Grande Loeuf
+181,La Jouannetterie
+182,La Loeuf
+183,La Picardière
+184,La Pilauderie
+185,La Rondonnière
+186,La Sbauderie
+187,La Touche
+188,La Trietterie
+189,Launay
+190,Le Batonnet
+191,Le Bois Chériot
+192,Le Colombier
+193,Le Coq Gaulois (Côté droit)
+194,Le Gardois
+195,Le Pontet
+196,Le Télégraphe (côté droit)
+197,Le Tertre
+198,Le Village au Piquet
+199,Le Village aux Richoux
+200,Le Village d'en Haut
+201,Les Assis
+202,Les Bouleaux
+203,Les Bruyères de Saint-Août
+204,Les Grandes Crêles
+205,Les Grandes Terres
+206,Les Grandes Vèves
+207,Les Grands Fourneaux
+208,Les Grands Moulins
+209,Les Grattejots
+210,Les Noues
+211,Les Oliviers
+212,Les Petites Crêles
+213,Les Riaux
+214,Les Tremblats
+215,Les Varennes des Forges
+216,Levée de l'Étang du Verdin
+217,Maison Forestière de Grandchamp
+218,Maison Forestière du Briou
+219,Maison Médicale de la Noue
+220,Paincourt
+221,Parc de Bellevue
+222,Passage Antoine Parmentier
+223,Passage de l'Abricot
+224,Passage de l'Aubépine
+225,Passage de l'Hospice
+226,Passage de Ronvaux
+227,Passage des Bergeries
+228,Passage des Épinettes
+229,Passage Descartes
+230,Passage du Bourdoiseau
+231,Passage du Chambon
+232,Passage du Château
+233,Passage du Crot à Foulon
+234,Passage du Jonc
+235,Passage du Pré d'Anet
+236,Passage Gustave Flourens
+237,Passage Jean-Jacques Rousseau
+238,Passage Lévêque
+239,Passage Proudhon
+240,Passage Tissier
+241,Passage Voltaire
+242,Passage Xavier de Maistre
+243,Petit Chemin de Bois Marteau
+244,Petit chemin de la Giraudière
+245,Petit Rateau
+246,Petite rue Anatole France
+247,Petite rue Babeuf
+248,Petite rue de Fay
+249,Petite rue des Donneaux
+250,Petite rue des Longueraies
+251,Petite rue du Bourdoiseau
+252,Petite rue du Camp
+253,Petite rue du Chambon (côté droit)
+254,Petite rue du Chambon (côté gauche)
+255,Place Aimé Césaire
+256,Place Ambroise Croizat
+257,Place Aristide Briand
+258,Place de l'Église des Forges
+259,Place de l'Étape
+260,Place de la Genette
+261,Place de la Mémoire
+262,Place de la Résistance
+263,Place du Bas de Grange
+264,Place du Château
+265,Place François Mitterrand
+266,Place Gabriel Péri
+267,Place Gallerand
+268,Place Jacques Brel
+269,Place Marceau
+270,Place Maréchal Foch
+271,Place Roland Champenier
+272,Place Salvador Allende
+273,Place Vaillant Couturier
+274,Quai d'Yèvre
+275,Quai de l'Étang des Forges
+276,Quai du Bassin
+277,Quai du Cher
+278,Résidence Ambroise Croizat
+279,Résidence Anatole France
+280,Résidence d'Héry
+281,Résidence de la Forêt
+282,Résidence de la Poste
+283,Résidence des Bruyères
+284,Résidence des Pommiers
+285,Résidence George Sand
+286,Résidence Larchevêque
+287,Résidence le Val d'Yèvre
+288,Résidence les Coumelins
+289,Résidence les Dumaines
+290,Résidence les Moulins Verts
+291,Résidence Paul Éluard
+292,Route d'Ainset côté droit
+293,Route d'Ainset côté gauche
+294,Route de Bellon
+295,Route de Bonègue
+296,Route de Bourges (côté droit)
+297,Route de Bourges (côté gauche)
+298,Route de Foëcy
+299,Route de Guérigny
+300,Route de la Croix
+301,Route de la Loeuf
+302,Route de Méreau
+303,Route de Neuvy (côté droit)
+304,Route de Neuvy (côté gauche)
+305,Route de Puits Berteau
+306,Route de Saint-Laurent
+307,Route de Saint-Lazare
+308,Route de Tours
+309,Route de Vieilfond côté droit
+310,Route de Vieilfond côté gauche
+311,Route des Noues
+312,Route des Souchènes
+313,Route du Bois Blanc
+314,Route du Petit Rateau
+315,Route du Vieux Domaine
+316,Route du Village d'en Haut côté droit
+317,Route du Village d'en Haut côté gauche
+318,Rue  Van Craeynest
+319,Rue Adolphe Hache
+320,Rue Alain Fournier
+321,Rue Albert et Paul Thouvenin
+322,Rue Albert Schweitzer
+323,Rue Alfred Nobel
+324,Rue Alphonse Daudet
+325,Rue Alphonse Pradat
+326,Rue Ambroise Croizat
+327,Rue Anatole France
+328,rue André Chénier
+329,Rue André Gide
+330,Rue André Guillemain
+331,Rue André Hénault
+332,Rue André Ribaud
+333,Rue Anne Frank
+334,Rue Antoine Parmentier
+335,Rue Antonin Léraut
+336,Rue Armand Bazille
+337,Rue Armand Brunet
+338,Rue Arthur Rimbaud
+339,Rue Auber
+340,Rue aux Chats
+341,Rue Babeuf
+342,Rue Baptiste Marcet
+343,Rue Bara
+344,Rue Barbès
+345,Rue Beau Site
+346,Rue Beethoven
+347,Rue Bernard Dumont
+348,Rue Bernard Palissy
+349,Rue Berthie Albrecht
+350,Rue Blaise Pascal
+351,Rue Blanche Baron
+352,Rue Blanqui
+353,Rue Bobby Sands
+354,Rue Boitard
+355,Rue Camélinat
+356,Rue Camille Blanc
+357,Rue Camille Desmoulins
+358,Rue Casimir Lecomte
+359,Rue Célestin Gérard
+360,Rue Charles Baudelaire
+361,Rue Charles Gibault
+362,Rue Charles Hurvoy
+363,Rue Charlotte Delbo
+364,Rue Claude Bernard
+365,Rue Claude Chevalier
+366,Rue Claude Lévi Strauss
+367,Rue Claude Michaud
+368,Rue Cognacq-Jay
+369,Rue Condorcet
+370,Rue Courbet
+371,Rue d'Héry
+372,Rue Danielle Casanova
+373,Rue Danton
+374,Rue de Bel Air
+375,Rue de Bellevue
+376,Rue de Bitterfeld
+377,Rue de Fay
+378,Rue de Jérusalem
+379,rue de l'Abbé Pierre
+380,Rue de l'Abricot
+381,Rue de l'Armistice
+382,Rue de l'Épargne
+383,Rue de l'Étape
+384,Rue de l'Hospice
+385,Rue de l'île du Cher
+386,Rue de l'Unité
+387,Rue de la Bidauderie
+388,Rue de la Convention
+389,Rue de la Croix Moreau
+390,Rue de la Fringale
+391,Rue de la Gaucherie
+392,Rue de la Monnaie
+393,Rue de la Montagne
+394,Rue de la Paix
+395,Rue de la Petite Noue
+396,Rue de la Petite Vitesse
+397,Rue de la Piscine
+398,Rue de la Plaisance
+399,Rue de la Poterie
+400,Rue de la Société Française
+401,Rue de la Voûte
+402,Rue de Rendsburg
+403,Rue de Ronvaux
+404,Rue de Stalingrad
+405,Rue de Valmy
+406,Rue de Villeneuve
+407,Rue de Wittelsheim
+408,Rue Denis Papin
+409,Rue des Ateliers
+410,Rue des Berlurettes
+411,Rue des Changes
+412,Rue des Donneaux
+413,rue des Écoles
+414,Rue des Épinettes
+415,Rue des Feuillures
+416,Rue des Francs-Tireurs
+417,Rue des Hortensias
+418,Rue des Lilas
+419,Rue des Longueraies
+420,Rue des Meunières
+421,Rue des Ormes
+422,Rue des Pentecôtes
+423,Rue des Pillots
+424,Rue des Ponts
+425,Rue des Seringats
+426,Rue des Terres Mortes
+427,Rue des Tramways de l'Indre
+428,Rue Descartes
+429,Rue Diderot
+430,Rue Docteur Lobligeois
+431,Rue du 11 Novembre
+432,Rue du Bas de Grange
+433,Rue du Bois d'Yèvre
+434,Rue du Bourdoiseau
+435,Rue du Bourgneuf
+436,Rue du Cavalier
+437,Rue du Champ Commun
+438,Rue du Champ du Four
+439,Rue du Champanet
+440,Rue du Château
+441,Rue du Château d'Eau
+442,Rue du Chemin Vert
+443,Rue du Colonel Fabien
+444,Rue du Crot à Foulon
+445,Rue du Docteur Roux
+446,rue du Grelet
+447,Rue du Gros Caillou
+448,Rue du Mouton
+449,Rue du Panorama
+450,Rue du Péry
+451,Rue du Plessis
+452,Rue du Presbytère
+453,Rue du Président Wilson
+454,Rue du Putet
+455,Rue du Sergent Bobillot
+456,Rue du Souvenir Français
+457,Rue du Square Émile Péraudin
+458,Rue du Travail
+459,Rue du Val Fleury
+460,Rue du Verdin
+461,Rue du Vert Pommier
+462,Rue du Village Aubry
+463,Rue Edgar Quinet
+464,Rue Edmond Rostand
+465,Rue Édouard  Branly
+466,Rue Eirik Labonne
+467,Rue Élisée Reclus
+468,Rue Elsa Triolet
+469,Rue Émile Accolas
+470,Rue Émile Bouleau
+471,Rue Émile Desforges
+472,Rue Émile Zola
+473,Rue Ernest Renan
+474,Rue Étienne Desroches
+475,Rue Étienne Dolet
+476,Rue Étienne Marcel
+477,Rue Étienne Nivet
+478,Rue Eugène Pottier
+479,Rue Évariste Galois
+480,Rue Fédérico Garcia-Lorca
+481,Rue Félix Pyat
+482,Rue Fernand Léger
+483,Rue Fourier
+484,Rue France Bloch-Sérazin
+485,Rue François Mitterrand
+486,Rue Frédéric Mistral
+487,Rue Gagarine
+488,Rue Galilée
+489,Rue Gallerand
+490,Rue Gambetta
+491,Rue Gambon
+492,Rue Garibaldi
+493,Rue Gaston Cornavin
+494,Rue Gaston Monmousseau
+495,Rue Gay-Lussac
+496,Rue Général de Gaulle
+497,Rue George Sand
+498,Rue Georges Clémenceau
+499,Rue Georges Fauconnier
+500,Rue Georges Politzer
+501,Rue Georges Rousseau
+502,Rue Gérard Philipe
+503,Rue Gisèle Halimi
+504,Rue Gourdon
+505,Rue Grand Clément
+506,Rue Grelon
+507,Rue Gustave Flaubert
+508,Rue Gustave Flourens
+509,Rue Guy Moquet
+510,Rue Hector Berlioz
+511,Rue Henri Barbusse
+512,Rue Henri Bergson
+513,Rue Henri Martin
+514,Rue Henri Sellier
+515,Rue Honoré de Balzac
+516,Rue Jacqueline Auriol
+517,Rue Jacques Brel
+518,Rue Jacques Decour
+519,Rue Jacques Richard
+520,Rue Jean Cocteau
+521,Rue Jean de la Fontaine
+522,Rue Jean Giono
+523,Rue Jean Moulin
+524,Rue Jean Picot
+525,Rue Jean Racine
+526,Rue Jean Vilar
+527,Rue Jean-Baptiste Clément
+528,Rue Jean-Jacques Rousseau
+529,Rue Jeanne Labourbe
+530,Rue Joliot Curie
+531,Rue Jules Guesde
+532,Rue Jules Vallès
+533,Rue Jules Verne
+534,Rue Jules-Louis Breton
+535,Rue Julian Grimau
+536,Rue Lavoisier
+537,Rue Ledru-Rollin
+538,Rue Lénine
+539,Rue Léo Mérigot
+540,Rue Léon Bourgeois
+541,Rue Louise Michel
+542,Rue Mac-Nab
+543,Rue Marcel Cachin
+544,Rue Marcel Pagnol
+545,Rue Marcel Paul
+546,Rue Marcel Perrin
+547,Rue Marcel Sembat
+548,Rue Maréchal Joffre
+549,Rue Maryse Bastié
+550,Rue Mattéoti
+551,Rue Mermoz
+552,Rue Meunier
+553,Rue Michel Lucas
+554,Rue Michelet
+555,Rue Millière
+556,Rue Mirabeau
+557,Rue Miranda de Ebro
+558,Rue Molière
+559,Rue Monge
+560,Rue Mozart
+561,Rue Nicolas Boileau
+562,Rue Nicolas Copernic
+563,Rue Pablo Casals
+564,Rue Pablo Néruda
+565,Rue Pablo Picasso
+566,Rue Pasteur
+567,Rue Paul Doumer
+568,Rue Paul Éluard
+569,Rue Paul Lafargue
+570,Rue Paul Valéry
+571,Rue Paul Verlaine
+572,Rue Pierre Brossolette
+573,Rue Pierre Calmette
+574,Rue Pierre Curie
+575,Rue Pierre Debournou
+576,Rue Pierre Dupont
+577,Rue Pierre et Jean Serpaud
+578,Rue Pierre Ferdonnet
+579,Rue Porte aux Boeufs
+580,Rue Proudhon
+581,Rue Rabelais
+582,Rue Raspail
+583,Rue Riparia
+584,Rue Robert Barran
+585,Rue Robert Desnos
+586,Rue Robespierre
+587,Rue Roger Faletto
+588,Rue Roland Champenier
+589,Rue Rollinat
+590,Rue Rouget de Lisle
+591,Rue Saint-Exupéry
+592,Rue Théodore Monod
+593,Rue Théodore Roosevelt
+594,Rue Urbain Nègre
+595,Rue Victor Hugo
+596,Rue Vincent Auriol
+597,Rue Voltaire
+598,Ruelle du Chevrier
+599,Ruelle du Corneau
+600,Ruelle du Pavillon
+601,Saint-Lazare
+602,Saint-Prie
+603,Sion
+604,Square du Châtaignier
+605,Square Georges Brassens
+606,Square Henriette Dumuin
+607,Square Jacques Duclos
+608,Square Jean-Baptiste Clément
+609,Square Lénine
+610,Square Louis Braille
+611,Village au Chevry (Côté gauche)
+612,Village d'Ainset
